@@ -1,0 +1,18 @@
+#!bin/bash
+
+for schedule in static dynamic guided
+do
+	export OMP_SCHEDULE="$schedule"
+	for nthreads in 1 2 4 8 10 12 16 
+	do
+		for seq in 1 2 3 4 5 
+		do
+			echo "schedulling setted to $OMP_SCHEDULE"
+			echo   "./ex2_v2 $nthreads"
+			# dtrace -s threadsched.d -c "./ex2_v2 $nthreads" >> "DTRACE_"$schedule"_"$nthreads"_"$seq".csv"
+		done
+	done
+done
+
+mkdir results_csv
+mv DTRACE*.csv results_csv
