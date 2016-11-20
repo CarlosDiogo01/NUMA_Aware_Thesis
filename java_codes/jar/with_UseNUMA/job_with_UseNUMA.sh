@@ -81,7 +81,7 @@ do
 
 		#Printing a CSV with NUMA Counters with schema: thr,BeforeN0,BeforeN1,AfterN0,AfterN1
 		FILE=NUMA_Counters.$size.size.$thr.threads.csv
-		echo "NUMA_Counters_For_$thr"_Threads"","Before_$node0",Before_$node1,After_$node0,After_$node1 >> $FILE
+		echo "NUMA_Counters_$size_"size"_$thr"_Threads"","Before_$node0",Before_$node1,After_$node0,After_$node1 >> $FILE
 		echo "numa_hit",$valb_numa_hit_node0,$valb_numa_hit_node1,$vala_numa_hit_node0,$vala_numa_hit_node1 >> $FILE
 		echo "numa_miss",$valb_numa_miss_node0,$valb_numa_miss_node1,$vala_numa_miss_node0,$vala_numa_miss_node1 >> $FILE
 		echo "numa_foreign",$valb_numa_foreign_node0,$valb_numa_foreign_node1,$vala_numa_foreign_node0,$vala_numa_foreign_node1 >> $FILE
