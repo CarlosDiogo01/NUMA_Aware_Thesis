@@ -1,0 +1,8 @@
+Size_4,without -XX:+UseNUMA,with -XX:+UseNUMA
+1.Threads,23.113,23.142
+2.Threads,11.567,11.572
+4.Threads,5.982,5.858
+8.Threads,2.967,2.966
+16.Threads,2.118,2.151
+24.Threads,1.28,1.267
+32.Threads,1.218,1.189

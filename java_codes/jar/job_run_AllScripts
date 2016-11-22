@@ -1,0 +1,20 @@
+#!/bin/sh
+
+#PBS -N job_AllScriptsNUMA
+#PBS -l walltime=08:00:00
+#PBS -q mei
+
+#PBS -m abe
+#PBS -M carlos.sa01@gmail.com
+#PBS -l nodes=1:r641:ppn=32
+
+read -r node_info<$PBS_NODEFILE
+
+echo "Allocated computing node: $node_info"
+
+cd ~/NUMA_Aware_Thesis/java_codes/jar
+
+sh 1_run_test_without_UseNUMA.sh
+sh 1_run_test_with_UseNUMA.sh
+sh 2_organize_withoutUseNUMA_withUseNUMA.sh
+sh 3_Get_Median_Times_each_size.sh 

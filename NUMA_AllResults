@@ -1,0 +1,7 @@
+NUMA_Counters_0_size_2_Threads,Before_,Before_,After_,After_
+numa_hit,,,,
+numa_miss,,,,
+numa_foreign,,,,
+interleave_hit,,,,
+local_node,,,,
+other_node,,,,

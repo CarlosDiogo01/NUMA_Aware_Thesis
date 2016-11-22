@@ -5,7 +5,6 @@ REP="10"
 read -r node_info<$PBS_NODEFILE
 RESULTSFOLDER="results_on_$node_info"
 
-mkdir "./$RESULTSFOLDER"
 mkdir "./$RESULTSFOLDER/with_UseNUMA"
 
 for size in 0 1 2 3 4 5
