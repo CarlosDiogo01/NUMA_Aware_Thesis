@@ -4,6 +4,11 @@
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <pthread.h>
 
+
+/***** From SO *******
+http://stackoverflow.com/questions/7259363/measuring-numa-non-uniform-memory-access-no-observable-asymmetry-why
+**********************/
+
 void pin_to_core(size_t core) {
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);
