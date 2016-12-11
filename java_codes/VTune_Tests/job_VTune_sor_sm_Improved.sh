@@ -1,5 +1,5 @@
 #PBS -N result_sor_sm_Improved
-#PBS -l walltime=00:05:00
+#PBS -l walltime=02:00:00
 #PBS -q mei
 
 # PBS -m abe
