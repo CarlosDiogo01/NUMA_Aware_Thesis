@@ -1,7 +1,0 @@
-                           node0           node1
-numa_hit            341178949950    317552257568
-numa_miss               76444415        78764266
-numa_foreign            78764266        76444415
-interleave_hit          54037525        48822744
-local_node          341145731177    317531150422
-other_node             109663188        99871412
