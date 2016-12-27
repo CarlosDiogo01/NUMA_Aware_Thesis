@@ -55,25 +55,25 @@ do
 	# Collecting VTune Events for $size
 	echo "Collecting HotSpots"
 	(>&2 echo "Collecting hotspots")
-	amplxe-cl -collect hotspots -- ${Java_dir}/java -XX:+UseNUMA -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
+	amplxe-cl -collect hotspots -- ${Java_dir}/java -XX:+UseNUMA -XX:+UseParallelGC -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
 
 	echo ""
 
 	echo "Collecting Memory-access"
 	(>&2 echo "Collecting Memory_Acess")
-	amplxe-cl -collect memory-access -- ${Java_dir}/java -XX:+UseNUMA -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
+	amplxe-cl -collect memory-access -- ${Java_dir}/java -XX:+UseNUMA -XX:+UseParallelGC -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
 
 	echo ""
 
 	echo "Collecting Advanced-Hotspots"
 	(>&2 echo "Collecting advanced-hotspots")
-	amplxe-cl -collect advanced-hotspots -- ${Java_dir}/java -XX:+UseNUMA -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
+	amplxe-cl -collect advanced-hotspots -- ${Java_dir}/java -XX:+UseNUMA -XX:+UseParallelGC -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
 
 	echo ""
 
 	echo "Collecting general-exploration"
 	(>&2 echo "Collecting general-exploration")
-	amplxe-cl -collect general-exploration -- ${Java_dir}/java -XX:+UseNUMA -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
+	amplxe-cl -collect general-exploration -- ${Java_dir}/java -XX:+UseNUMA -XX:+UseParallelGC -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SEQ_j8/ seq_sm.improved.JGFSORBenchSizeA -size $size
 	
 	echo ""
 	

@@ -1,4 +1,4 @@
-#PBS -N VTune_SOR_SM_Improved
+#PBS -N VTune_SOR_SM_Improved_Without_UseNUMA
 #PBS -l walltime=02:00:00
 #PBS -q mei
 
@@ -14,7 +14,8 @@
 read -r node_info<$PBS_NODEFILE
 
 Project_Folder="$HOME/ScholarShip_public/JGF/sor/Improved"
-VTune_output_dir="$HOME/NUMA_Aware_Thesis/java_codes/VTune_Tests/sor_SM_Improved_j8_$node_info"
+VTune_output_dir="$HOME/NUMA_Aware_Thesis/java_codes/VTune_Tests/sor_SM_Improved_j8_Without_UseNUMA_Fag_AllSizes_$node_info"
+
 # Java Dir 
 Java_dir="/share/apps/java/jdk1.8.0_20/bin"
 
@@ -79,7 +80,7 @@ do
 done
 
 cd "$HOME/NUMA_Aware_Thesis/java_codes/VTune_Tests"
-mv VTune_SOR_SM_Improved* sor_SM_Improved_j8_$node_info/
+mv VTune_SOR_SM_Improved_Without_UseNUMA* sor_SM_Improved_j8_Without_UseNUMA_Fag_AllSizes_$node_info/
 
 # Clear class files
 rm -rf ${Project_Folder}/class_SM_j8

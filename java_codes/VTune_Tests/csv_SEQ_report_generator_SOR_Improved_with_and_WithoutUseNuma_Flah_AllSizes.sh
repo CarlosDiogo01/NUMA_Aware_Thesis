@@ -5,7 +5,7 @@
 #PBS -m abe
 #PBS -M carlos.sa01@gmail.com 
 
-#PBS -l nodes=1:r662:ppn=4
+#PBS -l nodes=1:r662:ppn=8
 
 
 #### SCRIPT FOR ORGANIZE VTUNE RESULTS IN A CSV FILE SOR IMPROVED - SEQUENTIAL VERSION ####
@@ -16,6 +16,8 @@ read -r node_info<$PBS_NODEFILE
 VTune_output_dir="$HOME/NUMA_Aware_Thesis/java_codes/VTune_Tests/"
 # Java Dir 
 Java_dir="/share/apps/java/jdk1.8.0_20/bin/"
+
+MACHINE_WHERE_TESTS_RUNNED="compute-662-6"
 
 # Preparing environment for Parallel Studio XE 2016
 echo "Loading Parallel Studio XE 2016 ..." 
@@ -35,66 +37,103 @@ echo "DONE!"
 # Go to Project Folder
 cd ${VTune_output_dir}
 
-
 for size in 0 1 2 3 4 5
 do
 	# Organize CSV results to SOR SEQ improved Use_NUMA_Flag 
-	cd "sor_SEQ_Improved_j8_UseNumaFlag_*/Size_$size"
+	cd "sor_SEQ_Improved_j8_UseNumaFlag_${MACHINE_WHERE_TESTS_RUNNED}/Size_$size"
 	
 	(>&2 echo "**** START collect profile for SOR SEQ IMPROVED WITH -XX:+UseNuma Flag SIZE $size ******")
 
-	# Generate CSV for hotspots
+	# Generate CSV for summary
+	(>&2 echo "Generate Summary CSV for Size_$size")
+	amplxe-cl -R summary -report-output SOR_SEQ_UseNuma_Flag_summary_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
+	echo ""
+
+	# Generate CSV for hotspots: Display CPU time.
 	(>&2 echo "Generate Hotspots CSV for Size_$size")
-	amplxe-cl -R hotspots -report-output SOR_SEQ_UseNuma_Flag_hotspots_$node_info.csv -format csv -csv-delimiter comma
+	amplxe-cl -R hotspots -report-output SOR_SEQ_UseNuma_Flag_hotspots_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
+	echo ""
+	
+	# Generate CSV for hw-events: Display hardware events
+	(>&2 echo "Generate hw-events CSV for Size_$size")
+	amplxe-cl -R hw-events -report-output SOR_SEQ_UseNuma_Flag_hw-events_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
 	echo ""
 
-	#Generate CSV for Memory Access 
-	(>&2 echo "Generate Memory Access CSV for Size_$size")
-	amplxe-cl -R memory-access -report-output SOR_SEQ_UseNuma_Flag_memory_access_$node_info.csv -format csv -csv-delimiter comma
+	# Generate CSV for top-down: Display a call tree for your target application and provide CPU and wait time for each function.
+	(>&2 echo "Generate top-down CSV for Size_$size")
+	amplxe-cl -R top-down -report-output SOR_SEQ_UseNuma_Flag_top-down_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
 	echo ""
 
-	#Generate CSV for Advanced-hostposts	
-	(>&2 echo "Generate Advanced Hotspots CSV for Size_$size")
-	amplxe-cl -R advanced-hotspots -report-output SOR_SEQ_UseNuma_Flag_advanced_hotspots_$node_info.csv -format csv -csv-delimiter comma
+	# Generate CSV for gprof-cc: Display CPU or wait time in the gprof-like format.
+	(>&2 echo "Generate gprof-cc format CSV for Size_$size")
+	amplxe-cl -R gprof-cc -report-output SOR_SEQ_UseNuma_Flag_gprof_cc_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
 	echo ""
 
-	#Generate CSV for General-Exploration 
-	(>&2 echo "Generate General-Hotspots CSV for Size_$size")
-	amplxe-cl -R general-exploration -report-output SOR_SEQ_UseNuma_Flag_general_exploration_$node_info.csv -format csv -csv-delimiter comma
+	# Generate CSV for callstacks:  Display CPU or wait time for callstacks
+	(>&2 echo "Generate calstacks CSV for Size_$size")
+	amplxe-cl -R callstacks -report-output SOR_SEQ_UseNuma_Flag_callstacks_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
 	echo ""
 
 	(>&2 echo "**** END CSV gen profile for SOR SEQ IMPROVED WITH -XX:+UseNuma Flag SIZE $size ******")
-	
 
 
-	cd ..
-	
+	cd ${VTune_output_dir}
 
 
 	# Organize CSV results to SOR SEQ improved WITHOUT Use_NUMA_Flag 
-	cd "sor_SEQ_Improved_j8_WithoutUseNumaFlag_*/Size_$size"
-
+	cd "sor_SEQ_Improved_j8_WithoutUseNumaFlag_${MACHINE_WHERE_TESTS_RUNNED}/Size_$size"
+	
 	(>&2 echo "**** START collect profile for SOR SEQ IMPROVED WITHOUT -XX:+UseNuma Flag SIZE $size ******")
 
-        # Generate CSV for hotspots
+	# Generate CSV for summary
+        (>&2 echo "Generate Summary CSV for Size_$size")
+        amplxe-cl -R summary -report-output SOR_SEQ_WithoutUseNumaFlag_summary_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
+        echo ""
+
+        # Generate CSV for hotspots: Display CPU time.
         (>&2 echo "Generate Hotspots CSV for Size_$size")
-        amplxe-cl -R hotspots -report-output SOR_SEQ_UseNuma_Flag_hotspots_$node_info.csv -format csv -csv-delimiter comma
+        amplxe-cl -R hotspots -report-output SOR_SEQ_WithoutUseNumaFlag_hotspots_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
         echo ""
 
-        #Generate CSV for Memory Access 
-        (>&2 echo "Generate Memory Access CSV for Size_$size")
-        amplxe-cl -R memory-access -report-output SOR_SEQ_UseNuma_Flag_memory_access_$node_info.csv -format csv -csv-delimiter comma
+        # Generate CSV for hw-events: Display hardware events
+        (>&2 echo "Generate hw-events CSV for Size_$size")
+        amplxe-cl -R hw-events -report-output SOR_SEQ_WithoutUseNumaFlag_hw-events_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
         echo ""
 
-        #Generate CSV for Advanced-hostposts    
-        (>&2 echo "Generate Advanced Hotspots CSV for Size_$size")
-        amplxe-cl -R advanced-hotspots -report-output SOR_SEQ_UseNuma_Flag_advanced_hotspots_$node_info.csv -format csv -csv-delimiter comma
+        # Generate CSV for top-down: Display a call tree for your target application and provide CPU and wait time for each function.
+        (>&2 echo "Generate top-down CSV for Size_$size")
+        amplxe-cl -R top-down -report-output SOR_SEQ_WithoutUseNumaFlag_top-down_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
         echo ""
 
-        #Generate CSV for General-Exploration 
-        (>&2 echo "Generate General-Hotspots CSV for Size_$size")
-        amplxe-cl -R general-exploration -report-output SOR_SEQ_UseNuma_Flag_general_exploration_$node_info.csv -format csv -csv-delimiter comma
+        # Generate CSV for gprof-cc: Display CPU or wait time in the gprof-like format.
+        (>&2 echo "Generate gprof-cc format CSV for Size_$size")
+        amplxe-cl -R gprof-cc -report-output SOR_SEQ_WithoutUseNumaFlag_gprof_cc_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
+        echo ""
+
+        # Generate CSV for callstacks:  Display CPU or wait time for callstacks
+        (>&2 echo "Generate calstacks CSV for Size_$size")
+        amplxe-cl -R callstacks -report-output SOR_SEQ_WithoutUseNumaFlag_callstacks_${MACHINE_WHERE_TESTS_RUNNED}.csv -format csv -csv-delimiter comma
         echo ""
 
         (>&2 echo "**** END CSV gen profile for SOR SEQ IMPROVED WITHOUT -XX:+UseNuma Flag for SIZE $size ******")
+
+	cd ${VTune_output_dir}
+
 done
+
+
+# Difference between Without flag VS With -XX:+UseNUMA flag
+for size in 0 1 2 3 4 5
+do
+	#SEQ (without flag VS With -XX:+UseNUMA flag)
+
+	#Hotspots
+	amplxe-cl -report hotspots -r "$VTune_output_dir/sor_SEQ_Improved_j8_WithoutUseNumaFlag_${MACHINE_WHERE_TESTS_RUNNED}/Size_$size/r000hs" -r "$VTune_output_dir/sor_SEQ_Improved_j8_UseNumaFlag_${MACHINE_WHERE_TESTS_RUNNED}/Size_$size/r000hs" -report-output sor_SEQ_Without_VS_With_UseNUMA_hotspots_Size_$size.csv -format csv -csv-delimiter comma
+
+	#hw-events
+	amplxe-cl -report hw-events -r "$VTune_output_dir/sor_SEQ_Improved_j8_WithoutUseNumaFlag_${MACHINE_WHERE_TESTS_RUNNED}/Size_$size/r001macc" -r "$VTune_output_dir/sor_SEQ_Improved_j8_UseNumaFlag_${MACHINE_WHERE_TESTS_RUNNED}/Size_$size/r001macc" -report-output sor_SEQ_Without_VS_With_UseNUMA_hw-events_Size_$size.csv -format csv -csv-delimiter comma
+done
+
+cd ${VTune_output_dir}
+mkdir sor_SEQ_Improved_j8_Without_VS_UseNUMA_AllSizes
+mv *.csv sor_SEQ_Improved_j8_Without_VS_UseNUMA_AllSizes
