@@ -14,7 +14,7 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=gcc -fopenmp
+CC=icc -openmp
 CCC=mpic++
 CXX=mpic++
 FC=gfortran
@@ -61,7 +61,7 @@ LDLIBSOPTIONS=-lm
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lufact_sm: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	gcc -fopenmp -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lufact_sm ${OBJECTFILES} ${LDLIBSOPTIONS}
+	icc -openmp -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lufact_sm ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/Linpack.o: Linpack.c 
 	${MKDIR} -p ${OBJECTDIR}

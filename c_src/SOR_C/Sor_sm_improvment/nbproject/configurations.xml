@@ -40,11 +40,11 @@
         <cTool>
           <developmentMode>6</developmentMode>
           <standard>10</standard>
-          <commandlineTool>gcc -fopenmp</commandlineTool>
+          <commandlineTool>icc -openmp</commandlineTool>
           <warningLevel>0</warningLevel>
         </cTool>
         <linkerTool>
-          <commandlineTool>gcc -fopenmp</commandlineTool>
+          <commandlineTool>icc -openmp</commandlineTool>
         </linkerTool>
       </compileType>
       <item path="Sor.c" ex="false" tool="0" flavor2="0">

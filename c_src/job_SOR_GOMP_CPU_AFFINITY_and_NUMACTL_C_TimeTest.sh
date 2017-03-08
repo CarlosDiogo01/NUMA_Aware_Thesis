@@ -1,4 +1,4 @@
-#PBS -N SOR_GOMP_CPU_AFFINITY_and_NUMACTL_C_TimeTest
+#PBS -N SOR_KMP_AFFINITY_and_NUMACTL_C_TimeTest
 #PBS -l walltime=20:00:00
 #PBS -q mei
 
@@ -15,7 +15,7 @@ read -r node_info<$PBS_NODEFILE
 
 ############ Information about algorithm to run ################
 alg="SOR_C"
-exe="$HOME/NUMA_Aware_Thesis/c_src/SOR_C/Sor_sm_improvment/dist/Debug/OpenMPI-MacOSX/sor_sm_improvment_gcc_default"
+exe="$HOME/NUMA_Aware_Thesis/c_src/SOR_C/Sor_sm_improvment/dist/Debug/OpenMPI-MacOSX/sor_sm_improvment_icc_default"
 ################################################################
 
 
@@ -34,9 +34,11 @@ TIMES_ALL_TESTS_PER_SIZE="TIMES_${alg}_ALL_TESTS_PER_SIZE"
 
 
 ################## External LIBS and Tools Configuration #####################
-# GCC
 module purge
-module load gnu/5.3.0
+
+# ICC
+source /share/apps/intel/compilers_and_libraries_2016/linux/bin/compilervars.sh intel64
+source /share/apps/intel/compilers_and_libraries_2016/linux/mkl/bin/mklvars.sh intel64
 #############################################################################
 
 
@@ -45,11 +47,15 @@ module load gnu/5.3.0
 ############################### Tests ######################################
 test1="Default"
 
-#GOMP_CPU_AFFINITY tests based on "Default" execution. Just changing binding policy on GOMP_CPU_AFFINITY
-test2="GOMP_CPU_AFFINITY_Interlieving"
-test3="GOMP_CPU_AFFINITY_bindingSocket0_then_Socket1"
-test4="GOMP_CPU_AFFINITY_cpubind_0_only_(socket0)"
-test5="GOMP_CPU_AFFINITY_cpubind_1_only_(socket1)"
+##GOMP_CPU_AFFINITY tests based on "Default" execution. Just changing binding policy on GOMP_CPU_AFFINITY
+#test2="GOMP_CPU_AFFINITY_Interlieving"
+#test3="GOMP_CPU_AFFINITY_bindingSocket0_then_Socket1"
+#test4="GOMP_CPU_AFFINITY_cpubind_0_only_(socket0)"
+#test5="GOMP_CPU_AFFINITY_cpubind_1_only_(socket1)"
+
+test2="KMP_AFFINITY_Interlieving_explicit"
+
+
 
 #numactl tests
 test6="numactl_interleave_all_only"
