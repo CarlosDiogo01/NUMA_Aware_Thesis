@@ -1,0 +1,10 @@
+Size_3,Default,UseNUMA_and_UseParallelGC,numactl_interleave_all_only,UseNUMA_UseParallelGC_and_numactl_interleave_all,numactl_cpubind_0_1_and_membind_0,numactl_cpubind_0_1_membind_0_and_JAVA_NUMA_FLAGS,UseNUMAInterleaving,UseAdaptiveNUMAChunkSizing,NUMAStats
+1.Threads,5.276,5.68,5.792,5.662,5.296,5.66,5.29,5.284,5.667
+2.Threads,3.242,3.106,2.92,3.106,3.251,3.108,3.247,3.248,3.098
+4.Threads,2.446,1.921,1.682,1.933,2.441,1.92,2.442,2.451,1.927
+8.Threads,2.475,1.689,1.675,1.688,2.48,1.685,2.485,2.486,1.674
+10.Threads,2.533,1.71,1.544,1.709,2.547,1.706,2.555,2.54,1.704
+12.Threads,2.58,1.754,1.682,1.758,2.574,1.755,2.579,2.591,1.752
+16.Threads,2.622,1.778,1.515,1.778,2.608,1.784,2.61,2.615,1.777
+24.Threads,2.757,1.892,1.468,1.878,2.755,1.896,2.751,2.763,1.897
+32.Threads,2.733,1.872,1.469,1.872,2.728,1.865,2.723,2.747,1.873
