@@ -48,14 +48,10 @@ source /share/apps/intel/compilers_and_libraries_2016/linux/mkl/bin/mklvars.sh i
 test1="Default"
 
 ##GOMP_CPU_AFFINITY tests based on "Default" execution. Just changing binding policy on GOMP_CPU_AFFINITY
-#test2="GOMP_CPU_AFFINITY_Interlieving"
-#test3="GOMP_CPU_AFFINITY_bindingSocket0_then_Socket1"
-#test4="GOMP_CPU_AFFINITY_cpubind_0_only_(socket0)"
-#test5="GOMP_CPU_AFFINITY_cpubind_1_only_(socket1)"
-
-test2="KMP_AFFINITY_Interlieving_explicit"
-
-
+test2="GOMP_CPU_AFFINITY_Interlieving"
+test3="GOMP_CPU_AFFINITY_bindingSocket0_then_Socket1"
+test4="GOMP_CPU_AFFINITY_cpubind_0_only_(socket0)"
+test5="GOMP_CPU_AFFINITY_cpubind_1_only_(socket1)"
 
 #numactl tests
 test6="numactl_interleave_all_only"
