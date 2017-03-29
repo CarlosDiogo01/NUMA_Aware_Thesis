@@ -65,13 +65,12 @@ void JGFKernel(Sor *sor, int total_threads){
 
 	volatile long sync[total_threads][CACHELINE];
 	//double (*G) [sor->N] = malloc(sizeof *G * sor->M);
-	double **G;
+	double **G = malloc(sor->M * sizeof(double*));
 	FILE *f;
 
 	#pragma omp parallel for
 	for(int i = 0; i < sor->M; i++) 
 	{
-		G = malloc(sor->M * sizeof(double*));
 		G[i] = malloc(sor->M * sizeof(double*));
 	}
 	
