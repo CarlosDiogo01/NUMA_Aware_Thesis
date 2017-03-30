@@ -1,5 +1,5 @@
 #PBS -N LUFACT_C_omp_proc_bind_TimeTest
-#PBS -l walltime=10:00:00
+#PBS -l walltime=20:00:00
 #PBS -q mei
 
 #PBS -m abe
@@ -55,23 +55,6 @@ mkdir $Project_Folder
 cd $Project_Folder
 
 
-#test1 -> OMP_PROC_BIND=master
-mkdir $test1
-for size in $dataset
-do
-	mkdir "$test1/Size_$size"
-        for thr in $thread_bundle
-        do
-		csv="times.${alg}_$test1.$size.size.$thr.thr.csv" 
-		echo "OMP_PROC_BIND=master"
-                for ((i = 0; i < $REP; i++))
-                do
-                        $exe1 -5 $size $thr >> "$test1/Size_$size/$csv"
-		done
-                sort -t, -nk1 -o "$test1/Size_$size/$csv" "$test1/Size_$size/$csv"
-	done
-done
-
 
 #test2 -> OMP_PROC_BIND=spread 
 mkdir $test2
@@ -107,6 +90,25 @@ do
                 sort -t, -nk1 -o "$test3/Size_$size/$csv" "$test3/Size_$size/$csv"
         done
 done
+
+
+#test1 -> OMP_PROC_BIND=master
+mkdir $test1
+for size in $dataset
+do
+	mkdir "$test1/Size_$size"
+        for thr in $thread_bundle
+        do
+		csv="times.${alg}_$test1.$size.size.$thr.thr.csv" 
+		echo "Size: $size | nthreads: $thread_bundle | OMP_PROC_BIND=master |"
+                for ((i = 0; i < $REP; i++))
+                do
+                        $exe1 -5 $size $thr >> "$test1/Size_$size/$csv"
+		done
+                sort -t, -nk1 -o "$test1/Size_$size/$csv" "$test1/Size_$size/$csv"
+	done
+done
+
 
 
 #Extract Medians and merge all times for all tests per thread
