@@ -54,6 +54,8 @@ void JGFKernel(Sor *sor, int total_threads){
     
     volatile long sync[total_threads][CACHELINE];
     double (*G) [sor->N] = malloc(sizeof *G * sor->M);
+    
+    /* !Initialization of G on RandomMatrix (MASTER Thread!) */
     RandomMatrix(sor->M, sor->N, G);
     
     
@@ -68,6 +70,7 @@ void JGFKernel(Sor *sor, int total_threads){
     
     const double start  = omp_get_wtime();
     
+    /* !Computing G in Parallel */
     #pragma omp parallel
     {
         sor_simulation (1.25, sor->M, sor->N, G, sor->JACOBI_NUM_ITER, 

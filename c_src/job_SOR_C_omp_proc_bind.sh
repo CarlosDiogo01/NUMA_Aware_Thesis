@@ -27,7 +27,7 @@ dataset="1 2 3 4 5"
 thread_bundle="1 2 4 8 10 12 16 24 32"
 REP=10
 index_val_to_collect=5
-Project_Folder="$HOME/NUMA_Aware_Thesis/c_src/SOR_C/Sor_sm_improvment/${alg}_TimeTest_$node_info"
+Project_Folder="$HOME/NUMA_Aware_Thesis/c_src/${alg}_TimeTest_$node_info"
 TIMES_ALL_TESTS_PER_SIZE="TIMES_${alg}_ALL_TESTS_PER_SIZE"
 ##############################################################################
 

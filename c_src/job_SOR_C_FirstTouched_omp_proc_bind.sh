@@ -1,11 +1,22 @@
-node_info="compute-641-17"
+#PBS -N SOR_C_FirstTouched_omp_proc_bind_TimeTest
+#PBS -l walltime=10:00:00
+#PBS -q mei
+
+#PBS -m abe
+#PBS -M carlos.sa01@gmail.com 
+
+#PBS -lnodes=1:r641:ppn=32
+
+
+# Machine USED
+read -r node_info<$PBS_NODEFILE
 
 
 ############ Information about algorithm to run ################
-alg="SOR_C_proc_bind"
-exe1="$HOME/NUMA_Aware_Thesis/c_src/exes/sor_sm_improvment_proc_bind_master"
-exe2="$HOME/NUMA_Aware_Thesis/c_src/exes/sor_sm_improvment_proc_bind_spread"
-exe3="$HOME/NUMA_Aware_Thesis/c_src/exes/sor_sm_improvment_proc_bind_close"
+alg="SOR_C_FirstTouched_proc_bind"
+exe1="$HOME/NUMA_Aware_Thesis/c_src/exes/sor_sm_improvment_FirstTouched_proc_bind_master"
+exe2="$HOME/NUMA_Aware_Thesis/c_src/exes/sor_sm_improvment_FirstTouched_proc_bind_spread"
+exe3="$HOME/NUMA_Aware_Thesis/c_src/exes/sor_sm_improvment_FirstTouched_proc_bind_close"
 ################################################################
 
 
@@ -16,7 +27,7 @@ dataset="1 2 3 4 5"
 thread_bundle="1 2 4 8 10 12 16 24 32"
 REP=10
 index_val_to_collect=5
-Project_Folder="$HOME/NUMA_Aware_Thesis/c_src/SOR_C/Sor_sm_improvment/${alg}_TimeTest_$node_info"
+Project_Folder="$HOME/NUMA_Aware_Thesis/c_src/${alg}_TimeTest_$node_info"
 TIMES_ALL_TESTS_PER_SIZE="TIMES_${alg}_ALL_TESTS_PER_SIZE"
 ##############################################################################
 
