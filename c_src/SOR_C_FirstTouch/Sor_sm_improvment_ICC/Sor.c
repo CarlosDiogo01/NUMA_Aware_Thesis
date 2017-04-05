@@ -44,6 +44,7 @@ void JGFKernel(Sor *sor, int total_threads){
 	volatile long sync[total_threads][CACHELINE];
 	
 	double **G = malloc(sor->M * sizeof(double*));
+	int tid;
 	#pragma omp parallel
 	{
 		#pragma omp for nowait
@@ -54,14 +55,10 @@ void JGFKernel(Sor *sor, int total_threads){
 				G[i][j] = (((double)rand()/(double)RAND_MAX)) * 1e-6;
 			}
 		}
-
+		tid = omp_get_thread_num();
 		#pragma omp for nowait
-		for(int i = 0; i < total_threads; i++)
-		{
-			for(int j = 0; j < CACHELINE; j++)
-			{
-				sync[i][j] = 0;
-			}
+		for(int j = 0; j < CACHELINE; j++){
+			sync[tid][j] = 0;
 		}
 	}
 	
@@ -86,8 +83,12 @@ void JGFKernel(Sor *sor, int total_threads){
 	}
 	sor->Gtotal = Gtotal;
 
+        /* ! Free parallel allocations G[i] */
+        for(int i = 0; i < sor->M; i++){
+                free(G[i]);
+        }
 
-free(G);
+	free(G);
 }
 /**
  * In this version I managed to remove the conditions inside the inner loop
