@@ -38,56 +38,60 @@ void JGFinitialise(Sor *sor){
 	srand(sor->RANDOM_SEED);
 }
 
-
 void JGFKernel(Sor *sor, int total_threads){
 
 	volatile long sync[total_threads][CACHELINE];
-	
 	double **G = malloc(sor->M * sizeof(double*));
-	int tid;
-	#pragma omp parallel
+	double start, end;
+	
+	#pragma omp parallel proc_bind(master)
 	{
-		#pragma omp for nowait
-		for(int i = 0; i < sor->M; i++) 
-		{
+		/* Multiple Allocations (PARALLEL) */
+		for (int i=0; i<sor->M; i++){
 			G[i] = malloc(sor->N * sizeof(double));
-			for (int j = 0; j < sor->N; j++) {
+		}
+	
+		/* With FirstTouch */
+		#pragma omp for nowait
+		for (int i=0; i<sor->M; i++ ){
+			for (int j=0; j<sor->N; j++){
 				G[i][j] = (((double)rand()/(double)RAND_MAX)) * 1e-6;
 			}
 		}
-		tid = omp_get_thread_num();
-		#pragma omp for nowait
-		for(int j = 0; j < CACHELINE; j++){
+		const int tid = omp_get_thread_num();
+		for(int j = 0; j < CACHELINE; j++) {
 			sync[tid][j] = 0;
 		}
-	}
-	
-	const double start  = omp_get_wtime();
-	#pragma omp parallel
-	{
+		
+		#pragma omp master
+		{
+			 start  = omp_get_wtime();
+		}
+		
+		/* !Computing G in Parallel */
 		sor_simulation (1.25, sor->M, sor->N, G, sor->JACOBI_NUM_ITER, 
 				total_threads, sync);
+		
+		//barrier -> thread sync
+	
+		#pragma omp master
+		{	
+			end = omp_get_wtime();
+			printf("%f\n", (end - start));
+		}
 	}
-	const double end    = omp_get_wtime();
-
-	printf("%f\n", (end - start));
-
 	double Gtotal = 0;
-
-	for (int i = 1; i < sor->M-1; i++) 
-	{
-		for (int j = 1; j < sor->N-1; j++) 
-		{
+	for (int i = 1; i < sor->M-1; i++){
+		for (int j = 1; j < sor->N-1; j++){
 			Gtotal += G[i][j];
 		}
 	}
 	sor->Gtotal = Gtotal;
 
-        /* ! Free parallel allocations G[i] */
-        for(int i = 0; i < sor->M; i++){
-                free(G[i]);
-        }
-
+	/* Free parallel allocations G[i] */
+	for(int i=0; i< sor->M; i++){
+		free(G[i]);
+	}
 	free(G);
 }
 /**

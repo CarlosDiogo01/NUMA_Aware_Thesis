@@ -53,17 +53,16 @@ void RandomMatrix(int M, int N, double G [M][N]){
 void JGFKernel(Sor *sor, int total_threads){
     
     volatile long sync[total_threads][CACHELINE];
-   
     double (*G) [sor->N] = malloc(sizeof *G * sor->M);
     
     /* !Initialization of G on RandomMatrix (MASTER Thread!) */
     RandomMatrix(sor->M, sor->N, G);
-    
-    for(int i = 0; i < total_threads; i++)
+   
+    #pragma omp parallel 
     {
-        for(int j = 0; j < CACHELINE; j++)
-        {
-            sync[i][j] = 0;
+	const int tid = omp_get_thread_num();
+        for(int j = 0; j < CACHELINE; j++){
+		sync[tid][j] = 0;
         }
     }
     const double start  = omp_get_wtime();
