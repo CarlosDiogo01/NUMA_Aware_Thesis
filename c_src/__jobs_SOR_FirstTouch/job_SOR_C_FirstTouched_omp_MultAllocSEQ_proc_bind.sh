@@ -37,8 +37,8 @@ TIMES_ALL_TESTS_PER_SIZE="TIMES_${alg}_ALL_TESTS_PER_SIZE"
 ################## External LIBS and Tools Configuration #####################
 module purge
 
-# GCC
-module load gnu/5.3.0
+# ICC
+source /share/apps/intel/compilers_and_libraries_2016/linux/bin/compilervars.sh intel64
 #############################################################################
 
 
