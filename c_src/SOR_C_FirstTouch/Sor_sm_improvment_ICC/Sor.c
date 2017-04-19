@@ -44,7 +44,7 @@ void JGFKernel(Sor *sor, int total_threads){
 	double **G = malloc(sor->M * sizeof(double*));
 	double start, end;
 	
-	#pragma omp parallel proc_bind(master)
+	#pragma omp parallel proc_bind(close)
 	{
 		/* Multiple Allocations (PARALLEL) */
 		for (int i=0; i<sor->M; i++){
@@ -62,6 +62,7 @@ void JGFKernel(Sor *sor, int total_threads){
 		for(int j = 0; j < CACHELINE; j++) {
 			sync[tid][j] = 0;
 		}
+		#pragma omp barrier
 		
 		#pragma omp master
 		{
@@ -72,14 +73,10 @@ void JGFKernel(Sor *sor, int total_threads){
 		sor_simulation (1.25, sor->M, sor->N, G, sor->JACOBI_NUM_ITER, 
 				total_threads, sync);
 		
-		//barrier -> thread sync
-	
-		#pragma omp master
-		{	
-			end = omp_get_wtime();
-			printf("%f\n", (end - start));
-		}
 	}
+	end = omp_get_wtime();
+	printf("%f\n", (end - start));
+
 	double Gtotal = 0;
 	for (int i = 1; i < sor->M-1; i++){
 		for (int j = 1; j < sor->N-1; j++){

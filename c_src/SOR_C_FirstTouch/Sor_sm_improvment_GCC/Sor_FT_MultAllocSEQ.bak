@@ -62,7 +62,8 @@ void JGFKernel(Sor *sor, int total_threads){
 		for(int j = 0; j < CACHELINE; j++) {
 			sync[tid][j] = 0;
 		}
-		
+		#pragma omp barrier
+
 		#pragma omp master
 		{
 			 start  = omp_get_wtime();
@@ -72,14 +73,10 @@ void JGFKernel(Sor *sor, int total_threads){
 		sor_simulation (1.25, sor->M, sor->N, G, sor->JACOBI_NUM_ITER, 
 				total_threads, sync);
 		
-		//barrier -> thread sync
-	
-		#pragma omp master
-		{	
-			end = omp_get_wtime();
-			printf("%f\n", (end - start));
-		}
 	}
+	end = omp_get_wtime();
+	printf("%f\n", (end - start));
+	
 	double Gtotal = 0;
 	for (int i = 1; i < sor->M-1; i++){
 		for (int j = 1; j < sor->N-1; j++){
@@ -94,6 +91,7 @@ void JGFKernel(Sor *sor, int total_threads){
 	}
 	free(G);
 }
+
 /**
  * In this version I managed to remove the conditions inside the inner loop
  * for (int i = (p%2) + 1; i < Mm1+1; i+=2) making the code faster.

@@ -84,7 +84,7 @@ do
         do
                 csv="times.${alg}_$test3.$size.size.$thr.thr.csv"
 		echo "Test3 - KMP_AFFINITY Compact"
-		export KMP_AFFINITY=verbose,compact
+		export KMP_AFFINITY=compact
                 for ((i = 0; i < $REP; i++))
                 do
 			$exe -5 $size $thr >> "$test3/Size_$size/$csv"
@@ -103,7 +103,7 @@ do
         do
                 csv="times.${alg}_$test4.$size.size.$thr.thr.csv"
 		echo "Test4 - KMP_AFFINITY Scatter"
-		export KMP_AFFINITY=verbose,scatter
+		export KMP_AFFINITY=scatter
                 for ((i = 0; i < $REP; i++))
                 do
 			$exe -5 $size $thr >> "$test4/Size_$size/$csv"
