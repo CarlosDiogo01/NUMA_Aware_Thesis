@@ -52,6 +52,3 @@ echo "***** Size $size ******"
 		done
 	done
 done
-
-
-

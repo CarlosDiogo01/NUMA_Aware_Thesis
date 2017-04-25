@@ -41,16 +41,11 @@ void JGFinitialise(Sor *sor){
 void JGFKernel(Sor *sor, int total_threads){
 
 	volatile long sync[total_threads][CACHELINE];
-	double **G = malloc(sor->M * sizeof(double*));
+	double (*G) [sor->N] = malloc(sizeof *G * sor->M);
 	double start, end;
 	
 	#pragma omp parallel proc_bind(close)
 	{
-		/* Multiple Allocations (PARALLEL) */
-		for (int i=0; i<sor->M; i++){
-			G[i] = malloc(sor->N * sizeof(double));
-		}
-	
 		/* With FirstTouch */
 		#pragma omp for nowait
 		for (int i=0; i<sor->M; i++ ){
@@ -76,7 +71,7 @@ void JGFKernel(Sor *sor, int total_threads){
 	}
 	end = omp_get_wtime();
 	printf("%f\n", (end - start));
-
+	
 	double Gtotal = 0;
 	for (int i = 1; i < sor->M-1; i++){
 		for (int j = 1; j < sor->N-1; j++){
@@ -84,11 +79,6 @@ void JGFKernel(Sor *sor, int total_threads){
 		}
 	}
 	sor->Gtotal = Gtotal;
-
-	/* Free parallel allocations G[i] */
-	for(int i=0; i< sor->M; i++){
-		free(G[i]);
-	}
 	free(G);
 }
 /**
@@ -97,7 +87,7 @@ void JGFKernel(Sor *sor, int total_threads){
  */
 
 void sor_simulation (double omega, int M, int N, 
-		double **G, int num_iterations, 
+		double G[M][N], int num_iterations, 
 		int total_threads, volatile long sync[total_threads][CACHELINE]) {
 
 	int id_thread =  omp_get_thread_num();

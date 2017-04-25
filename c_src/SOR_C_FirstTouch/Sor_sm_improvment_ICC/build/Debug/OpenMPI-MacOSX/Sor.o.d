@@ -4,6 +4,8 @@ build/Debug/OpenMPI-MacOSX/Sor.o: Sor.c Sor.h
 
 /usr/include/features.h:
 
+/usr/include/stdc-predef.h:
+
 /usr/include/sys/cdefs.h:
 
 /usr/include/bits/wordsize.h:
@@ -12,7 +14,7 @@ build/Debug/OpenMPI-MacOSX/Sor.o: Sor.c Sor.h
 
 /usr/include/gnu/stubs-64.h:
 
-/share/apps/intel/compilers_and_libraries_2016.0.109/linux/compiler/include/stddef.h:
+/opt/intel/compilers_and_libraries_2017.1.132/linux/compiler/include/stddef.h:
 
 /usr/include/bits/types.h:
 
@@ -24,7 +26,7 @@ build/Debug/OpenMPI-MacOSX/Sor.o: Sor.c Sor.h
 
 /usr/include/wchar.h:
 
-/share/apps/intel/compilers_and_libraries_2016.0.109/linux/compiler/include/stdarg.h:
+/opt/intel/compilers_and_libraries_2017.1.132/linux/compiler/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -34,7 +36,9 @@ build/Debug/OpenMPI-MacOSX/Sor.o: Sor.c Sor.h
 
 /usr/include/stdlib.h:
 
-/share/apps/intel/compilers_and_libraries_2016.0.109/linux/compiler/include/omp.h:
+/usr/include/bits/stdlib-float.h:
+
+/opt/intel/compilers_and_libraries_2017.1.132/linux/compiler/include/omp.h:
 
 /usr/include/time.h:
 

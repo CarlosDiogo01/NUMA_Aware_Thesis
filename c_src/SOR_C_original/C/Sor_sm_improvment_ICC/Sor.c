@@ -39,7 +39,7 @@ void JGFinitialise(Sor *sor){
 }
 
 
-void RandomMatrix(int M, int N, double G [M][N]){
+void RandomMatrix(int M, int N, double **G){
 
     for (int i = 0; i < N; i++)
     {
@@ -53,22 +53,26 @@ void RandomMatrix(int M, int N, double G [M][N]){
 void JGFKernel(Sor *sor, int total_threads){
     
     volatile long sync[total_threads][CACHELINE];
-    double (*G) [sor->N] = malloc(sizeof *G * sor->M);
-    
+    double **G = malloc(sor->M * sizeof(double*));
+
+    /* MASTER THREAD performing allocation serial */
+    for (int i=0; i<sor->M; i++){
+	G[i] = malloc(sor->N * sizeof(double)); 
+    }
+
     /* !Initialization of G on RandomMatrix (MASTER Thread!) */
     RandomMatrix(sor->M, sor->N, G);
-   
-    #pragma omp parallel 
+  
+    #pragma omp parallel
     {
 	const int tid = omp_get_thread_num();
-        for(int j = 0; j < CACHELINE; j++){
-		sync[tid][j] = 0;
-        }
+	for(int j = 0; j < CACHELINE; j++){
+        	sync[tid][j] = 0;
+     	}
     }
     const double start  = omp_get_wtime();
-    
     /* !Computing G (PARALLEL) */
-    #pragma omp parallel
+    #pragma omp parallel proc_bind(close)
     {
         sor_simulation (1.25, sor->M, sor->N, G, sor->JACOBI_NUM_ITER, 
                         total_threads, sync);
@@ -86,7 +90,11 @@ void JGFKernel(Sor *sor, int total_threads){
         }
     }
     sor->Gtotal = Gtotal;
-            
+    
+    /* MASTER THREAD Free serial */
+    for(int i=0; i< sor->M; i++){
+    	free(G[i]);
+    }
     free(G);
 }
 /**
@@ -95,7 +103,7 @@ void JGFKernel(Sor *sor, int total_threads){
  */
 
 void sor_simulation (double omega, int M, int N, 
-        double G[M][N], int num_iterations, 
+        double **G, int num_iterations, 
         int total_threads, volatile long sync[total_threads][CACHELINE]) {
 
     int id_thread =  omp_get_thread_num();

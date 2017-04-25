@@ -200,8 +200,7 @@ void last_row(  const double omega_over_four, const double one_minus_omega,
 
 	const double *Gim2 = Gim2_;
 	// removing if((j+1) != Nm1) condition using Nm-1 instead of Nm1
-	const int Nm2 = Nm1 - 1;
-	for (int j = 1; j < Nm2; j += 2)
+
 	{
 		Gim1[j+1]=omega_over_four * (Gim2[j+1] + Gi[j+1] + Gim1[j]
 				+ Gim1[j+2]) + one_minus_omega * Gim1[j+1];

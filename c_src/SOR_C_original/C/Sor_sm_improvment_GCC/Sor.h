@@ -28,8 +28,8 @@ typedef struct SOR{
 void run            (int size, int validation, int nthreads);
 void JGFinitialise  (Sor *sor);
 void JGFKernel      (Sor *sor, int total_threads);
-void RandomMatrix   (int M, int N, double G [M][N]);
-void sor_simulation (double omega, int M, int N, double G[M][N], 
+void RandomMatrix   (int M, int N, double **G);
+void sor_simulation (double omega, int M, int N, double **G, 
                         int iterations, int total_threads,  
                         volatile long sync[total_threads][CACHELINE]);
 void middle_rows    (const double omega_over_four, const double one_minus_omega, 
