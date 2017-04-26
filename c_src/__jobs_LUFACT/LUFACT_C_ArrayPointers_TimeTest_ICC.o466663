@@ -1,0 +1,180 @@
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=spread
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+OMP_PROC_BIND=close
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test7 - KMP_AFFINITY Compact
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter
+Test4 - KMP_AFFINITY Scatter

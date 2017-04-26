@@ -58,17 +58,16 @@ void JGFKernel(Sor *sor, int total_threads){
     /* !Initialization of G on RandomMatrix (MASTER Thread!) */
     RandomMatrix(sor->M, sor->N, G);
    
-    #pragma omp parallel 
-    {
-	const int tid = omp_get_thread_num();
-        for(int j = 0; j < CACHELINE; j++){
-		sync[tid][j] = 0;
+    for(int i = 0; i < total_threads; i++) {
+        for(int j = 0; j < CACHELINE; j++) {
+            sync[i][j] = 0;
         }
     }
+
     const double start  = omp_get_wtime();
     
     /* !Computing G (PARALLEL) */
-    #pragma omp parallel proc_bind(close)
+    #pragma omp parallel
     {
         sor_simulation (1.25, sor->M, sor->N, G, sor->JACOBI_NUM_ITER, 
                         total_threads, sync);

@@ -1,5 +1,5 @@
 #PBS -N SOR_C_ArrayPointers_TimeTest_ICC
-#PBS -l walltime=40:00:00
+#PBS -l walltime=20:00:00
 #PBS -q mei
 
 #PBS -m abe
@@ -42,9 +42,9 @@ test7="KMP_AFFINITY_compact"
 test8="KMP_AFFINITY_scatter"
 
 # ICC omp_proc_bind tests
-test9="omp_proc_bind_master"
-test10="omp_proc_bind_spread"
-test11="omp_proc_bind_close"
+#test9="omp_proc_bind_master"
+#test10="omp_proc_bind_spread"
+#test11="omp_proc_bind_close"
 ############################################################################
 
 
@@ -64,59 +64,59 @@ cd $Project_Folder
 
 
 # test9 -> omp_proc_bind_master
-mkdir $test9
-for size in $dataset
-do
-        mkdir "$test9/Size_$size"
-        for thr in $thread_bundle
-        do
-                csv="times.${alg}_$test9.$size.size.$thr.thr.csv"
-                echo "OMP_PROC_BIND=master"
-                for ((i = 0; i < $REP; i++))
-                do
-                        $exeICCprocbindmaster -5 $size $thr >> "$test9/Size_$size/$csv"
-                done
-                sort -t, -nk1 -o "$test9/Size_$size/$csv" "$test9/Size_$size/$csv"
-        done
-done
+#mkdir $test9
+#for size in $dataset
+#do
+#        mkdir "$test9/Size_$size"
+#        for thr in $thread_bundle
+#        do
+#                csv="times.${alg}_$test9.$size.size.$thr.thr.csv"
+#                echo "OMP_PROC_BIND=master"
+#                for ((i = 0; i < $REP; i++))
+#                do
+#                        $exeICCprocbindmaster -5 $size $thr >> "$test9/Size_$size/$csv"
+#                done
+#                sort -t, -nk1 -o "$test9/Size_$size/$csv" "$test9/Size_$size/$csv"
+#        done
+# done
 
 
 
 # test10 -> omp_proc_bind_spread
-mkdir $test10
-for size in $dataset
-do
-        mkdir "$test10/Size_$size"
-        for thr in $thread_bundle
-        do
-                csv="times.${alg}_$test10.$size.size.$thr.thr.csv"
-                echo "OMP_PROC_BIND=spread"
-                for ((i = 0; i < $REP; i++))
-                do
-                        $exeICCprocbindspread -5 $size $thr >> "$test10/Size_$size/$csv"
-                done
-                sort -t, -nk1 -o "$test10/Size_$size/$csv" "$test10/Size_$size/$csv"
-        done
-done
+#mkdir $test10
+#for size in $dataset
+#do
+#        mkdir "$test10/Size_$size"
+#        for thr in $thread_bundle
+#        do
+#                csv="times.${alg}_$test10.$size.size.$thr.thr.csv"
+#                echo "OMP_PROC_BIND=spread"
+#                for ((i = 0; i < $REP; i++))
+#                do
+#                        $exeICCprocbindspread -5 $size $thr >> "$test10/Size_$size/$csv"
+#                done
+#                sort -t, -nk1 -o "$test10/Size_$size/$csv" "$test10/Size_$size/$csv"
+#        done
+#done
 
 
 
 # test11 -> omp_proc_bind_close
-mkdir $test11
-for size in $dataset
-do
-        mkdir "$test11/Size_$size"
-        for thr in $thread_bundle
-        do
-                csv="times.${alg}_$test11.$size.size.$thr.thr.csv"
-                echo "OMP_PROC_BIND=close"
-                for ((i = 0; i < $REP; i++))
-                do
-                        $exeICCprocbindclose -5 $size $thr >> "$test11/Size_$size/$csv"
-                done
-                sort -t, -nk1 -o "$test11/Size_$size/$csv" "$test11/Size_$size/$csv"
-        done
-done
+#mkdir $test11
+#for size in $dataset
+#do
+#        mkdir "$test11/Size_$size"
+#        for thr in $thread_bundle
+#        do
+#                csv="times.${alg}_$test11.$size.size.$thr.thr.csv"
+#                echo "OMP_PROC_BIND=close"
+#                for ((i = 0; i < $REP; i++))
+#                do
+#                        $exeICCprocbindclose -5 $size $thr >> "$test11/Size_$size/$csv"
+#                done
+#               sort -t, -nk1 -o "$test11/Size_$size/$csv" "$test11/Size_$size/$csv"
+#        done
+# done
 
 
 # test7 -> KMP_AFFINITY_compact
@@ -163,14 +163,11 @@ done
 mkdir $TIMES_ALL_TESTS_PER_SIZE
 for size in $dataset
 do
-	echo "Size_$size","$test7","$test8","$test9","$test10","$test11" >> "$TIMES_ALL_TESTS_PER_SIZE/TIMES_${alg}_Size_$size.csv"
+	echo "Size_$size","$test7","$test8" >> "$TIMES_ALL_TESTS_PER_SIZE/TIMES_${alg}_Size_$size.csv"
 	for thr in $thread_bundle
 	do
 		median_test7=`cat "$test7/Size_$size/times.${alg}_$test7.$size.size.$thr.thr.csv" | awk 'FNR == '$index_val_to_collect' {print}'`
 		median_test8=`cat "$test8/Size_$size/times.${alg}_$test8.$size.size.$thr.thr.csv" | awk 'FNR == '$index_val_to_collect' {print}'`
-		median_test9=`cat "$test9/Size_$size/times.${alg}_$test9.$size.size.$thr.thr.csv" | awk 'FNR == '$index_val_to_collect' {print}'`
-		median_test10=`cat "$test10/Size_$size/times.${alg}_$test10.$size.size.$thr.thr.csv" | awk 'FNR == '$index_val_to_collect' {print}'`
-		median_test11=`cat "$test11/Size_$size/times.${alg}_$test11.$size.size.$thr.thr.csv" | awk 'FNR == '$index_val_to_collect' {print}'`
-		echo "$thr.Threads","$median_test7","$median_test8","$median_test9","$median_test10","$median_test11" >> "$TIMES_ALL_TESTS_PER_SIZE/TIMES_${alg}_Size_$size.csv"
+		echo "$thr.Threads","$median_test7","$median_test8" >> "$TIMES_ALL_TESTS_PER_SIZE/TIMES_${alg}_Size_$size.csv"
 	done
 done
