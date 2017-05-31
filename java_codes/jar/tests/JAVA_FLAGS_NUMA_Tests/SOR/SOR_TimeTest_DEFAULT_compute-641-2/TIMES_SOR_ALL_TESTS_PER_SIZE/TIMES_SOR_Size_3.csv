@@ -1,0 +1,10 @@
+Size_3,Default,UseNUMA_and_UseParallelGC,numactl_interleave_all_only,UseNUMA_UseParallelGC_and_numactl_interleave_all
+1.Threads,5.29,5.723,5.879,5.728
+2.Threads,3.223,3.088,2.945,3.085
+4.Threads,2.426,1.909,1.686,1.914
+8.Threads,2.477,1.682,1.682,1.679
+10.Threads,2.558,1.704,1.539,1.706
+12.Threads,2.578,1.761,1.68,1.745
+16.Threads,2.644,1.792,1.509,1.764
+24.Threads,2.75,1.888,1.467,1.885
+32.Threads,2.741,1.885,1.458,1.869

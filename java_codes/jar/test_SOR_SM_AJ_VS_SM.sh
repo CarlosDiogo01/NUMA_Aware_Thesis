@@ -2,9 +2,8 @@
 alg="SOR"
 jar_path="$HOME/NUMA_Aware_Thesis/java_codes/jar"
 exe1="SOR_Improved_sm.jar"
-exe2="SOR_AJ_SM.jar"
 
-packexes="$exe2 $exe1"
+packexes="$exe1"
 ################################################################
 
 
@@ -26,10 +25,11 @@ JAVA8="/share/apps/java/jdk1.8.0_20/bin/java"
 #test1="Default"
 #test2="UseNUMA_and_UseParallelGC"
 #test3="numactl_interleave_all_only" 
-test4="UseNUMA_UseParallelGC_and_numactl_interleave_all"
+#test4="UseNUMA_UseParallelGC_and_numactl_interleave_all"
 #test5="numactl_cpubind_0_1_and_membind_0"
 #test6="numactl_cpubind_0_1_membind_0_and_JAVA_NUMA_FLAGS"
-# test7="UseNUMAInterleaving"
+#test7="UseNUMAInterleaving"
+test8="NUMAChunkResizeWeight"
 ############################################################################
 
 
@@ -72,6 +72,7 @@ do
 #		echo " "
 #	done
 
+
 	# test3 -> numactl --interleave=all ONLY
 #	echo "Test: $test3"
 #	for size in $dataset
@@ -89,22 +90,24 @@ do
 #		echo " "
 #	done
 #
+
+
 	# test4 -> -XX:+UseNUMA -XX:UseParallelGC AND numactl --interleave=all
-	echo "Test: $test4"
-	for size in $dataset
-	do
-		echo -e "\t Size = $size"
-		for thr in $thread_bundle
-		do
-			echo -e "\t\tThreads = $thr"
-			for ((i = 0; i < $REP; i++))
-			do
-				res=`numactl --interleave=all $JAVA8 -jar -XX:+UseNUMA -XX:+UseParallelGC $jar_path/$exe -5 $size $thr`
-				echo -e "\t\t$res"
-			done
-		done
-		echo " "
-	done
+#	echo "Test: $test4"
+#	for size in $dataset
+#	do
+#		echo -e "\t Size = $size"
+#		for thr in $thread_bundle
+#		do
+#			echo -e "\t\tThreads = $thr"
+#			for ((i = 0; i < $REP; i++))
+#			do
+#				res=`numactl --interleave=all $JAVA8 -jar -XX:+UseNUMA -XX:+UseParallelGC $jar_path/$exe -5 $size $thr`
+#				echo -e "\t\t$res"
+#			done
+#		done
+#		echo " "
+#	done
 
 
 #	# test5 -> cpubind=0,1 (inteleave between CPU0 and CPU1) and membind=0
@@ -162,4 +165,26 @@ do
 	#		sort -t, -nk1 -o "$test7/Size_$size/$csv" "$test7/Size_$size/$csv"
 	#        done
 	# done
+
+
+
+
+# test8 -> Using -XX:+UseNUMA -XX:+NUMAPageScanRate -XX:+UseParallelGC flags
+	echo "Test: $test8"
+	for size in $dataset
+	do
+		echo -e "\t Size = $size"
+		NUMAChunkResizeWeight=100
+		echo -e "\t NUMAChunkResizeWeight = $NUMAChunkResizeWeight"
+		for thr in $thread_bundle
+		do
+			echo -e "\t\tThreads = $thr"
+			for ((i = 0; i < $REP; i++))
+			do
+				res=`$JAVA8 -jar -XX:+ForceNUMA -XX:+UseNUMA -XX:NUMAChunkResizeWeight=100 -XX:+UseParallelGC $jar_path/$exe -5 $size $thr`
+				echo -e "\t\t$res"
+			done
+		done
+		echo " "
+	done
 done
