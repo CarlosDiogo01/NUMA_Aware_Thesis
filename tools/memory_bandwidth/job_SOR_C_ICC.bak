@@ -1,0 +1,68 @@
+#PBS -N STREAM_ICC
+#PBS -l walltime=20:00:00
+#PBS -q mei
+
+#PBS -m abe
+#PBS -M carlos.sa01@gmail.com 
+
+#PBS -lnodes=1:r641:ppn=32
+
+
+# Machine USED
+read -r node_info<$PBS_NODEFILE
+
+
+
+############ Folders ################
+exe="`pwd`/exes"
+outputfolder="`pwd`/output"
+#####################################
+
+
+######### Compiler options ##########
+CC=gcc
+CFLAGS="-O3 -xCORE-AVX2 -ffreestanding"
+####################################
+
+numthreads_counted=`cat stream.omp.AVX2.80M.20x.output | grep "Number of Threads counted" | awk -F'= ' '{print $2}'`
+
+########################## Tests configuration ###############################
+thread_bundle="1 2 4 8 10 12 16 24 32"
+stream_array_size="80000000"
+stream_array_size_MB="80"
+stream_rep_no="20"
+stream_exe="stream.omp.AVX2.${stream_array_size_MB}M.${stream_rep_no}x.$CC"
+##############################################################################
+
+
+# Making stream executables
+$CC -O3 -fopenmp -D_OPENMP -DSTREAM_ARRAY_SIZE=$stream_array_size -DNTIMES=$stream_rep_no stream.c -o $stream_exe
+mv stream.omp.AVX2 $exe
+
+
+############################### Tests ######################################
+test1="Stream with ARRAY_SIZE = $stream_array_size_MB MB"
+############################################################################
+
+
+# Running stream executables
+for nthr in thread_bundle 
+do
+	export OMP_NUM_THREADS=$nthr
+	mkdir $outputfolder/${stream_array_size_MB}_MB/
+	./$stream_exe >> $outputfolder/${stream_array_size_MB}_MB/$stream_exe.$nthr.output
+done
+
+
+
+# Extract bandwith  and merge all times for all tests per thread
+mkdir $TIMES_ALL_TESTS_PER_SIZE
+for thr in $dataset
+do
+	echo "Size_$size","$test7","$test8" >> "$TIMES_ALL_TESTS_PER_SIZE/TIMES_${alg}_Size_$size.csv"
+	for thr in $thread_bundle
+	do
+		median_test8=`cat "$test8/Size_$size/times.${alg}_$test8.$size.size.$thr.thr.csv" | awk 'FNR == '$index_val_to_collect' {print}'`
+		echo "$thr.Threads","$median_test7","$median_test8" >> "$TIMES_ALL_TESTS_PER_SIZE/TIMES_${alg}_Size_$size.csv"
+	done
+done
