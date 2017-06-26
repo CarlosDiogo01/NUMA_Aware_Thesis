@@ -1,0 +1,24 @@
+mkdeps.o: ../../../gcc-5.3.0/libcpp/mkdeps.c config.h \
+ ../../../gcc-5.3.0/libcpp/system.h \
+ ../../../gcc-5.3.0/libcpp/../include/filenames.h \
+ ../../../gcc-5.3.0/libcpp/../include/hashtab.h \
+ ../../../gcc-5.3.0/libcpp/../include/ansidecl.h \
+ ../../../gcc-5.3.0/libcpp/../include/libiberty.h \
+ ../../../gcc-5.3.0/libcpp/../include/safe-ctype.h \
+ ../../../gcc-5.3.0/libcpp/include/mkdeps.h
+
+config.h:
+
+../../../gcc-5.3.0/libcpp/system.h:
+
+../../../gcc-5.3.0/libcpp/../include/filenames.h:
+
+../../../gcc-5.3.0/libcpp/../include/hashtab.h:
+
+../../../gcc-5.3.0/libcpp/../include/ansidecl.h:
+
+../../../gcc-5.3.0/libcpp/../include/libiberty.h:
+
+../../../gcc-5.3.0/libcpp/../include/safe-ctype.h:
+
+../../../gcc-5.3.0/libcpp/include/mkdeps.h:

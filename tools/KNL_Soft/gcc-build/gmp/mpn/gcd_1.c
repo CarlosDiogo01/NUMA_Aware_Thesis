@@ -1,0 +1,1 @@
+../../../gcc-5.3.0/gmp/mpn/generic/gcd_1.c

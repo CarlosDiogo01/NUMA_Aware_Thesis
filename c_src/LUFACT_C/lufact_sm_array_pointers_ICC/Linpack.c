@@ -59,13 +59,14 @@ void run(const int size, const int validation, int numThreads)
     {
         linpack->a[line] = malloc(sizeof(double) * (n + 1));
     }
-    
+   
+/* 
     //applying first touch
     #pragma omp parallel for 
     for(int i = 0; i < n; i++)
         for(int j = 0; j < n+1; j++)
             linpack->a[i][j] = 0.0;
-    
+*/    
     // unsuccessful memory allocation
     if(!(linpack->a && linpack->b && linpack->x  && linpack->ipvt))
     {

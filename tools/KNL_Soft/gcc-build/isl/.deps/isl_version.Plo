@@ -1,0 +1,11 @@
+isl_version.lo: ../../gcc-5.3.0/isl/isl_version.c \
+ /usr/include/stdc-predef.h isl_config.h \
+ ../../gcc-5.3.0/isl/isl_config_post.h gitversion.h
+
+/usr/include/stdc-predef.h:
+
+isl_config.h:
+
+../../gcc-5.3.0/isl/isl_config_post.h:
+
+gitversion.h:

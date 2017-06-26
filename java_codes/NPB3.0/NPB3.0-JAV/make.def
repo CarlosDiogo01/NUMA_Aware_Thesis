@@ -1,0 +1,3 @@
+JROOT=/share/apps/java/jdk1.8.0_20
+JAVAFLAGS=-O 
+

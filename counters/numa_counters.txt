@@ -1,0 +1,453 @@
+===============================================================================
+ Native Events in Component: perf_event
+===============================================================================
+
+perf::PAGE-FAULTS                                                            |
+|            PERF_COUNT_SW_PAGE_FAULTS                                         |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+
+
+--------------------------------------------------------------------------------
+| perf::FAULTS                                                                 |
+|            PERF_COUNT_SW_PAGE_FAULTS                                         |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+
+
+
+--------------------------------------------------------------------------------
+| perf::LLC-LOADS                                                              |
+|            Last level cache load accesses                                    |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :precise=0                                                               |
+|            precise ip                                                        |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+
+
+--------------------------------------------------------------------------------
+| perf::LLC-LOAD-MISSES                                                        |
+|            Last level cache load misses                                      |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :precise=0                                                               |
+|            precise ip                                                        |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+| OFFCORE_REQUESTS                                                             |
+|            Offcore requests                                                  |
+|     :ANY                                                                     |
+|            All offcore requests                                              |
+|     :ANY_READ                                                                |
+|            Offcore read requests                                             |
+|     :ANY_RFO                                                                 |
+|            Offcore RFO requests                                              |
+|     :DEMAND_READ_CODE                                                        |
+|            Offcore demand code read requests                                 |
+|     :DEMAND_READ_DATA                                                        |
+|            Offcore demand data read requests                                 |
+|     :DEMAND_RFO                                                              |
+|            Offcore demand RFO requests                                       |
+|     :L1D_WRITEBACK                                                           |
+|            Offcore L1 data cache writebacks                                  |
+|     :e=0                                                                     |
+|            edge level (may require counter-mask >= 1)                        |
+|     :i=0                                                                     |
+|            invert                                                            |
+|     :c=0                                                                     |
+|            counter-mask in range [0-255]                                     |
+|     :t=0                                                                     |
+|            measure any thread                                                |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+| OFFCORE_REQUESTS_OUTSTANDING                                                 |
+|            Outstanding offcore requests                                      |
+|     :ANY_READ                                                                |
+|            Outstanding offcore reads                                         |
+|     :DEMAND_READ_CODE                                                        |
+|            Outstanding offcore demand code reads                             |
+|     :DEMAND_READ_DATA                                                        |
+|            Outstanding offcore demand data reads                             |
+|     :DEMAND_RFO                                                              |
+|            Outstanding offcore demand RFOs                                   |
+|     :ANY_READ_NOT_EMPTY                                                      |
+|            Number of cycles with offcore reads busy                          |
+|     :READ_DATA_NOT_EMPTY                                                     |
+|            Number of cycles with offcore demand data reads busy              |
+|     :READ_CODE_NOT_EMPTY                                                     |
+|            Number of cycles with offcore code reads busy                     |
+|     :RFO_NOT_EMPTY                                                           |
+|            Number of cycles with offcore rfo busy                            |
+|     :e=0                                                                     |
+|            edge level (may require counter-mask >= 1)                        |
+|     :i=0                                                                     |
+|            invert                                                            |
+|     :c=0                                                                     |
+|            counter-mask in range [0-255]                                     |
+|     :t=0                                                                     |
+|            measure any thread                                                |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+| MEM_UNCORE_RETIRED                                                           |
+|            Load instructions retired (Precise Event)                         |
+|     :LOCAL_HITM                                                              |
+|            Load instructions retired that HIT modified data in sibling core (|
+|            Precise Event)                                                    |
+|     :LOCAL_DRAM_AND_REMOTE_CACHE_HIT                                         |
+|            Load instructions retired local dram and remote cache HIT data sou|
+|            rces (Precise Event)                                              |
+|     :REMOTE_DRAM                                                             |
+|            Load instructions retired remote DRAM and remote home-remote cache|
+|             HITM (Precise Event)                                             |
+|     :UNCACHEABLE                                                             |
+|            Load instructions retired IO (Precise Event)                      |
+|     :REMOTE_HITM                                                             |
+|            Retired loads that hit remote socket in modified state (Precise Ev|
+|            ent)                                                              |
+|     :OTHER_LLC_MISS                                                          |
+|            Load instructions retired other LLC miss (Precise Event)          |
+|     :UNKNOWN_SOURCE                                                          |
+|            Load instructions retired unknown LLC miss (Precise Event)        |
+|     :e=0                                                                     |
+|            edge level (may require counter-mask >= 1)                        |
+|     :i=0                                                                     |
+|            invert                                                            |
+|     :c=0                                                                     |
+|            counter-mask in range [0-255]                                     |
+|     :t=0                                                                     |
+|            measure any thread                                                |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :precise=0                                                               |
+|            precise ip                                                        |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+--------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------
+| OFFCORE_RESPONSE_0                                                           |
+|            Offcore response 0 (must provide at least one request and one resp|
+|            onse umasks)                                                      |
+|     :DMND_DATA_RD                                                            |
+|            Request: counts the number of demand and DCU prefetch data reads o|
+|            f full and partial cachelines as well as demand data page table en|
+|            try cacheline reads. Does not count L2 data read prefetches or ins|
+|            truction fetches                                                  |
+|     :DMND_RFO                                                                |
+|            Request: counts the number of demand and DCU prefetch reads for ow|
+|            nership (RFO) requests generated by a write to data cacheline. Doe|
+|            s not count L2 RFO                                                |
+|     :DMND_IFETCH                                                             |
+|            Request: counts the number of demand and DCU prefetch instruction |
+|            cacheline reads. Does not count L2 code read prefetches           |
+|     :WB                                                                      |
+|            Request: counts the number of writeback (modified to exclusive) tr|
+|            ansactions                                                        |
+|     :PF_DATA_RD                                                              |
+|            Request: counts the number of data cacheline reads generated by L2|
+|             prefetchers                                                      |
+|     :PF_RFO                                                                  |
+|            Request: counts the number of RFO requests generated by L2 prefetc|
+|            hers                                                              |
+|     :PF_IFETCH                                                               |
+|            Request: counts the number of code reads generated by L2 prefetche|
+|            rs                                                                |
+|     :OTHER                                                                   |
+|            Request: counts one of the following transaction types, including |
+|            L3 invalidate, I/O, full or partial writes, WC or non-temporal sto|
+|            res, CLFLUSH, Fences, lock, unlock, split lock                    |
+|     :ANY_IFETCH                                                              |
+|            Request: combination of PF_IFETCH | DMND_IFETCH                   |
+|     :ANY_REQUEST                                                             |
+|            Request: combination of all requests umasks                       |
+|     :ANY_DATA                                                                |
+|            Request: any data read/write request                              |
+|     :ANY_DATA_RD                                                             |
+|            Request: any data read in request                                 |
+|     :ANY_RFO                                                                 |
+|            Request: combination of DMND_RFO | PF_RFO                         |
+|     :UNCORE_HIT                                                              |
+|            Response: counts L3 Hit: local or remote home requests that hit L3|
+|             cache in the uncore with no coherency actions required (snooping)|
+|                                                                              |
+|     :OTHER_CORE_HIT_SNP                                                      |
+|            Response: counts L3 Hit: local or remote home requests that hit L3|
+|             cache in the uncore and was serviced by another core with a cross|
+|             core snoop where no modified copies were found (clean)           |
+|     :OTHER_CORE_HITM                                                         |
+|            Response: counts L3 Hit: local or remote home requests that hit L3|
+|             cache in the uncore and was serviced by another core with a cross|
+|             core snoop where modified copies were found (HITM)               |
+|     :REMOTE_CACHE_HITM                                                       |
+|            Response: counts L3 Hit: local or remote home requests that hit a |
+|            remote L3 cacheline in modified (HITM) state                      |
+|     :LOCAL_DRAM_AND_REMOTE_CACHE_HIT                                         |
+|            Response: counts L3 Miss: local home requests that missed the L3 c|
+|            ache and were serviced by local DRAM or a remote cache            |
+|     :REMOTE_DRAM                                                             |
+|            Response: counts L3 Miss: remote home requests that missed the L3 |
+|            cache and were serviced by remote DRAM                            |
+|     :OTHER_LLC_MISS                                                          |
+|            Response: counts L3 Miss: remote home requests that missed the L3 |
+|            cache                                                             |
+|     :NON_DRAM                                                                |
+|            Response: Non-DRAM requests that were serviced by IOH             |
+|     :ANY_CACHE_DRAM                                                          |
+|            Response: requests serviced by any source but IOH                 |
+|     :ANY_LLC_MISS                                                            |
+|            Response: requests that missed in L3                              |
+|     :LOCAL_CACHE                                                             |
+|            Response: any local (core and socket) caches                      |
+|     :ANY_RESPONSE                                                            |
+|            Response: combination of all response umasks                      |
+|     :e=0                                                                     |
+|            edge level (may require counter-mask >= 1)                        |
+|     :i=0                                                                     |
+|            invert                                                            |
+|     :c=0                                                                     |
+|            counter-mask in range [0-255]                                     |
+|     :t=0                                                                     |
+|            measure any thread                                                |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+--------------------------------------------------------------------------------
+| OFFCORE_RESPONSE_1                                                           |
+|            Offcore response 1 (must provide at least one request and one resp|
+|            onse umasks)                                                      |
+|     :DMND_DATA_RD                                                            |
+|            Request: counts the number of demand and DCU prefetch data reads o|
+|            f full and partial cachelines as well as demand data page table en|
+|            try cacheline reads. Does not count L2 data read prefetches or ins|
+|            truction fetches                                                  |
+|     :DMND_RFO                                                                |
+|            Request: counts the number of demand and DCU prefetch reads for ow|
+|            nership (RFO) requests generated by a write to data cacheline. Doe|
+|            s not count L2 RFO                                                |
+|     :DMND_IFETCH                                                             |
+|            Request: counts the number of demand and DCU prefetch instruction |
+|            cacheline reads. Does not count L2 code read prefetches           |
+|     :WB                                                                      |
+|            Request: counts the number of writeback (modified to exclusive) tr|
+|            ansactions                                                        |
+|     :PF_DATA_RD                                                              |
+|            Request: counts the number of data cacheline reads generated by L2|
+|             prefetchers                                                      |
+|     :PF_RFO                                                                  |
+|            Request: counts the number of RFO requests generated by L2 prefetc|
+|            hers                                                              |
+|     :PF_IFETCH                                                               |
+|            Request: counts the number of code reads generated by L2 prefetche|
+|            rs                                                                |
+|     :OTHER                                                                   |
+|            Request: counts one of the following transaction types, including |
+|            L3 invalidate, I/O, full or partial writes, WC or non-temporal sto|
+|            res, CLFLUSH, Fences, lock, unlock, split lock                    |
+|     :ANY_IFETCH                                                              |
+|            Request: combination of PF_IFETCH | DMND_IFETCH                   |
+|     :ANY_REQUEST                                                             |
+|            Request: combination of all requests umasks                       |
+|     :ANY_DATA                                                                |
+|            Request: any data read/write request                              |
+|     :ANY_DATA_RD                                                             |
+|            Request: any data read in request                                 |
+|     :ANY_RFO                                                                 |
+|            Request: combination of DMND_RFO | PF_RFO                         |
+|     :UNCORE_HIT                                                              |
+|            Response: counts L3 Hit: local or remote home requests that hit L3|
+|             cache in the uncore with no coherency actions required (snooping)|
+|                                                                              |
+|     :OTHER_CORE_HIT_SNP                                                      |
+|            Response: counts L3 Hit: local or remote home requests that hit L3|
+|             cache in the uncore and was serviced by another core with a cross|
+|             core snoop where no modified copies were found (clean)           |
+|     :OTHER_CORE_HITM                                                         |
+|            Response: counts L3 Hit: local or remote home requests that hit L3|
+|             cache in the uncore and was serviced by another core with a cross|
+|             core snoop where modified copies were found (HITM)               |
+|     :REMOTE_CACHE_HITM                                                       |
+|            Response: counts L3 Hit: local or remote home requests that hit a |
+|            remote L3 cacheline in modified (HITM) state                      |
+|     :LOCAL_DRAM_AND_REMOTE_CACHE_HIT                                         |
+|            Response: counts L3 Miss: local home requests that missed the L3 c|
+|            ache and were serviced by local DRAM or a remote cache            |
+|     :REMOTE_DRAM                                                             |
+|            Response: counts L3 Miss: remote home requests that missed the L3 |
+|            cache and were serviced by remote DRAM                            |
+|     :OTHER_LLC_MISS                                                          |
+|            Response: counts L3 Miss: remote home requests that missed the L3 |
+|            cache                                                             |
+|     :NON_DRAM                                                                |
+|            Response: Non-DRAM requests that were serviced by IOH             |
+|     :ANY_CACHE_DRAM                                                          |
+|            Response: requests serviced by any source but IOH                 |
+|     :ANY_LLC_MISS                                                            |
+|            Response: requests that missed in L3                              |
+|     :LOCAL_CACHE                                                             |
+|            Response: any local (core and socket) caches                      |
+|     :ANY_RESPONSE                                                            |
+|            Response: combination of all response umasks                      |
+|     :e=0                                                                     |
+|            edge level (may require counter-mask >= 1)                        |
+|     :i=0                                                                     |
+|            invert                                                            |
+|     :c=0                                                                     |
+|            counter-mask in range [0-255]                                     |
+|     :t=0                                                                     |
+|            measure any thread                                                |
+|     :u=0                                                                     |
+|            monitor at user level                                             |
+|     :k=0                                                                     |
+|            monitor at kernel level                                           |
+|     :period=0                                                                |
+|            sampling period                                                   |
+|     :freq=0                                                                  |
+|            sampling frequency (Hz)                                           |
+|     :excl=0                                                                  |
+|            exclusive access                                                  |
+|     :mg=0                                                                    |
+|            monitor guest execution                                           |
+|     :mh=0                                                                    |
+|            monitor host execution                                            |
+|     :cpu=0                                                                   |
+|            CPU to program                                                    |
+|     :pinned=0                                                                |
+|            pin event to counters                                             |
+--------------------------------------------------------------------------------
+
