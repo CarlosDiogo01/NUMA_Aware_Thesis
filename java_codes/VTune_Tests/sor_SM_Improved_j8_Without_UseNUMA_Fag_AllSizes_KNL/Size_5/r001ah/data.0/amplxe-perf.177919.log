@@ -1,0 +1,4 @@
+
+177920:perf-sync:ready:TSC=4055189413050165
+[ perf record: Woken up 105 times to write data ]
+[ perf record: Captured and wrote 3.692 MB /tmp/amplxe-tmp-a59905/amplxe-res-177898-4055185533759100/data.0/177907.perf (~161309 samples) ]

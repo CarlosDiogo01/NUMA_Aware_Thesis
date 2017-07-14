@@ -1,0 +1,66 @@
+
+
+
+
+
+
+
+
+
+
+
+
+  Host: compute-641-4
+  Host: compute-641-4
+  Host: compute-641-4
+  Host: compute-641-4
+  Host: compute-641-4
+  Host: compute-641-4
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Another transport will be used instead, although this may result in
+Another transport will be used instead, although this may result in
+Another transport will be used instead, although this may result in
+Another transport will be used instead, although this may result in
+Another transport will be used instead, although this may result in
+Another transport will be used instead, although this may result in
+Module: OpenFabrics (openib)
+Module: OpenFabrics (openib)
+Module: OpenFabrics (openib)
+Module: OpenFabrics (openib)
+Module: OpenFabrics (openib)
+Module: OpenFabrics (openib)
+Time:24.928
+Time:25.273
+Time:25.3
+Time:26.35
+Time:27.021
+Time:27.673
+[[15325,1],0]: A high-performance Open MPI point-to-point messaging module
+[[9260,1],0]: A high-performance Open MPI point-to-point messaging module
+[[9288,1],0]: A high-performance Open MPI point-to-point messaging module
+[[9338,1],0]: A high-performance Open MPI point-to-point messaging module
+[[9351,1],0]: A high-performance Open MPI point-to-point messaging module
+[[9431,1],0]: A high-performance Open MPI point-to-point messaging module
+lower performance.
+lower performance.
+lower performance.
+lower performance.
+lower performance.
+lower performance.
+was unable to find any relevant network interfaces:
+was unable to find any relevant network interfaces:
+was unable to find any relevant network interfaces:
+was unable to find any relevant network interfaces:
+was unable to find any relevant network interfaces:
+was unable to find any relevant network interfaces:

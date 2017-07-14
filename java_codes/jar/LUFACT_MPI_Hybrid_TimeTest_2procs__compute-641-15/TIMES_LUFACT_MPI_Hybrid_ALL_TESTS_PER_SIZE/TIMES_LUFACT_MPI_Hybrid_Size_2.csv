@@ -1,0 +1,10 @@
+Size_2_2_procs,Default,UseNUMA_and_UseParallelGC,numactl_interleave_all_only,UseNUMA_and_numactl_interleave_all
+1.Threads,1.216,1.218,1.24,1.23
+2.Threads,0.716,0.718,0.721,0.719
+4.Threads,0.472,0.509,0.472,0.466
+8.Threads,0.509,0.493,0.501,0.493
+10.Threads,0.5,0.498,0.52,0.492
+12.Threads,0.506,0.494,0.495,0.513
+16.Threads,0.577,0.557,0.557,0.566
+24.Threads,0.639,0.631,0.641,0.632
+32.Threads,0.702,0.714,0.71,0.705

@@ -11,7 +11,9 @@
 #### SCRIPT FOR TESTING SOR IMPROVED - SM VERSION WITHOUT NUMA FLAG####
 
 # Knowing wich machine is being used
-read -r node_info<$PBS_NODEFILE
+#read -r node_info<$PBS_NODEFILE
+
+node_info="KNL"
 
 Project_Folder="$HOME/ScholarShip_public/JGF/sor/Improved"
 VTune_output_dir="$HOME/NUMA_Aware_Thesis/java_codes/VTune_Tests/sor_SM_Improved_j8_Without_UseNUMA_Fag_AllSizes_$node_info"
@@ -44,7 +46,7 @@ mkdir -p class_SM_j8
 ${Java_dir}/javac -g -d ./class_SM_j8 ./sm/*.java
 
 
-for size in 0 1 2 3 4 5
+for size in 5
 do
 	# Creating Folder for Results of a given SIZE
 	mkdir -p ${VTune_output_dir}/Size_$size/
@@ -56,22 +58,22 @@ do
 	# Collecting VTune Events for $size
 	echo "Collecting HotSpots"
 	(>&2 echo "Collecting hotspots")
-	amplxe-cl -collect hotspots -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 24
+	amplxe-cl -collect hotspots -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 8
 	echo ""
 
 	echo "Collecting Memory-access"
 	(>&2 echo "Collecting Memory_Acess")
-	amplxe-cl -collect memory-access -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 24
+	amplxe-cl -collect memory-access -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 8
 	echo ""
 
 	echo "Collecting Advanced-Hotspots"
 	(>&2 echo "Collecting advanced-hotspots")
-	amplxe-cl -collect advanced-hotspots -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 24
+	amplxe-cl -collect advanced-hotspots -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 8
 	echo ""
 
 	echo "Collecting general-exploration"
 	(>&2 echo "Collecting general-exploration")
-	amplxe-cl -collect general-exploration -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 24
+	amplxe-cl -collect general-exploration -- ${Java_dir}/java -Xcomp -Djava.library.path=native_lib/ia32 -cp ${Project_Folder}/class_SM_j8/ sm.improved.JGFSORBenchSizeA -size 5 8
 	echo ""
 	
 	echo "**** END COLLECT ALL EVENTS FOR SIZE $size ******"
