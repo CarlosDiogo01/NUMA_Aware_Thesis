@@ -1,0 +1,1820 @@
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+           7801057      r5301d3                                                     
+
+      27.917861945 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+           5613085      r530cd3                                                     
+
+      29.478293806 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            894650      r5310d3                                                     
+
+      30.251181296 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+             63057      r5320d3                                                     
+
+      30.382332825 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            272023      r5302d2                                                     
+
+      30.306998588 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            603314      r5304d2                                                     
+
+      22.316938992 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+             91331      r5301d2                                                     
+
+      30.340654522 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+          80392462      r5308d2                                                     
+
+      30.093479221 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r400000                                                     
+
+      29.687176250 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+      345869715447      r7f800000                                                   
+
+      22.750868109 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r800000000                                                  
+
+      30.332735783 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r1000000000                                                 
+
+      26.992860247 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r2000000000                                                 
+
+      30.263958660 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r1                                                          
+
+      29.884643789 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r2                                                          
+
+      30.201506866 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r4                                                          
+
+      30.479141419 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r10                                                         
+
+      30.306347393 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r20                                                         
+
+      30.284855183 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r40                                                         
+
+      30.152716224 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r80                                                         
+
+      27.838780682 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r100                                                        
+
+      21.106497910 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r200                                                        
+
+      30.546446130 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r400000                                                     
+
+      30.153590160 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+      512941728174      r7f800000                                                   
+
+      30.303030883 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r800000000                                                  
+
+      29.169015825 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r1000000000                                                 
+
+      29.953079785 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r2000000000                                                 
+
+      22.620786904 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r1                                                          
+
+      27.972468330 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r2                                                          
+
+      30.088570356 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r4                                                          
+
+      22.966241873 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r10                                                         
+
+      29.831980253 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r20                                                         
+
+      30.342167807 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r40                                                         
+
+      28.034408629 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r80                                                         
+
+      30.202020660 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r100                                                        
+
+      22.769843806 seconds time elapsed
+
+
+ Performance counter stats for '/share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r200                                                        
+
+      30.479859258 seconds time elapsed
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ usage: perf stat [<options>] [<command>]
+
+    -T, --transaction     hardware transaction statistics
+    -e, --event <event>   event selector. use 'perf list' to list available events
+        --filter <filter>
+                          event filter
+    -i, --no-inherit      child tasks do not inherit counters
+    -p, --pid <pid>       stat events on existing process id
+    -t, --tid <tid>       stat events on existing thread id
+    -a, --all-cpus        system-wide collection from all CPUs
+    -g, --group           put the counters into a counter group
+    -c, --scale           scale/normalize counters
+    -v, --verbose         be more verbose (show counter open errors, etc)
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+    -n, --null            null run - dont start any counters
+    -d, --detailed        detailed run - start a lot of events
+    -S, --sync            call sync() before starting a run
+    -B, --big-num         print large numbers with thousands' separators
+    -C, --cpu <cpu>       list of cpus to monitor in system-wide
+    -A, --no-aggr         disable CPU count aggregation
+    -x, --field-separator <separator>
+                          print counts with custom separator
+    -G, --cgroup <name>   monitor event in cgroup name only
+    -o, --output <file>   output file name
+        --append          append to the output file
+        --log-fd <n>      log output to fd, instead of stderr
+        --pre <command>   command to run prior to the measured command
+        --post <command>  command to run after to the measured command
+    -I, --interval-print <n>
+                          print counts at regular interval in ms (>= 100)
+        --per-socket      aggregate counts per processor socket
+        --per-core        aggregate counts per physical processor core
+    -D, --delay <n>       ms to wait before starting measurement after program start
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+           3729846      r5301d3                                                     
+
+      35.379692126 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+          26017854      r530cd3                                                     
+
+      36.465831612 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            583714      r5310d3                                                     
+
+      35.449379143 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            223739      r5320d3                                                     
+
+      35.549763716 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            249180      r5302d2                                                     
+
+      35.313216146 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+           1299749      r5304d2                                                     
+
+      35.304636520 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            285626      r5301d2                                                     
+
+      35.538201840 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+          86965767      r5308d2                                                     
+
+      35.223716794 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r400000                                                     
+
+      35.921462181 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+      633111659701      r7f800000                                                   
+
+      35.422762210 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r800000000                                                  
+
+      35.615960747 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r1000000000                                                 
+
+      35.340893996 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r2000000000                                                 
+
+      35.370806012 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r1                                                          
+
+      35.243755614 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r2                                                          
+
+      35.535944636 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r4                                                          
+
+      35.298378553 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r10                                                         
+
+      34.909894029 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r20                                                         
+
+      35.364595020 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r40                                                         
+
+      35.433690823 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r80                                                         
+
+      35.235908940 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r100                                                        
+
+      35.309884421 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301b7                                                     
+                 0      r200                                                        
+
+      35.272566425 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r400000                                                     
+
+      35.243217429 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+      633904164743      r7f800000                                                   
+
+      35.964569504 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r800000000                                                  
+
+      35.750226252 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r1000000000                                                 
+
+      35.181072022 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r2000000000                                                 
+
+      35.403663382 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r1                                                          
+
+      35.410032566 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r2                                                          
+
+      35.682999261 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r4                                                          
+
+      35.243271158 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r10                                                         
+
+      35.137534391 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r20                                                         
+
+      35.262190111 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r40                                                         
+
+      35.497194521 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r80                                                         
+
+      35.358502259 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r100                                                        
+
+      35.501413085 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=1 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb                                                     
+                 0      r200                                                        
+
+      35.209896333 seconds time elapsed
+
