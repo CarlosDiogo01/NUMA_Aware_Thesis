@@ -1,0 +1,3441 @@
+Supported PMU models:
+	[7, netburst, "Pentium4"]
+	[8, netburst_p, "Pentium4 (Prescott)"]
+	[11, core, "Intel Core"]
+	[14, atom, "Intel Atom"]
+	[15, nhm, "Intel Nehalem"]
+	[16, nhm_ex, "Intel Nehalem EX"]
+	[17, nhm_unc, "Intel Nehalem uncore"]
+	[18, ix86arch, "Intel X86 architectural PMU"]
+	[51, perf, "perf_events generic PMU"]
+	[52, wsm, "Intel Westmere (single-socket)"]
+	[53, wsm_dp, "Intel Westmere DP"]
+	[54, wsm_unc, "Intel Westmere uncore"]
+	[55, amd64_k7, "AMD64 K7"]
+	[56, amd64_k8_revb, "AMD64 K8 RevB"]
+	[57, amd64_k8_revc, "AMD64 K8 RevC"]
+	[58, amd64_k8_revd, "AMD64 K8 RevD"]
+	[59, amd64_k8_reve, "AMD64 K8 RevE"]
+	[60, amd64_k8_revf, "AMD64 K8 RevF"]
+	[61, amd64_k8_revg, "AMD64 K8 RevG"]
+	[62, amd64_fam10h_barcelona, "AMD64 Fam10h Barcelona"]
+	[63, amd64_fam10h_shanghai, "AMD64 Fam10h Shanghai"]
+	[64, amd64_fam10h_istanbul, "AMD64 Fam10h Istanbul"]
+	[68, snb, "Intel Sandy Bridge"]
+	[69, amd64_fam14h_bobcat, "AMD64 Fam14h Bobcat"]
+	[70, amd64_fam15h_interlagos, "AMD64 Fam15h Interlagos"]
+	[71, snb_ep, "Intel Sandy Bridge EP"]
+	[72, amd64_fam12h_llano, "AMD64 Fam12h Llano"]
+	[73, amd64_fam11h_turion, "AMD64 Fam11h Turion"]
+	[74, ivb, "Intel Ivy Bridge"]
+	[76, snb_unc_cbo0, "Intel Sandy Bridge C-box0 uncore"]
+	[77, snb_unc_cbo1, "Intel Sandy Bridge C-box1 uncore"]
+	[78, snb_unc_cbo2, "Intel Sandy Bridge C-box2 uncore"]
+	[79, snb_unc_cbo3, "Intel Sandy Bridge C-box3 uncore"]
+	[80, snbep_unc_cbo0, "Intel Sandy Bridge-EP C-Box 0 uncore"]
+	[81, snbep_unc_cbo1, "Intel Sandy Bridge-EP C-Box 1 uncore"]
+	[82, snbep_unc_cbo2, "Intel Sandy Bridge-EP C-Box 2 uncore"]
+	[83, snbep_unc_cbo3, "Intel Sandy Bridge-EP C-Box 3 uncore"]
+	[84, snbep_unc_cbo4, "Intel Sandy Bridge-EP C-Box 4 uncore"]
+	[85, snbep_unc_cbo5, "Intel Sandy Bridge-EP C-Box 5 uncore"]
+	[86, snbep_unc_cbo6, "Intel Sandy Bridge-EP C-Box 6 uncore"]
+	[87, snbep_unc_cbo7, "Intel Sandy Bridge-EP C-Box 7 uncore"]
+	[88, snbep_unc_ha, "Intel Sandy Bridge-EP HA uncore"]
+	[89, snbep_unc_imc0, "Intel Sandy Bridge-EP IMC0 uncore"]
+	[90, snbep_unc_imc1, "Intel Sandy Bridge-EP IMC1 uncore"]
+	[91, snbep_unc_imc2, "Intel Sandy Bridge-EP IMC2 uncore"]
+	[92, snbep_unc_imc3, "Intel Sandy Bridge-EP IMC3 uncore"]
+	[93, snbep_unc_pcu, "Intel Sandy Bridge-EP PCU uncore"]
+	[94, snbep_unc_qpi0, "Intel Sandy Bridge-EP QPI0 uncore"]
+	[95, snbep_unc_qpi1, "Intel Sandy Bridge-EP QPI1 uncore"]
+	[96, snbep_unc_ubo, "Intel Sandy Bridge-EP U-Box uncore"]
+	[97, snbep_unc_r2pcie, "Intel Sandy Bridge-EP R2PCIe uncore"]
+	[98, snbep_unc_r3qpi0, "Intel Sandy Bridge-EP R3QPI0 uncore"]
+	[99, snbep_unc_r3qpi1, "Intel Sandy Bridge-EP R3QPI1 uncore"]
+	[100, knc, "Intel Knights Corner"]
+	[103, ivb_ep, "Intel Ivy Bridge EP"]
+	[104, hsw, "Intel Haswell"]
+	[105, ivb_unc_cbo0, "Intel Ivy Bridge C-box0 uncore"]
+	[106, ivb_unc_cbo1, "Intel Ivy Bridge C-box1 uncore"]
+	[107, ivb_unc_cbo2, "Intel Ivy Bridge C-box2 uncore"]
+	[108, ivb_unc_cbo3, "Intel Ivy Bridge C-box3 uncore"]
+	[110, rapl, "Intel RAPL"]
+	[111, slm, "Intel Silvermont"]
+	[112, amd64_fam15h_nb, "AMD64 Fam15h NorthBridge"]
+	[114, perf_raw, "perf_events raw PMU"]
+	[115, ivbep_unc_cbo0, "Intel Ivy Bridge-EP C-Box 0 uncore"]
+	[116, ivbep_unc_cbo1, "Intel Ivy Bridge-EP C-Box 1 uncore"]
+	[117, ivbep_unc_cbo2, "Intel Ivy Bridge-EP C-Box 2 uncore"]
+	[118, ivbep_unc_cbo3, "Intel Ivy Bridge-EP C-Box 3 uncore"]
+	[119, ivbep_unc_cbo4, "Intel Ivy Bridge-EP C-Box 4 uncore"]
+	[120, ivbep_unc_cbo5, "Intel Ivy Bridge-EP C-Box 5 uncore"]
+	[121, ivbep_unc_cbo6, "Intel Ivy Bridge-EP C-Box 6 uncore"]
+	[122, ivbep_unc_cbo7, "Intel Ivy Bridge-EP C-Box 7 uncore"]
+	[123, ivbep_unc_cbo8, "Intel Ivy Bridge-EP C-Box 8 uncore"]
+	[124, ivbep_unc_cbo9, "Intel Ivy Bridge-EP C-Box 9 uncore"]
+	[125, ivbep_unc_cbo10, "Intel Ivy Bridge-EP C-Box 10 uncore"]
+	[126, ivbep_unc_cbo11, "Intel Ivy Bridge-EP C-Box 11 uncore"]
+	[127, ivbep_unc_cbo12, "Intel Ivy Bridge-EP C-Box 12 uncore"]
+	[128, ivbep_unc_cbo13, "Intel Ivy Bridge-EP C-Box 13 uncore"]
+	[129, ivbep_unc_cbo14, "Intel Ivy Bridge-EP C-Box 14 uncore"]
+	[130, ivbep_unc_ha0, "Intel Ivy Bridge-EP HA 0 uncore"]
+	[131, ivbep_unc_ha1, "Intel Ivy Bridge-EP HA 1 uncore"]
+	[132, ivbep_unc_imc0, "Intel Iyy Bridge-EP IMC0 uncore"]
+	[133, ivbep_unc_imc1, "Intel Iyy Bridge-EP IMC1 uncore"]
+	[134, ivbep_unc_imc2, "Intel Iyy Bridge-EP IMC2 uncore"]
+	[135, ivbep_unc_imc3, "Intel Iyy Bridge-EP IMC3 uncore"]
+	[136, ivbep_unc_imc4, "Intel Iyy Bridge-EP IMC4 uncore"]
+	[137, ivbep_unc_imc5, "Intel Iyy Bridge-EP IMC5 uncore"]
+	[138, ivbep_unc_imc6, "Intel Iyy Bridge-EP IMC6 uncore"]
+	[139, ivbep_unc_imc7, "Intel Iyy Bridge-EP IMC7 uncore"]
+	[140, ivbep_unc_pcu, "Intel Ivy Bridge-EP PCU uncore"]
+	[141, ivbep_unc_qpi0, "Intel Ivy Bridge-EP QPI0 uncore"]
+	[142, ivbep_unc_qpi1, "Intel Ivy Bridge-EP QPI1 uncore"]
+	[143, ivbep_unc_qpi2, "Intel Ivy Bridge-EP QPI2 uncore"]
+	[144, ivbep_unc_ubo, "Intel Ivy Bridge-EP U-Box uncore"]
+	[145, ivbep_unc_r2pcie, "Intel Ivy Bridge-EP R2PCIe uncore"]
+	[146, ivbep_unc_r3qpi0, "Intel Ivy Bridge-EP R3QPI0 uncore"]
+	[147, ivbep_unc_r3qpi1, "Intel Ivy Bridge-EP R3QPI1 uncore"]
+	[148, ivbep_unc_r3qpi2, "Intel Ivy Bridge-EP R3QPI2 uncore"]
+	[149, ivbep_unc_irp, "Intel Ivy Bridge-EP IRP uncore"]
+	[154, hsw_ep, "Intel Haswell EP"]
+	[155, bdw, "Intel Broadwell"]
+	[157, hswep_unc_cbo0, "Intel Haswell-EP C-Box 0 uncore"]
+	[158, hswep_unc_cbo1, "Intel Haswell-EP C-Box 1 uncore"]
+	[159, hswep_unc_cbo2, "Intel Haswell-EP C-Box 2 uncore"]
+	[160, hswep_unc_cbo3, "Intel Haswell-EP C-Box 3 uncore"]
+	[161, hswep_unc_cbo4, "Intel Haswell-EP C-Box 4 uncore"]
+	[162, hswep_unc_cbo5, "Intel Haswell-EP C-Box 5 uncore"]
+	[163, hswep_unc_cbo6, "Intel Haswell-EP C-Box 6 uncore"]
+	[164, hswep_unc_cbo7, "Intel Haswell-EP C-Box 7 uncore"]
+	[165, hswep_unc_cbo8, "Intel Haswell-EP C-Box 8 uncore"]
+	[166, hswep_unc_cbo9, "Intel Haswell-EP C-Box 9 uncore"]
+	[167, hswep_unc_cbo10, "Intel Haswell-EP C-Box 10 uncore"]
+	[168, hswep_unc_cbo11, "Intel Haswell-EP C-Box 11 uncore"]
+	[169, hswep_unc_cbo12, "Intel Haswell-EP C-Box 12 uncore"]
+	[170, hswep_unc_cbo13, "Intel Haswell-EP C-Box 13 uncore"]
+	[171, hswep_unc_cbo14, "Intel Haswell-EP C-Box 14 uncore"]
+	[172, hswep_unc_cbo15, "Intel Haswell-EP C-Box 15 uncore"]
+	[173, hswep_unc_cbo16, "Intel Haswell-EP C-Box 16 uncore"]
+	[174, hswep_unc_cbo17, "Intel Haswell-EP C-Box 17 uncore"]
+	[175, hswep_unc_ha0, "Intel Haswell-EP HA 0 uncore"]
+	[176, hswep_unc_ha1, "Intel Haswell-EP HA 1 uncore"]
+	[177, hswep_unc_imc0, "Intel Haswell-EP IMC0 uncore"]
+	[178, hswep_unc_imc1, "Intel Haswell-EP IMC1 uncore"]
+	[179, hswep_unc_imc2, "Intel Haswell-EP IMC2 uncore"]
+	[180, hswep_unc_imc3, "Intel Haswell-EP IMC3 uncore"]
+	[181, hswep_unc_imc4, "Intel Haswell-EP IMC4 uncore"]
+	[182, hswep_unc_imc5, "Intel Haswell-EP IMC5 uncore"]
+	[183, hswep_unc_imc6, "Intel Haswell-EP IMC6 uncore"]
+	[184, hswep_unc_imc7, "Intel Haswell-EP IMC7 uncore"]
+	[185, hswep_unc_pcu, "Intel Haswell-EP PCU uncore"]
+	[186, hswep_unc_qpi0, "Intel Haswell-EP QPI0 uncore"]
+	[187, hswep_unc_qpi1, "Intel Haswell-EP QPI1 uncore"]
+	[188, hswep_unc_ubo, "Intel Haswell-EP U-Box uncore"]
+	[189, hswep_unc_r2pcie, "Intel Haswell-EP R2PCIe uncore"]
+	[190, hswep_unc_r3qpi0, "Intel Haswell-EP R3QPI0 uncore"]
+	[191, hswep_unc_r3qpi1, "Intel Haswell-EP R3QPI1 uncore"]
+	[192, hswep_unc_r3qpi2, "Intel Haswell-EP R3QPI2 uncore"]
+	[193, hswep_unc_irp, "Intel Haswell-EP IRP uncore"]
+	[194, hswep_unc_sbo0, "Intel Haswell-EP S-BOX0 uncore"]
+	[195, hswep_unc_sbo1, "Intel Haswell-EP S-BOX1 uncore"]
+	[196, hswep_unc_sbo2, "Intel Haswell-EP S-BOX2 uncore"]
+	[197, hswep_unc_sbo3, "Intel Haswell-EP S-BOX3 uncore"]
+	[200, skl, "Intel Skylake"]
+	[201, bdw_ep, "Intel Broadwell EP"]
+	[202, glm, "Intel Goldmont"]
+	[203, knl, "Intel Knights Landing"]
+	[204, knl_unc_imc0, "Intel KnightLanding IMC 0 uncore"]
+	[205, knl_unc_imc1, "Intel KnightLanding IMC 1 uncore"]
+	[206, knl_unc_imc2, "Intel KnightLanding IMC 2 uncore"]
+	[207, knl_unc_imc3, "Intel KnightLanding IMC 3 uncore"]
+	[208, knl_unc_imc4, "Intel KnightLanding IMC 4 uncore"]
+	[209, knl_unc_imc5, "Intel KnightLanding IMC 5 uncore"]
+	[210, knl_unc_imc_uclk0, "Intel KnightLanding IMC UCLK 0 uncore"]
+	[211, knl_unc_imc_uclk1, "Intel KnightLanding IMC UCLK 1 uncore"]
+	[212, knl_unc_edc_eclk0, "Intel KnightLanding EDC_ECLK_0 uncore"]
+	[213, knl_unc_edc_eclk1, "Intel KnightLanding EDC_ECLK_1 uncore"]
+	[214, knl_unc_edc_eclk2, "Intel KnightLanding EDC_ECLK_2 uncore"]
+	[215, knl_unc_edc_eclk3, "Intel KnightLanding EDC_ECLK_3 uncore"]
+	[216, knl_unc_edc_eclk4, "Intel KnightLanding EDC_ECLK_4 uncore"]
+	[217, knl_unc_edc_eclk5, "Intel KnightLanding EDC_ECLK_5 uncore"]
+	[218, knl_unc_edc_eclk6, "Intel KnightLanding EDC_ECLK_6 uncore"]
+	[219, knl_unc_edc_eclk7, "Intel KnightLanding EDC_ECLK_7 uncore"]
+	[220, knl_unc_edc_uclk0, "Intel KnightLanding EDC_UCLK_0 uncore"]
+	[221, knl_unc_edc_uclk1, "Intel KnightLanding EDC_UCLK_1 uncore"]
+	[222, knl_unc_edc_uclk2, "Intel KnightLanding EDC_UCLK_2 uncore"]
+	[223, knl_unc_edc_uclk3, "Intel KnightLanding EDC_UCLK_3 uncore"]
+	[224, knl_unc_edc_uclk4, "Intel KnightLanding EDC_UCLK_4 uncore"]
+	[225, knl_unc_edc_uclk5, "Intel KnightLanding EDC_UCLK_5 uncore"]
+	[226, knl_unc_edc_uclk6, "Intel KnightLanding EDC_UCLK_6 uncore"]
+	[227, knl_unc_edc_uclk7, "Intel KnightLanding EDC_UCLK_7 uncore"]
+	[228, knl_unc_cha0, "Intel KnightLanding CHA 0 uncore"]
+	[229, knl_unc_cha1, "Intel KnightLanding CHA 1 uncore"]
+	[230, knl_unc_cha2, "Intel KnightLanding CHA 2 uncore"]
+	[231, knl_unc_cha3, "Intel KnightLanding CHA 3 uncore"]
+	[232, knl_unc_cha4, "Intel KnightLanding CHA 4 uncore"]
+	[233, knl_unc_cha5, "Intel KnightLanding CHA 5 uncore"]
+	[234, knl_unc_cha6, "Intel KnightLanding CHA 6 uncore"]
+	[235, knl_unc_cha7, "Intel KnightLanding CHA 7 uncore"]
+	[236, knl_unc_cha8, "Intel KnightLanding CHA 8 uncore"]
+	[237, knl_unc_cha9, "Intel KnightLanding CHA 9 uncore"]
+	[238, knl_unc_cha10, "Intel KnightLanding CHA 10 uncore"]
+	[239, knl_unc_cha11, "Intel KnightLanding CHA 11 uncore"]
+	[240, knl_unc_cha12, "Intel KnightLanding CHA 12 uncore"]
+	[241, knl_unc_cha13, "Intel KnightLanding CHA 13 uncore"]
+	[242, knl_unc_cha14, "Intel KnightLanding CHA 14 uncore"]
+	[243, knl_unc_cha15, "Intel KnightLanding CHA 15 uncore"]
+	[244, knl_unc_cha16, "Intel KnightLanding CHA 16 uncore"]
+	[245, knl_unc_cha17, "Intel KnightLanding CHA 17 uncore"]
+	[246, knl_unc_cha18, "Intel KnightLanding CHA 18 uncore"]
+	[247, knl_unc_cha19, "Intel KnightLanding CHA 19 uncore"]
+	[248, knl_unc_cha20, "Intel KnightLanding CHA 20 uncore"]
+	[249, knl_unc_cha21, "Intel KnightLanding CHA 21 uncore"]
+	[250, knl_unc_cha22, "Intel KnightLanding CHA 22 uncore"]
+	[251, knl_unc_cha23, "Intel KnightLanding CHA 23 uncore"]
+	[252, knl_unc_cha24, "Intel KnightLanding CHA 24 uncore"]
+	[253, knl_unc_cha25, "Intel KnightLanding CHA 25 uncore"]
+	[254, knl_unc_cha26, "Intel KnightLanding CHA 26 uncore"]
+	[255, knl_unc_cha27, "Intel KnightLanding CHA 27 uncore"]
+	[256, knl_unc_cha28, "Intel KnightLanding CHA 28 uncore"]
+	[257, knl_unc_cha29, "Intel KnightLanding CHA 29 uncore"]
+	[258, knl_unc_cha30, "Intel KnightLanding CHA 30 uncore"]
+	[259, knl_unc_cha31, "Intel KnightLanding CHA 31 uncore"]
+	[260, knl_unc_cha32, "Intel KnightLanding CHA 32 uncore"]
+	[261, knl_unc_cha33, "Intel KnightLanding CHA 33 uncore"]
+	[262, knl_unc_cha34, "Intel KnightLanding CHA 34 uncore"]
+	[263, knl_unc_cha35, "Intel KnightLanding CHA 35 uncore"]
+	[264, knl_unc_cha36, "Intel KnightLanding CHA 36 uncore"]
+	[265, knl_unc_cha37, "Intel KnightLanding CHA 37 uncore"]
+	[267, knl_unc_m2pcie, "Intel Knights Landing M2PCIe uncore"]
+	[269, bdx_unc_cbo0, "Intel BroadwellX C-Box 0 uncore"]
+	[270, bdx_unc_cbo1, "Intel BroadwellX C-Box 1 uncore"]
+	[271, bdx_unc_cbo2, "Intel BroadwellX C-Box 2 uncore"]
+	[272, bdx_unc_cbo3, "Intel BroadwellX C-Box 3 uncore"]
+	[273, bdx_unc_cbo4, "Intel BroadwellX C-Box 4 uncore"]
+	[274, bdx_unc_cbo5, "Intel BroadwellX C-Box 5 uncore"]
+	[275, bdx_unc_cbo6, "Intel BroadwellX C-Box 6 uncore"]
+	[276, bdx_unc_cbo7, "Intel BroadwellX C-Box 7 uncore"]
+	[277, bdx_unc_cbo8, "Intel BroadwellX C-Box 8 uncore"]
+	[278, bdx_unc_cbo9, "Intel BroadwellX C-Box 9 uncore"]
+	[279, bdx_unc_cbo10, "Intel BroadwellX C-Box 10 uncore"]
+	[280, bdx_unc_cbo11, "Intel BroadwellX C-Box 11 uncore"]
+	[281, bdx_unc_cbo12, "Intel BroadwellX C-Box 12 uncore"]
+	[282, bdx_unc_cbo13, "Intel BroadwellX C-Box 13 uncore"]
+	[283, bdx_unc_cbo14, "Intel BroadwellX C-Box 14 uncore"]
+	[284, bdx_unc_cbo15, "Intel BroadwellX C-Box 15 uncore"]
+	[285, bdx_unc_cbo16, "Intel BroadwellX C-Box 16 uncore"]
+	[286, bdx_unc_cbo17, "Intel BroadwellX C-Box 17 uncore"]
+	[287, bdx_unc_cbo18, "Intel BroadwellX C-Box 18 uncore"]
+	[288, bdx_unc_cbo19, "Intel BroadwellX C-Box 19 uncore"]
+	[289, bdx_unc_cbo20, "Intel BroadwellX C-Box 20 uncore"]
+	[290, bdx_unc_cbo21, "Intel BroadwellX C-Box 21 uncore"]
+	[291, bdx_unc_cbo22, "Intel BroadwellX C-Box 22 uncore"]
+	[292, bdx_unc_cbo23, "Intel BroadwellX C-Box 23 uncore"]
+	[293, bdx_unc_ha0, "Intel BroadwellX HA 0 uncore"]
+	[294, bdx_unc_ha1, "Intel BroadwellX HA 1 uncore"]
+	[295, bdx_unc_imc0, "Intel BroadwellX IMC0 uncore"]
+	[296, bdx_unc_imc1, "Intel BroadwellX IMC1 uncore"]
+	[297, bdx_unc_imc2, "Intel BroadwellX IMC2 uncore"]
+	[298, bdx_unc_imc3, "Intel BroadwellX IMC3 uncore"]
+	[299, bdx_unc_imc4, "Intel BroadwellX IMC4 uncore"]
+	[300, bdx_unc_imc5, "Intel BroadwellX IMC5 uncore"]
+	[301, bdx_unc_imc6, "Intel BroadwellX IMC6 uncore"]
+	[302, bdx_unc_imc7, "Intel BroadwellX IMC7 uncore"]
+	[303, bdx_unc_pcu, "Intel BroadwellX PCU uncore"]
+	[304, bdx_unc_qpi0, "Intel BroadwellX QPI0 uncore"]
+	[305, bdx_unc_qpi1, "Intel BroadwellX QPI1 uncore"]
+	[306, bdx_unc_qpi2, "Intel BroadwellX QPI2 uncore"]
+	[307, bdx_unc_ubo, "Intel BroadwellX U-Box uncore"]
+	[308, bdx_unc_r2pcie, "Intel BroadwellX R2PCIe uncore"]
+	[309, bdx_unc_r3qpi0, "Intel BroadwellX R3QPI0 uncore"]
+	[310, bdx_unc_r3qpi1, "Intel BroadwellX R3QPI1 uncore"]
+	[311, bdx_unc_r3qpi2, "Intel BroadwellX R3QPI2 uncore"]
+	[312, bdx_unc_irp, "Intel BroadwellX IRP uncore"]
+	[313, bdx_unc_sbo0, "Intel BroadwellX S-BOX0 uncore"]
+	[314, bdx_unc_sbo1, "Intel BroadwellX S-BOX1 uncore"]
+	[315, bdx_unc_sbo2, "Intel BroadwellX S-BOX2 uncore"]
+	[316, bdx_unc_sbo3, "Intel BroadwellX S-BOX3 uncore"]
+Detected PMU models:
+	[18, ix86arch, "Intel X86 architectural PMU", 7 events, 1 max encoding, 7 counters, core PMU]
+	[51, perf, "perf_events generic PMU", 102 events, 1 max encoding, 0 counters, OS generic PMU]
+	[103, ivb_ep, "Intel Ivy Bridge EP", 79 events, 2 max encoding, 11 counters, core PMU]
+	[114, perf_raw, "perf_events raw PMU", 1 events, 1 max encoding, 0 counters, OS generic PMU]
+Total events: 10551 available, 189 supported
+#-----------------------------
+IDX	 : 37748736
+PMU name : ix86arch (Intel X86 architectural PMU)
+Name     : UNHALTED_CORE_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : count core clock cycles whenever the clock signal on the specific core is running (not halted)
+Code     : 0x3c
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 37748737
+PMU name : ix86arch (Intel X86 architectural PMU)
+Name     : INSTRUCTION_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : count the number of instructions at retirement. For instructions that consists of multiple micro-ops, this event counts the retirement of the last micro-op of the instruction
+Code     : 0xc0
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 37748738
+PMU name : ix86arch (Intel X86 architectural PMU)
+Name     : UNHALTED_REFERENCE_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : count reference clock cycles while the clock signal on the specific core is running. The reference clock operates at a fixed frequency, irrespective of core frequency changes due to performance state transitions
+Code     : 0x13c
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 37748739
+PMU name : ix86arch (Intel X86 architectural PMU)
+Name     : LLC_REFERENCES
+Equiv	 : None
+Flags    : None
+Desc     : count each request originating from the core to reference a cache line in the last level cache. The count may include speculation, but excludes cache line fills due to hardware prefetch
+Code     : 0x4f2e
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 37748740
+PMU name : ix86arch (Intel X86 architectural PMU)
+Name     : LLC_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : count each cache miss condition for references to the last level cache. The event count may include speculation, but excludes cache line fills due to hardware prefetch
+Code     : 0x412e
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 37748741
+PMU name : ix86arch (Intel X86 architectural PMU)
+Name     : BRANCH_INSTRUCTIONS_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : count branch instructions at retirement. Specifically, this event counts the retirement of the last micro-op of a branch instruction
+Code     : 0xc4
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 37748742
+PMU name : ix86arch (Intel X86 architectural PMU)
+Name     : MISPREDICTED_BRANCH_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : count mispredicted branch instructions at retirement. Specifically, this event counts at retirement of the last micro-op of a branch instruction in the architectural path of the execution and experienced misprediction in the branch prediction hardware
+Code     : 0xc5
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 106954752
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CPU_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_CPU_CYCLES
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954753
+PMU name : perf (perf_events generic PMU)
+Name     : CYCLES
+Equiv	 : PERF_COUNT_HW_CPU_CYCLES
+Flags    : None
+Desc     : PERF_COUNT_HW_CPU_CYCLES
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954754
+PMU name : perf (perf_events generic PMU)
+Name     : CPU-CYCLES
+Equiv	 : PERF_COUNT_HW_CPU_CYCLES
+Flags    : None
+Desc     : PERF_COUNT_HW_CPU_CYCLES
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954755
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_INSTRUCTIONS
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954756
+PMU name : perf (perf_events generic PMU)
+Name     : INSTRUCTIONS
+Equiv	 : PERF_COUNT_HW_INSTRUCTIONS
+Flags    : None
+Desc     : PERF_COUNT_HW_INSTRUCTIONS
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954757
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_REFERENCES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_CACHE_REFERENCES
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954758
+PMU name : perf (perf_events generic PMU)
+Name     : CACHE-REFERENCES
+Equiv	 : PERF_COUNT_HW_CACHE_REFERENCES
+Flags    : None
+Desc     : PERF_COUNT_HW_CACHE_REFERENCES
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954759
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_CACHE_MISSES
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954760
+PMU name : perf (perf_events generic PMU)
+Name     : CACHE-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_MISSES
+Flags    : None
+Desc     : PERF_COUNT_HW_CACHE_MISSES
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954761
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954762
+PMU name : perf (perf_events generic PMU)
+Name     : BRANCH-INSTRUCTIONS
+Equiv	 : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Flags    : None
+Desc     : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954763
+PMU name : perf (perf_events generic PMU)
+Name     : BRANCHES
+Equiv	 : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Flags    : None
+Desc     : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954764
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_BRANCH_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_BRANCH_MISSES
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954765
+PMU name : perf (perf_events generic PMU)
+Name     : BRANCH-MISSES
+Equiv	 : PERF_COUNT_HW_BRANCH_MISSES
+Flags    : None
+Desc     : PERF_COUNT_HW_BRANCH_MISSES
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954766
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_BUS_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_BUS_CYCLES
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954767
+PMU name : perf (perf_events generic PMU)
+Name     : BUS-CYCLES
+Equiv	 : PERF_COUNT_HW_BUS_CYCLES
+Flags    : None
+Desc     : PERF_COUNT_HW_BUS_CYCLES
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954768
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_STALLED_CYCLES_FRONTEND
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_STALLED_CYCLES_FRONTEND
+Code     : 0x7
+#-----------------------------
+IDX	 : 106954769
+PMU name : perf (perf_events generic PMU)
+Name     : STALLED-CYCLES-FRONTEND
+Equiv	 : PERF_COUNT_HW_STALLED_CYCLES_FRONTEND
+Flags    : None
+Desc     : PERF_COUNT_HW_STALLED_CYCLES_FRONTEND
+Code     : 0x7
+#-----------------------------
+IDX	 : 106954770
+PMU name : perf (perf_events generic PMU)
+Name     : IDLE-CYCLES-FRONTEND
+Equiv	 : PERF_COUNT_HW_STALLED_CYCLES_FRONTEND
+Flags    : None
+Desc     : PERF_COUNT_HW_STALLED_CYCLES_FRONTEND
+Code     : 0x7
+#-----------------------------
+IDX	 : 106954771
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_STALLED_CYCLES_BACKEND
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_STALLED_CYCLES_BACKEND
+Code     : 0x8
+#-----------------------------
+IDX	 : 106954772
+PMU name : perf (perf_events generic PMU)
+Name     : STALLED-CYCLES-BACKEND
+Equiv	 : PERF_COUNT_HW_STALLED_CYCLES_BACKEND
+Flags    : None
+Desc     : PERF_COUNT_HW_STALLED_CYCLES_BACKEND
+Code     : 0x8
+#-----------------------------
+IDX	 : 106954773
+PMU name : perf (perf_events generic PMU)
+Name     : IDLE-CYCLES-BACKEND
+Equiv	 : PERF_COUNT_HW_STALLED_CYCLES_BACKEND
+Flags    : None
+Desc     : PERF_COUNT_HW_STALLED_CYCLES_BACKEND
+Code     : 0x8
+#-----------------------------
+IDX	 : 106954774
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_REF_CPU_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_REF_CPU_CYCLES
+Code     : 0x9
+#-----------------------------
+IDX	 : 106954775
+PMU name : perf (perf_events generic PMU)
+Name     : REF-CYCLES
+Equiv	 : PERF_COUNT_HW_REF_CPU_CYCLES
+Flags    : None
+Desc     : PERF_COUNT_HW_REF_CPU_CYCLES
+Code     : 0x9
+#-----------------------------
+IDX	 : 106954776
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_CPU_CLOCK
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_CPU_CLOCK
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954777
+PMU name : perf (perf_events generic PMU)
+Name     : CPU-CLOCK
+Equiv	 : PERF_COUNT_SW_CPU_CLOCK
+Flags    : None
+Desc     : PERF_COUNT_SW_CPU_CLOCK
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954778
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_TASK_CLOCK
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_TASK_CLOCK
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954779
+PMU name : perf (perf_events generic PMU)
+Name     : TASK-CLOCK
+Equiv	 : PERF_COUNT_SW_TASK_CLOCK
+Flags    : None
+Desc     : PERF_COUNT_SW_TASK_CLOCK
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954780
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_PAGE_FAULTS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954781
+PMU name : perf (perf_events generic PMU)
+Name     : PAGE-FAULTS
+Equiv	 : PERF_COUNT_SW_PAGE_FAULTS
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954782
+PMU name : perf (perf_events generic PMU)
+Name     : FAULTS
+Equiv	 : PERF_COUNT_SW_PAGE_FAULTS
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954783
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_CONTEXT_SWITCHES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_CONTEXT_SWITCHES
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954784
+PMU name : perf (perf_events generic PMU)
+Name     : CONTEXT-SWITCHES
+Equiv	 : PERF_COUNT_SW_CONTEXT_SWITCHES
+Flags    : None
+Desc     : PERF_COUNT_SW_CONTEXT_SWITCHES
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954785
+PMU name : perf (perf_events generic PMU)
+Name     : CS
+Equiv	 : PERF_COUNT_SW_CONTEXT_SWITCHES
+Flags    : None
+Desc     : PERF_COUNT_SW_CONTEXT_SWITCHES
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954786
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_CPU_MIGRATIONS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_CPU_MIGRATIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954787
+PMU name : perf (perf_events generic PMU)
+Name     : CPU-MIGRATIONS
+Equiv	 : PERF_COUNT_SW_CPU_MIGRATIONS
+Flags    : None
+Desc     : PERF_COUNT_SW_CPU_MIGRATIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954788
+PMU name : perf (perf_events generic PMU)
+Name     : MIGRATIONS
+Equiv	 : PERF_COUNT_SW_CPU_MIGRATIONS
+Flags    : None
+Desc     : PERF_COUNT_SW_CPU_MIGRATIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954789
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_PAGE_FAULTS_MIN
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS_MIN
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954790
+PMU name : perf (perf_events generic PMU)
+Name     : MINOR-FAULTS
+Equiv	 : PERF_COUNT_SW_PAGE_FAULTS_MIN
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS_MIN
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954791
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_PAGE_FAULTS_MAJ
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS_MAJ
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954792
+PMU name : perf (perf_events generic PMU)
+Name     : MAJOR-FAULTS
+Equiv	 : PERF_COUNT_SW_PAGE_FAULTS_MAJ
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS_MAJ
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954793
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_L1D
+Equiv	 : None
+Flags    : None
+Desc     : L1 data cache
+Code     : 0x0
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x100 : PMU : [WRITE] : None : write access
+Umask-02 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-03 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-04 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954794
+PMU name : perf (perf_events generic PMU)
+Name     : L1-DCACHE-LOADS
+Equiv	 : PERF_COUNT_HW_CACHE_L1D:READ:ACCESS
+Flags    : None
+Desc     : L1 cache load accesses
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954795
+PMU name : perf (perf_events generic PMU)
+Name     : L1-DCACHE-LOAD-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_L1D:READ:MISS
+Flags    : None
+Desc     : L1 cache load misses
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954796
+PMU name : perf (perf_events generic PMU)
+Name     : L1-DCACHE-STORES
+Equiv	 : PERF_COUNT_HW_CACHE_L1D:WRITE:ACCESS
+Flags    : None
+Desc     : L1 cache store accesses
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954797
+PMU name : perf (perf_events generic PMU)
+Name     : L1-DCACHE-STORE-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_L1D:WRITE:MISS
+Flags    : None
+Desc     : L1 cache store misses
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954798
+PMU name : perf (perf_events generic PMU)
+Name     : L1-DCACHE-PREFETCHES
+Equiv	 : PERF_COUNT_HW_CACHE_L1D:PREFETCH:ACCESS
+Flags    : None
+Desc     : L1 cache prefetch accesses
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954799
+PMU name : perf (perf_events generic PMU)
+Name     : L1-DCACHE-PREFETCH-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_L1D:PREFETCH:MISS
+Flags    : None
+Desc     : L1 cache prefetch misses
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954800
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_L1I
+Equiv	 : None
+Flags    : None
+Desc     : L1 instruction cache
+Code     : 0x1
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-02 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-03 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954801
+PMU name : perf (perf_events generic PMU)
+Name     : L1-ICACHE-LOADS
+Equiv	 : PERF_COUNT_HW_CACHE_L1I:READ:ACCESS
+Flags    : None
+Desc     : L1I cache load accesses
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954802
+PMU name : perf (perf_events generic PMU)
+Name     : L1-ICACHE-LOAD-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_L1I:READ:MISS
+Flags    : None
+Desc     : L1I cache load misses
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954803
+PMU name : perf (perf_events generic PMU)
+Name     : L1-ICACHE-PREFETCHES
+Equiv	 : PERF_COUNT_HW_CACHE_L1I:PREFETCH:ACCESS
+Flags    : None
+Desc     : L1I cache prefetch accesses
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954804
+PMU name : perf (perf_events generic PMU)
+Name     : L1-ICACHE-PREFETCH-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_L1I:PREFETCH:MISS
+Flags    : None
+Desc     : L1I cache prefetch misses
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954805
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_LL
+Equiv	 : None
+Flags    : None
+Desc     : Last level cache
+Code     : 0x2
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x100 : PMU : [WRITE] : None : write access
+Umask-02 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-03 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-04 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954806
+PMU name : perf (perf_events generic PMU)
+Name     : LLC-LOADS
+Equiv	 : PERF_COUNT_HW_CACHE_LL:READ:ACCESS
+Flags    : None
+Desc     : Last level cache load accesses
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954807
+PMU name : perf (perf_events generic PMU)
+Name     : LLC-LOAD-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_LL:READ:MISS
+Flags    : None
+Desc     : Last level cache load misses
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954808
+PMU name : perf (perf_events generic PMU)
+Name     : LLC-STORES
+Equiv	 : PERF_COUNT_HW_CACHE_LL:WRITE:ACCESS
+Flags    : None
+Desc     : Last level cache store accesses
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954809
+PMU name : perf (perf_events generic PMU)
+Name     : LLC-STORE-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_LL:WRITE:MISS
+Flags    : None
+Desc     : Last level cache store misses
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954810
+PMU name : perf (perf_events generic PMU)
+Name     : LLC-PREFETCHES
+Equiv	 : PERF_COUNT_HW_CACHE_LL:PREFETCH:ACCESS
+Flags    : None
+Desc     : Last level cache prefetch accesses
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954811
+PMU name : perf (perf_events generic PMU)
+Name     : LLC-PREFETCH-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_LL:PREFETCH:MISS
+Flags    : None
+Desc     : Last level cache prefetch misses
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954812
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_DTLB
+Equiv	 : None
+Flags    : None
+Desc     : Data Translation Lookaside Buffer
+Code     : 0x3
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x100 : PMU : [WRITE] : None : write access
+Umask-02 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-03 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-04 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954813
+PMU name : perf (perf_events generic PMU)
+Name     : DTLB-LOADS
+Equiv	 : PERF_COUNT_HW_CACHE_DTLB:READ:ACCESS
+Flags    : None
+Desc     : Data TLB load accesses
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954814
+PMU name : perf (perf_events generic PMU)
+Name     : DTLB-LOAD-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_DTLB:READ:MISS
+Flags    : None
+Desc     : Data TLB load misses
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954815
+PMU name : perf (perf_events generic PMU)
+Name     : DTLB-STORES
+Equiv	 : PERF_COUNT_HW_CACHE_DTLB:WRITE:ACCESS
+Flags    : None
+Desc     : Data TLB store accesses
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954816
+PMU name : perf (perf_events generic PMU)
+Name     : DTLB-STORE-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_DTLB:WRITE:MISS
+Flags    : None
+Desc     : Data TLB store misses
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954817
+PMU name : perf (perf_events generic PMU)
+Name     : DTLB-PREFETCHES
+Equiv	 : PERF_COUNT_HW_CACHE_DTLB:PREFETCH:ACCESS
+Flags    : None
+Desc     : Data TLB prefetch accesses
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954818
+PMU name : perf (perf_events generic PMU)
+Name     : DTLB-PREFETCH-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_DTLB:PREFETCH:MISS
+Flags    : None
+Desc     : Data TLB prefetch misses
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954819
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_ITLB
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Translation Lookaside Buffer
+Code     : 0x4
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-02 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954820
+PMU name : perf (perf_events generic PMU)
+Name     : ITLB-LOADS
+Equiv	 : PERF_COUNT_HW_CACHE_ITLB:READ:ACCESS
+Flags    : None
+Desc     : Instruction TLB load accesses
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954821
+PMU name : perf (perf_events generic PMU)
+Name     : ITLB-LOAD-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_ITLB:READ:MISS
+Flags    : None
+Desc     : Instruction TLB load misses
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954822
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_BPU
+Equiv	 : None
+Flags    : None
+Desc     : Branch Prediction Unit
+Code     : 0x5
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-02 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954823
+PMU name : perf (perf_events generic PMU)
+Name     : BRANCH-LOADS
+Equiv	 : PERF_COUNT_HW_CACHE_BPU:READ:ACCESS
+Flags    : None
+Desc     : Branch  load accesses
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954824
+PMU name : perf (perf_events generic PMU)
+Name     : BRANCH-LOAD-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_BPU:READ:MISS
+Flags    : None
+Desc     : Branch  load misses
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954825
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_NODE
+Equiv	 : None
+Flags    : None
+Desc     : Node memory access
+Code     : 0x6
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x100 : PMU : [WRITE] : None : write access
+Umask-02 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-03 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-04 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954826
+PMU name : perf (perf_events generic PMU)
+Name     : NODE-LOADS
+Equiv	 : PERF_COUNT_HW_CACHE_NODE:READ:ACCESS
+Flags    : None
+Desc     : Node  load accesses
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954827
+PMU name : perf (perf_events generic PMU)
+Name     : NODE-LOAD-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_NODE:READ:MISS
+Flags    : None
+Desc     : Node  load misses
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954828
+PMU name : perf (perf_events generic PMU)
+Name     : NODE-STORES
+Equiv	 : PERF_COUNT_HW_CACHE_NODE:WRITE:ACCESS
+Flags    : None
+Desc     : Node  store accesses
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954829
+PMU name : perf (perf_events generic PMU)
+Name     : NODE-STORE-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_NODE:WRITE:MISS
+Flags    : None
+Desc     : Node  store misses
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954830
+PMU name : perf (perf_events generic PMU)
+Name     : NODE-PREFETCHES
+Equiv	 : PERF_COUNT_HW_CACHE_NODE:PREFETCH:ACCESS
+Flags    : None
+Desc     : Node  prefetch accesses
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954831
+PMU name : perf (perf_events generic PMU)
+Name     : NODE-PREFETCH-MISSES
+Equiv	 : PERF_COUNT_HW_CACHE_NODE:PREFETCH:MISS
+Flags    : None
+Desc     : Node  prefetch misses
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954832
+PMU name : perf (perf_events generic PMU)
+Name     : lwpmudrv
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2f3 : PMU : [lwpmudrv_marker] : None : lwpmudrv_marker
+#-----------------------------
+IDX	 : 106954833
+PMU name : perf (perf_events generic PMU)
+Name     : sunrpc
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2f1 : PMU : [rpc_call_status] : None : rpc_call_status
+Umask-01 : 0x2f0 : PMU : [rpc_bind_status] : None : rpc_bind_status
+Umask-02 : 0x2ef : PMU : [rpc_connect_status] : None : rpc_connect_status
+Umask-03 : 0x2ee : PMU : [rpc_task_begin] : None : rpc_task_begin
+Umask-04 : 0x2ed : PMU : [rpc_task_run_action] : None : rpc_task_run_action
+Umask-05 : 0x2ec : PMU : [rpc_task_complete] : None : rpc_task_complete
+Umask-06 : 0x2eb : PMU : [rpc_task_sleep] : None : rpc_task_sleep
+Umask-07 : 0x2ea : PMU : [rpc_task_wakeup] : None : rpc_task_wakeup
+#-----------------------------
+IDX	 : 106954834
+PMU name : perf (perf_events generic PMU)
+Name     : ext4
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2e9 : PMU : [ext4_free_inode] : None : ext4_free_inode
+Umask-01 : 0x2e8 : PMU : [ext4_request_inode] : None : ext4_request_inode
+Umask-02 : 0x2e7 : PMU : [ext4_allocate_inode] : None : ext4_allocate_inode
+Umask-03 : 0x2e6 : PMU : [ext4_write_begin] : None : ext4_write_begin
+Umask-04 : 0x2e5 : PMU : [ext4_da_write_begin] : None : ext4_da_write_begin
+Umask-05 : 0x2e4 : PMU : [ext4_ordered_write_end] : None : ext4_ordered_write_end
+Umask-06 : 0x2e3 : PMU : [ext4_writeback_write_end] : None : ext4_writeback_write_end
+Umask-07 : 0x2e2 : PMU : [ext4_journalled_write_end] : None : ext4_journalled_write_end
+Umask-08 : 0x2e1 : PMU : [ext4_da_write_end] : None : ext4_da_write_end
+Umask-09 : 0x2e0 : PMU : [ext4_writepage] : None : ext4_writepage
+Umask-10 : 0x2df : PMU : [ext4_da_writepages] : None : ext4_da_writepages
+Umask-11 : 0x2de : PMU : [ext4_da_write_pages] : None : ext4_da_write_pages
+Umask-12 : 0x2dd : PMU : [ext4_da_writepages_result] : None : ext4_da_writepages_result
+Umask-13 : 0x2dc : PMU : [ext4_discard_blocks] : None : ext4_discard_blocks
+Umask-14 : 0x2db : PMU : [ext4_mb_new_inode_pa] : None : ext4_mb_new_inode_pa
+Umask-15 : 0x2da : PMU : [ext4_mb_new_group_pa] : None : ext4_mb_new_group_pa
+Umask-16 : 0x2d9 : PMU : [ext4_mb_release_inode_pa] : None : ext4_mb_release_inode_pa
+Umask-17 : 0x2d8 : PMU : [ext4_mb_release_group_pa] : None : ext4_mb_release_group_pa
+Umask-18 : 0x2d7 : PMU : [ext4_discard_preallocations] : None : ext4_discard_preallocations
+Umask-19 : 0x2d6 : PMU : [ext4_mb_discard_preallocations] : None : ext4_mb_discard_preallocations
+Umask-20 : 0x2d5 : PMU : [ext4_request_blocks] : None : ext4_request_blocks
+Umask-21 : 0x2d4 : PMU : [ext4_allocate_blocks] : None : ext4_allocate_blocks
+Umask-22 : 0x2d3 : PMU : [ext4_free_blocks] : None : ext4_free_blocks
+Umask-23 : 0x2d2 : PMU : [ext4_sync_file] : None : ext4_sync_file
+Umask-24 : 0x2d1 : PMU : [ext4_sync_fs] : None : ext4_sync_fs
+Umask-25 : 0x2d0 : PMU : [ext4_alloc_da_blocks] : None : ext4_alloc_da_blocks
+Umask-26 : 0x2cf : PMU : [ext4_mballoc_alloc] : None : ext4_mballoc_alloc
+Umask-27 : 0x2ce : PMU : [ext4_mballoc_prealloc] : None : ext4_mballoc_prealloc
+Umask-28 : 0x2cd : PMU : [ext4_mballoc_discard] : None : ext4_mballoc_discard
+Umask-29 : 0x2cc : PMU : [ext4_mballoc_free] : None : ext4_mballoc_free
+Umask-30 : 0x2cb : PMU : [ext4_trim_extent] : None : ext4_trim_extent
+Umask-31 : 0x2ca : PMU : [ext4_trim_all_free] : None : ext4_trim_all_free
+#-----------------------------
+IDX	 : 106954835
+PMU name : perf (perf_events generic PMU)
+Name     : jbd2
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2c9 : PMU : [jbd2_checkpoint] : None : jbd2_checkpoint
+Umask-01 : 0x2c8 : PMU : [jbd2_start_commit] : None : jbd2_start_commit
+Umask-02 : 0x2c7 : PMU : [jbd2_commit_locking] : None : jbd2_commit_locking
+Umask-03 : 0x2c6 : PMU : [jbd2_commit_flushing] : None : jbd2_commit_flushing
+Umask-04 : 0x2c5 : PMU : [jbd2_commit_logging] : None : jbd2_commit_logging
+Umask-05 : 0x2c4 : PMU : [jbd2_drop_transaction] : None : jbd2_drop_transaction
+Umask-06 : 0x2c3 : PMU : [jbd2_end_commit] : None : jbd2_end_commit
+Umask-07 : 0x2c2 : PMU : [jbd2_submit_inode_data] : None : jbd2_submit_inode_data
+Umask-08 : 0x2c1 : PMU : [jbd2_run_stats] : None : jbd2_run_stats
+Umask-09 : 0x2c0 : PMU : [jbd2_checkpoint_stats] : None : jbd2_checkpoint_stats
+Umask-10 : 0x2bf : PMU : [jbd2_update_superblock_end] : None : jbd2_update_superblock_end
+#-----------------------------
+IDX	 : 106954836
+PMU name : perf (perf_events generic PMU)
+Name     : skb
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2be : PMU : [kfree_skb] : None : kfree_skb
+Umask-01 : 0x2bd : PMU : [consume_skb] : None : consume_skb
+Umask-02 : 0x2bc : PMU : [skb_copy_datagram_iovec] : None : skb_copy_datagram_iovec
+#-----------------------------
+IDX	 : 106954837
+PMU name : perf (perf_events generic PMU)
+Name     : net
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2bb : PMU : [net_dev_xmit] : None : net_dev_xmit
+Umask-01 : 0x2ba : PMU : [net_dev_queue] : None : net_dev_queue
+Umask-02 : 0x2b9 : PMU : [netif_receive_skb] : None : netif_receive_skb
+Umask-03 : 0x2b8 : PMU : [netif_rx] : None : netif_rx
+#-----------------------------
+IDX	 : 106954838
+PMU name : perf (perf_events generic PMU)
+Name     : napi
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2b7 : PMU : [napi_poll] : None : napi_poll
+#-----------------------------
+IDX	 : 106954839
+PMU name : perf (perf_events generic PMU)
+Name     : sock
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2b6 : PMU : [sock_rcvqueue_full] : None : sock_rcvqueue_full
+Umask-01 : 0x2b5 : PMU : [sock_exceed_buf_limit] : None : sock_exceed_buf_limit
+#-----------------------------
+IDX	 : 106954840
+PMU name : perf (perf_events generic PMU)
+Name     : udp
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2b4 : PMU : [udp_fail_queue_rcv_skb] : None : udp_fail_queue_rcv_skb
+#-----------------------------
+IDX	 : 106954841
+PMU name : perf (perf_events generic PMU)
+Name     : scsi
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x28f : PMU : [scsi_dispatch_cmd_start] : None : scsi_dispatch_cmd_start
+Umask-01 : 0x28e : PMU : [scsi_dispatch_cmd_error] : None : scsi_dispatch_cmd_error
+Umask-02 : 0x28d : PMU : [scsi_dispatch_cmd_done] : None : scsi_dispatch_cmd_done
+Umask-03 : 0x28c : PMU : [scsi_dispatch_cmd_timeout] : None : scsi_dispatch_cmd_timeout
+Umask-04 : 0x28b : PMU : [scsi_eh_wakeup] : None : scsi_eh_wakeup
+#-----------------------------
+IDX	 : 106954842
+PMU name : perf (perf_events generic PMU)
+Name     : block
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x28a : PMU : [block_rq_abort] : None : block_rq_abort
+Umask-01 : 0x289 : PMU : [block_rq_requeue] : None : block_rq_requeue
+Umask-02 : 0x288 : PMU : [block_rq_complete] : None : block_rq_complete
+Umask-03 : 0x287 : PMU : [block_rq_insert] : None : block_rq_insert
+Umask-04 : 0x286 : PMU : [block_rq_issue] : None : block_rq_issue
+Umask-05 : 0x285 : PMU : [block_bio_bounce] : None : block_bio_bounce
+Umask-06 : 0x284 : PMU : [block_bio_complete] : None : block_bio_complete
+Umask-07 : 0x283 : PMU : [block_bio_backmerge] : None : block_bio_backmerge
+Umask-08 : 0x282 : PMU : [block_bio_frontmerge] : None : block_bio_frontmerge
+Umask-09 : 0x281 : PMU : [block_bio_queue] : None : block_bio_queue
+Umask-10 : 0x280 : PMU : [block_getrq] : None : block_getrq
+Umask-11 : 0x27f : PMU : [block_sleeprq] : None : block_sleeprq
+Umask-12 : 0x27e : PMU : [block_plug] : None : block_plug
+Umask-13 : 0x27d : PMU : [block_unplug_timer] : None : block_unplug_timer
+Umask-14 : 0x27c : PMU : [block_unplug_io] : None : block_unplug_io
+Umask-15 : 0x27b : PMU : [block_split] : None : block_split
+Umask-16 : 0x27a : PMU : [block_remap] : None : block_remap
+Umask-17 : 0x279 : PMU : [block_rq_remap] : None : block_rq_remap
+#-----------------------------
+IDX	 : 106954843
+PMU name : perf (perf_events generic PMU)
+Name     : writeback
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x200 : PMU : [writeback_nothread] : None : writeback_nothread
+Umask-01 : 0x1ff : PMU : [writeback_queue] : None : writeback_queue
+Umask-02 : 0x1fe : PMU : [writeback_exec] : None : writeback_exec
+Umask-03 : 0x1fd : PMU : [writeback_pages_written] : None : writeback_pages_written
+Umask-04 : 0x1fc : PMU : [writeback_nowork] : None : writeback_nowork
+Umask-05 : 0x1fb : PMU : [writeback_bdi_register] : None : writeback_bdi_register
+Umask-06 : 0x1fa : PMU : [writeback_bdi_unregister] : None : writeback_bdi_unregister
+Umask-07 : 0x1f9 : PMU : [writeback_task_start] : None : writeback_task_start
+Umask-08 : 0x1f8 : PMU : [writeback_task_stop] : None : writeback_task_stop
+Umask-09 : 0x1f7 : PMU : [wbc_writeback_start] : None : wbc_writeback_start
+Umask-10 : 0x1f6 : PMU : [wbc_writeback_written] : None : wbc_writeback_written
+Umask-11 : 0x1f5 : PMU : [wbc_writeback_wait] : None : wbc_writeback_wait
+Umask-12 : 0x1f4 : PMU : [wbc_balance_dirty_start] : None : wbc_balance_dirty_start
+Umask-13 : 0x1f3 : PMU : [wbc_balance_dirty_written] : None : wbc_balance_dirty_written
+Umask-14 : 0x1f2 : PMU : [wbc_balance_dirty_wait] : None : wbc_balance_dirty_wait
+Umask-15 : 0x1f1 : PMU : [wbc_writepage] : None : wbc_writepage
+#-----------------------------
+IDX	 : 106954844
+PMU name : perf (perf_events generic PMU)
+Name     : kmem
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x12e : PMU : [kmalloc] : None : kmalloc
+Umask-01 : 0x12d : PMU : [kmem_cache_alloc] : None : kmem_cache_alloc
+Umask-02 : 0x12c : PMU : [kmalloc_node] : None : kmalloc_node
+Umask-03 : 0x12b : PMU : [kmem_cache_alloc_node] : None : kmem_cache_alloc_node
+Umask-04 : 0x12a : PMU : [kfree] : None : kfree
+Umask-05 : 0x129 : PMU : [kmem_cache_free] : None : kmem_cache_free
+Umask-06 : 0x128 : PMU : [mm_page_free_direct] : None : mm_page_free_direct
+Umask-07 : 0x127 : PMU : [mm_pagevec_free] : None : mm_pagevec_free
+Umask-08 : 0x126 : PMU : [mm_page_alloc] : None : mm_page_alloc
+Umask-09 : 0x125 : PMU : [mm_page_alloc_zone_locked] : None : mm_page_alloc_zone_locked
+Umask-10 : 0x124 : PMU : [mm_page_pcpu_drain] : None : mm_page_pcpu_drain
+Umask-11 : 0x123 : PMU : [mm_page_alloc_extfrag] : None : mm_page_alloc_extfrag
+Umask-12 : 0x122 : PMU : [mm_anon_fault] : None : mm_anon_fault
+Umask-13 : 0x121 : PMU : [mm_anon_pgin] : None : mm_anon_pgin
+Umask-14 : 0x120 : PMU : [mm_anon_cow] : None : mm_anon_cow
+Umask-15 : 0x11f : PMU : [mm_anon_userfree] : None : mm_anon_userfree
+Umask-16 : 0x11e : PMU : [mm_anon_unmap] : None : mm_anon_unmap
+Umask-17 : 0x11d : PMU : [mm_filemap_fault] : None : mm_filemap_fault
+Umask-18 : 0x11c : PMU : [mm_filemap_cow] : None : mm_filemap_cow
+Umask-19 : 0x11b : PMU : [mm_filemap_unmap] : None : mm_filemap_unmap
+Umask-20 : 0x11a : PMU : [mm_filemap_userunmap] : None : mm_filemap_userunmap
+Umask-21 : 0x119 : PMU : [mm_pagereclaim_pgout] : None : mm_pagereclaim_pgout
+Umask-22 : 0x118 : PMU : [mm_pagereclaim_free] : None : mm_pagereclaim_free
+Umask-23 : 0x117 : PMU : [mm_background_writeout] : None : mm_background_writeout
+Umask-24 : 0x116 : PMU : [mm_olddata_writeout] : None : mm_olddata_writeout
+Umask-25 : 0x115 : PMU : [mm_balancedirty_writeout] : None : mm_balancedirty_writeout
+Umask-26 : 0x114 : PMU : [mm_kswapd_ran] : None : mm_kswapd_ran
+Umask-27 : 0x113 : PMU : [mm_directreclaim_reclaimall] : None : mm_directreclaim_reclaimall
+Umask-28 : 0x112 : PMU : [mm_directreclaim_reclaimzone] : None : mm_directreclaim_reclaimzone
+Umask-29 : 0x111 : PMU : [mm_pagereclaim_shrinkzone] : None : mm_pagereclaim_shrinkzone
+Umask-30 : 0x110 : PMU : [mm_pagereclaim_shrinkactive] : None : mm_pagereclaim_shrinkactive
+Umask-31 : 0x10f : PMU : [mm_pagereclaim_shrinkinactive] : None : mm_pagereclaim_shrinkinactive
+Umask-32 : 0x10e : PMU : [mm_kernel_pagefault] : None : mm_kernel_pagefault
+Umask-33 : 0x10d : PMU : [mm_vmscan_kswapd_sleep] : None : mm_vmscan_kswapd_sleep
+Umask-34 : 0x10c : PMU : [mm_vmscan_kswapd_wake] : None : mm_vmscan_kswapd_wake
+Umask-35 : 0x10b : PMU : [mm_vmscan_wakeup_kswapd] : None : mm_vmscan_wakeup_kswapd
+Umask-36 : 0x10a : PMU : [mm_vmscan_direct_reclaim_begin] : None : mm_vmscan_direct_reclaim_begin
+Umask-37 : 0x109 : PMU : [mm_vmscan_direct_reclaim_end] : None : mm_vmscan_direct_reclaim_end
+Umask-38 : 0x108 : PMU : [mm_vmscan_lru_isolate] : None : mm_vmscan_lru_isolate
+Umask-39 : 0x107 : PMU : [mm_vmscan_writepage] : None : mm_vmscan_writepage
+#-----------------------------
+IDX	 : 106954845
+PMU name : perf (perf_events generic PMU)
+Name     : power
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x104 : PMU : [power_start] : None : power_start
+Umask-01 : 0x103 : PMU : [power_frequency] : None : power_frequency
+Umask-02 : 0x102 : PMU : [power_end] : None : power_end
+#-----------------------------
+IDX	 : 106954846
+PMU name : perf (perf_events generic PMU)
+Name     : module
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0xfd : PMU : [module_load] : None : module_load
+Umask-01 : 0xfc : PMU : [module_free] : None : module_free
+Umask-02 : 0xfb : PMU : [module_get] : None : module_get
+Umask-03 : 0xfa : PMU : [module_put] : None : module_put
+Umask-04 : 0xf9 : PMU : [module_request] : None : module_request
+#-----------------------------
+IDX	 : 106954847
+PMU name : perf (perf_events generic PMU)
+Name     : workqueue
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0xd6 : PMU : [workqueue_insertion] : None : workqueue_insertion
+Umask-01 : 0xd5 : PMU : [workqueue_execution] : None : workqueue_execution
+Umask-02 : 0xd4 : PMU : [workqueue_creation] : None : workqueue_creation
+Umask-03 : 0xd3 : PMU : [workqueue_destruction] : None : workqueue_destruction
+#-----------------------------
+IDX	 : 106954848
+PMU name : perf (perf_events generic PMU)
+Name     : signal
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x9e : PMU : [signal_generate] : None : signal_generate
+Umask-01 : 0x9d : PMU : [signal_deliver] : None : signal_deliver
+#-----------------------------
+IDX	 : 106954849
+PMU name : perf (perf_events generic PMU)
+Name     : timer
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x84 : PMU : [timer_init] : None : timer_init
+Umask-01 : 0x83 : PMU : [timer_start] : None : timer_start
+Umask-02 : 0x82 : PMU : [timer_expire_entry] : None : timer_expire_entry
+Umask-03 : 0x81 : PMU : [timer_expire_exit] : None : timer_expire_exit
+Umask-04 : 0x80 : PMU : [timer_cancel] : None : timer_cancel
+Umask-05 : 0x7f : PMU : [hrtimer_init] : None : hrtimer_init
+Umask-06 : 0x7e : PMU : [hrtimer_start] : None : hrtimer_start
+Umask-07 : 0x7d : PMU : [hrtimer_expire_entry] : None : hrtimer_expire_entry
+Umask-08 : 0x7c : PMU : [hrtimer_expire_exit] : None : hrtimer_expire_exit
+Umask-09 : 0x7b : PMU : [hrtimer_cancel] : None : hrtimer_cancel
+Umask-10 : 0x7a : PMU : [itimer_state] : None : itimer_state
+Umask-11 : 0x79 : PMU : [itimer_expire] : None : itimer_expire
+#-----------------------------
+IDX	 : 106954850
+PMU name : perf (perf_events generic PMU)
+Name     : irq
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x5e : PMU : [irq_handler_entry] : None : irq_handler_entry
+Umask-01 : 0x5d : PMU : [irq_handler_exit] : None : irq_handler_exit
+Umask-02 : 0x5c : PMU : [softirq_entry] : None : softirq_entry
+Umask-03 : 0x5b : PMU : [softirq_exit] : None : softirq_exit
+Umask-04 : 0x5a : PMU : [softirq_raise] : None : softirq_raise
+#-----------------------------
+IDX	 : 106954851
+PMU name : perf (perf_events generic PMU)
+Name     : sched
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x3d : PMU : [sched_kthread_stop] : None : sched_kthread_stop
+Umask-01 : 0x3c : PMU : [sched_kthread_stop_ret] : None : sched_kthread_stop_ret
+Umask-02 : 0x3b : PMU : [sched_wait_task] : None : sched_wait_task
+Umask-03 : 0x3a : PMU : [sched_wakeup] : None : sched_wakeup
+Umask-04 : 0x39 : PMU : [sched_wakeup_new] : None : sched_wakeup_new
+Umask-05 : 0x38 : PMU : [sched_switch] : None : sched_switch
+Umask-06 : 0x37 : PMU : [sched_migrate_task] : None : sched_migrate_task
+Umask-07 : 0x36 : PMU : [sched_process_free] : None : sched_process_free
+Umask-08 : 0x35 : PMU : [sched_process_exit] : None : sched_process_exit
+Umask-09 : 0x34 : PMU : [sched_process_wait] : None : sched_process_wait
+Umask-10 : 0x33 : PMU : [sched_process_fork] : None : sched_process_fork
+Umask-11 : 0x32 : PMU : [sched_stat_wait] : None : sched_stat_wait
+Umask-12 : 0x31 : PMU : [sched_stat_sleep] : None : sched_stat_sleep
+Umask-13 : 0x30 : PMU : [sched_stat_iowait] : None : sched_stat_iowait
+Umask-14 : 0x2f : PMU : [sched_stat_runtime] : None : sched_stat_runtime
+#-----------------------------
+IDX	 : 106954852
+PMU name : perf (perf_events generic PMU)
+Name     : mce
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x1a : PMU : [mce_record] : None : mce_record
+#-----------------------------
+IDX	 : 106954853
+PMU name : perf (perf_events generic PMU)
+Name     : syscalls
+Equiv	 : None
+Flags    : None
+Desc     : tracepoint
+Code     : 0x0
+Umask-00 : 0x2b3 : PMU : [sys_enter_socket] : None : sys_enter_socket
+Umask-01 : 0x2b2 : PMU : [sys_exit_socket] : None : sys_exit_socket
+Umask-02 : 0x2b1 : PMU : [sys_enter_socketpair] : None : sys_enter_socketpair
+Umask-03 : 0x2b0 : PMU : [sys_exit_socketpair] : None : sys_exit_socketpair
+Umask-04 : 0x2af : PMU : [sys_enter_bind] : None : sys_enter_bind
+Umask-05 : 0x2ae : PMU : [sys_exit_bind] : None : sys_exit_bind
+Umask-06 : 0x2ad : PMU : [sys_enter_listen] : None : sys_enter_listen
+Umask-07 : 0x2ac : PMU : [sys_exit_listen] : None : sys_exit_listen
+Umask-08 : 0x2ab : PMU : [sys_enter_accept4] : None : sys_enter_accept4
+Umask-09 : 0x2aa : PMU : [sys_exit_accept4] : None : sys_exit_accept4
+Umask-10 : 0x2a9 : PMU : [sys_enter_accept] : None : sys_enter_accept
+Umask-11 : 0x2a8 : PMU : [sys_exit_accept] : None : sys_exit_accept
+Umask-12 : 0x2a7 : PMU : [sys_enter_connect] : None : sys_enter_connect
+Umask-13 : 0x2a6 : PMU : [sys_exit_connect] : None : sys_exit_connect
+Umask-14 : 0x2a5 : PMU : [sys_enter_getsockname] : None : sys_enter_getsockname
+Umask-15 : 0x2a4 : PMU : [sys_exit_getsockname] : None : sys_exit_getsockname
+Umask-16 : 0x2a3 : PMU : [sys_enter_getpeername] : None : sys_enter_getpeername
+Umask-17 : 0x2a2 : PMU : [sys_exit_getpeername] : None : sys_exit_getpeername
+Umask-18 : 0x2a1 : PMU : [sys_enter_sendto] : None : sys_enter_sendto
+Umask-19 : 0x2a0 : PMU : [sys_exit_sendto] : None : sys_exit_sendto
+Umask-20 : 0x29f : PMU : [sys_enter_recvfrom] : None : sys_enter_recvfrom
+Umask-21 : 0x29e : PMU : [sys_exit_recvfrom] : None : sys_exit_recvfrom
+Umask-22 : 0x29d : PMU : [sys_enter_setsockopt] : None : sys_enter_setsockopt
+Umask-23 : 0x29c : PMU : [sys_exit_setsockopt] : None : sys_exit_setsockopt
+Umask-24 : 0x29b : PMU : [sys_enter_getsockopt] : None : sys_enter_getsockopt
+Umask-25 : 0x29a : PMU : [sys_exit_getsockopt] : None : sys_exit_getsockopt
+Umask-26 : 0x299 : PMU : [sys_enter_shutdown] : None : sys_enter_shutdown
+Umask-27 : 0x298 : PMU : [sys_exit_shutdown] : None : sys_exit_shutdown
+Umask-28 : 0x297 : PMU : [sys_enter_sendmsg] : None : sys_enter_sendmsg
+Umask-29 : 0x296 : PMU : [sys_exit_sendmsg] : None : sys_exit_sendmsg
+Umask-30 : 0x295 : PMU : [sys_enter_sendmmsg] : None : sys_enter_sendmmsg
+Umask-31 : 0x294 : PMU : [sys_exit_sendmmsg] : None : sys_exit_sendmmsg
+Umask-32 : 0x293 : PMU : [sys_enter_recvmsg] : None : sys_enter_recvmsg
+Umask-33 : 0x292 : PMU : [sys_exit_recvmsg] : None : sys_exit_recvmsg
+Umask-34 : 0x291 : PMU : [sys_enter_recvmmsg] : None : sys_enter_recvmmsg
+Umask-35 : 0x290 : PMU : [sys_exit_recvmmsg] : None : sys_exit_recvmmsg
+Umask-36 : 0x278 : PMU : [sys_enter_add_key] : None : sys_enter_add_key
+Umask-37 : 0x277 : PMU : [sys_exit_add_key] : None : sys_exit_add_key
+Umask-38 : 0x276 : PMU : [sys_enter_request_key] : None : sys_enter_request_key
+Umask-39 : 0x275 : PMU : [sys_exit_request_key] : None : sys_exit_request_key
+Umask-40 : 0x274 : PMU : [sys_enter_keyctl] : None : sys_enter_keyctl
+Umask-41 : 0x273 : PMU : [sys_exit_keyctl] : None : sys_exit_keyctl
+Umask-42 : 0x272 : PMU : [sys_enter_mq_open] : None : sys_enter_mq_open
+Umask-43 : 0x271 : PMU : [sys_exit_mq_open] : None : sys_exit_mq_open
+Umask-44 : 0x270 : PMU : [sys_enter_mq_unlink] : None : sys_enter_mq_unlink
+Umask-45 : 0x26f : PMU : [sys_exit_mq_unlink] : None : sys_exit_mq_unlink
+Umask-46 : 0x26e : PMU : [sys_enter_mq_timedsend] : None : sys_enter_mq_timedsend
+Umask-47 : 0x26d : PMU : [sys_exit_mq_timedsend] : None : sys_exit_mq_timedsend
+Umask-48 : 0x26c : PMU : [sys_enter_mq_timedreceive] : None : sys_enter_mq_timedreceive
+Umask-49 : 0x26b : PMU : [sys_exit_mq_timedreceive] : None : sys_exit_mq_timedreceive
+Umask-50 : 0x26a : PMU : [sys_enter_mq_notify] : None : sys_enter_mq_notify
+Umask-51 : 0x269 : PMU : [sys_exit_mq_notify] : None : sys_exit_mq_notify
+Umask-52 : 0x268 : PMU : [sys_enter_mq_getsetattr] : None : sys_enter_mq_getsetattr
+Umask-53 : 0x267 : PMU : [sys_exit_mq_getsetattr] : None : sys_exit_mq_getsetattr
+Umask-54 : 0x266 : PMU : [sys_enter_shmget] : None : sys_enter_shmget
+Umask-55 : 0x265 : PMU : [sys_exit_shmget] : None : sys_exit_shmget
+Umask-56 : 0x264 : PMU : [sys_enter_shmctl] : None : sys_enter_shmctl
+Umask-57 : 0x263 : PMU : [sys_exit_shmctl] : None : sys_exit_shmctl
+Umask-58 : 0x262 : PMU : [sys_enter_shmat] : None : sys_enter_shmat
+Umask-59 : 0x261 : PMU : [sys_exit_shmat] : None : sys_exit_shmat
+Umask-60 : 0x260 : PMU : [sys_enter_shmdt] : None : sys_enter_shmdt
+Umask-61 : 0x25f : PMU : [sys_exit_shmdt] : None : sys_exit_shmdt
+Umask-62 : 0x25e : PMU : [sys_enter_semget] : None : sys_enter_semget
+Umask-63 : 0x25d : PMU : [sys_exit_semget] : None : sys_exit_semget
+Umask-64 : 0x25c : PMU : [sys_enter_semtimedop] : None : sys_enter_semtimedop
+Umask-65 : 0x25b : PMU : [sys_exit_semtimedop] : None : sys_exit_semtimedop
+Umask-66 : 0x25a : PMU : [sys_enter_semop] : None : sys_enter_semop
+Umask-67 : 0x259 : PMU : [sys_exit_semop] : None : sys_exit_semop
+Umask-68 : 0x258 : PMU : [sys_enter_msgget] : None : sys_enter_msgget
+Umask-69 : 0x257 : PMU : [sys_exit_msgget] : None : sys_exit_msgget
+Umask-70 : 0x256 : PMU : [sys_enter_msgctl] : None : sys_enter_msgctl
+Umask-71 : 0x255 : PMU : [sys_exit_msgctl] : None : sys_exit_msgctl
+Umask-72 : 0x254 : PMU : [sys_enter_msgsnd] : None : sys_enter_msgsnd
+Umask-73 : 0x253 : PMU : [sys_exit_msgsnd] : None : sys_exit_msgsnd
+Umask-74 : 0x252 : PMU : [sys_enter_msgrcv] : None : sys_enter_msgrcv
+Umask-75 : 0x251 : PMU : [sys_exit_msgrcv] : None : sys_exit_msgrcv
+Umask-76 : 0x250 : PMU : [sys_enter_quotactl] : None : sys_enter_quotactl
+Umask-77 : 0x24f : PMU : [sys_exit_quotactl] : None : sys_exit_quotactl
+Umask-78 : 0x24e : PMU : [sys_enter_nfsservctl] : None : sys_enter_nfsservctl
+Umask-79 : 0x24d : PMU : [sys_exit_nfsservctl] : None : sys_exit_nfsservctl
+Umask-80 : 0x24c : PMU : [sys_enter_flock] : None : sys_enter_flock
+Umask-81 : 0x24b : PMU : [sys_exit_flock] : None : sys_exit_flock
+Umask-82 : 0x24a : PMU : [sys_enter_io_setup] : None : sys_enter_io_setup
+Umask-83 : 0x249 : PMU : [sys_exit_io_setup] : None : sys_exit_io_setup
+Umask-84 : 0x248 : PMU : [sys_enter_io_destroy] : None : sys_enter_io_destroy
+Umask-85 : 0x247 : PMU : [sys_exit_io_destroy] : None : sys_exit_io_destroy
+Umask-86 : 0x246 : PMU : [sys_enter_io_submit] : None : sys_enter_io_submit
+Umask-87 : 0x245 : PMU : [sys_exit_io_submit] : None : sys_exit_io_submit
+Umask-88 : 0x244 : PMU : [sys_enter_io_cancel] : None : sys_enter_io_cancel
+Umask-89 : 0x243 : PMU : [sys_exit_io_cancel] : None : sys_exit_io_cancel
+Umask-90 : 0x242 : PMU : [sys_enter_io_getevents] : None : sys_enter_io_getevents
+Umask-91 : 0x241 : PMU : [sys_exit_io_getevents] : None : sys_exit_io_getevents
+Umask-92 : 0x240 : PMU : [sys_enter_eventfd2] : None : sys_enter_eventfd2
+Umask-93 : 0x23f : PMU : [sys_exit_eventfd2] : None : sys_exit_eventfd2
+Umask-94 : 0x23e : PMU : [sys_enter_eventfd] : None : sys_enter_eventfd
+Umask-95 : 0x23d : PMU : [sys_exit_eventfd] : None : sys_exit_eventfd
+Umask-96 : 0x23c : PMU : [sys_enter_timerfd_create] : None : sys_enter_timerfd_create
+Umask-97 : 0x23b : PMU : [sys_exit_timerfd_create] : None : sys_exit_timerfd_create
+Umask-98 : 0x23a : PMU : [sys_enter_timerfd_settime] : None : sys_enter_timerfd_settime
+Umask-99 : 0x239 : PMU : [sys_exit_timerfd_settime] : None : sys_exit_timerfd_settime
+Umask-100 : 0x238 : PMU : [sys_enter_timerfd_gettime] : None : sys_enter_timerfd_gettime
+Umask-101 : 0x237 : PMU : [sys_exit_timerfd_gettime] : None : sys_exit_timerfd_gettime
+Umask-102 : 0x236 : PMU : [sys_enter_signalfd4] : None : sys_enter_signalfd4
+Umask-103 : 0x235 : PMU : [sys_exit_signalfd4] : None : sys_exit_signalfd4
+Umask-104 : 0x234 : PMU : [sys_enter_signalfd] : None : sys_enter_signalfd
+Umask-105 : 0x233 : PMU : [sys_exit_signalfd] : None : sys_exit_signalfd
+Umask-106 : 0x232 : PMU : [sys_enter_epoll_create1] : None : sys_enter_epoll_create1
+Umask-107 : 0x231 : PMU : [sys_exit_epoll_create1] : None : sys_exit_epoll_create1
+Umask-108 : 0x230 : PMU : [sys_enter_epoll_create] : None : sys_enter_epoll_create
+Umask-109 : 0x22f : PMU : [sys_exit_epoll_create] : None : sys_exit_epoll_create
+Umask-110 : 0x22e : PMU : [sys_enter_epoll_ctl] : None : sys_enter_epoll_ctl
+Umask-111 : 0x22d : PMU : [sys_exit_epoll_ctl] : None : sys_exit_epoll_ctl
+Umask-112 : 0x22c : PMU : [sys_enter_epoll_wait] : None : sys_enter_epoll_wait
+Umask-113 : 0x22b : PMU : [sys_exit_epoll_wait] : None : sys_exit_epoll_wait
+Umask-114 : 0x22a : PMU : [sys_enter_epoll_pwait] : None : sys_enter_epoll_pwait
+Umask-115 : 0x229 : PMU : [sys_exit_epoll_pwait] : None : sys_exit_epoll_pwait
+Umask-116 : 0x228 : PMU : [sys_enter_inotify_init1] : None : sys_enter_inotify_init1
+Umask-117 : 0x227 : PMU : [sys_exit_inotify_init1] : None : sys_exit_inotify_init1
+Umask-118 : 0x226 : PMU : [sys_enter_inotify_init] : None : sys_enter_inotify_init
+Umask-119 : 0x225 : PMU : [sys_exit_inotify_init] : None : sys_exit_inotify_init
+Umask-120 : 0x224 : PMU : [sys_enter_inotify_add_watch] : None : sys_enter_inotify_add_watch
+Umask-121 : 0x223 : PMU : [sys_exit_inotify_add_watch] : None : sys_exit_inotify_add_watch
+Umask-122 : 0x222 : PMU : [sys_enter_inotify_rm_watch] : None : sys_enter_inotify_rm_watch
+Umask-123 : 0x221 : PMU : [sys_exit_inotify_rm_watch] : None : sys_exit_inotify_rm_watch
+Umask-124 : 0x220 : PMU : [sys_enter_ioprio_set] : None : sys_enter_ioprio_set
+Umask-125 : 0x21f : PMU : [sys_exit_ioprio_set] : None : sys_exit_ioprio_set
+Umask-126 : 0x21e : PMU : [sys_enter_ioprio_get] : None : sys_enter_ioprio_get
+Umask-127 : 0x21d : PMU : [sys_exit_ioprio_get] : None : sys_exit_ioprio_get
+Umask-128 : 0x21c : PMU : [sys_enter_statfs] : None : sys_enter_statfs
+Umask-129 : 0x21b : PMU : [sys_exit_statfs] : None : sys_exit_statfs
+Umask-130 : 0x21a : PMU : [sys_enter_fstatfs] : None : sys_enter_fstatfs
+Umask-131 : 0x219 : PMU : [sys_exit_fstatfs] : None : sys_exit_fstatfs
+Umask-132 : 0x218 : PMU : [sys_enter_ustat] : None : sys_enter_ustat
+Umask-133 : 0x217 : PMU : [sys_exit_ustat] : None : sys_exit_ustat
+Umask-134 : 0x216 : PMU : [sys_enter_utime] : None : sys_enter_utime
+Umask-135 : 0x215 : PMU : [sys_exit_utime] : None : sys_exit_utime
+Umask-136 : 0x214 : PMU : [sys_enter_utimensat] : None : sys_enter_utimensat
+Umask-137 : 0x213 : PMU : [sys_exit_utimensat] : None : sys_exit_utimensat
+Umask-138 : 0x212 : PMU : [sys_enter_futimesat] : None : sys_enter_futimesat
+Umask-139 : 0x211 : PMU : [sys_exit_futimesat] : None : sys_exit_futimesat
+Umask-140 : 0x210 : PMU : [sys_enter_utimes] : None : sys_enter_utimes
+Umask-141 : 0x20f : PMU : [sys_exit_utimes] : None : sys_exit_utimes
+Umask-142 : 0x20e : PMU : [sys_enter_sync] : None : sys_enter_sync
+Umask-143 : 0x20d : PMU : [sys_exit_sync] : None : sys_exit_sync
+Umask-144 : 0x20c : PMU : [sys_enter_syncfs] : None : sys_enter_syncfs
+Umask-145 : 0x20b : PMU : [sys_exit_syncfs] : None : sys_exit_syncfs
+Umask-146 : 0x20a : PMU : [sys_enter_fsync] : None : sys_enter_fsync
+Umask-147 : 0x209 : PMU : [sys_exit_fsync] : None : sys_exit_fsync
+Umask-148 : 0x208 : PMU : [sys_enter_fdatasync] : None : sys_enter_fdatasync
+Umask-149 : 0x207 : PMU : [sys_exit_fdatasync] : None : sys_exit_fdatasync
+Umask-150 : 0x206 : PMU : [sys_enter_vmsplice] : None : sys_enter_vmsplice
+Umask-151 : 0x205 : PMU : [sys_exit_vmsplice] : None : sys_exit_vmsplice
+Umask-152 : 0x204 : PMU : [sys_enter_splice] : None : sys_enter_splice
+Umask-153 : 0x203 : PMU : [sys_exit_splice] : None : sys_exit_splice
+Umask-154 : 0x202 : PMU : [sys_enter_tee] : None : sys_enter_tee
+Umask-155 : 0x201 : PMU : [sys_exit_tee] : None : sys_exit_tee
+Umask-156 : 0x1f0 : PMU : [sys_enter_setxattr] : None : sys_enter_setxattr
+Umask-157 : 0x1ef : PMU : [sys_exit_setxattr] : None : sys_exit_setxattr
+Umask-158 : 0x1ee : PMU : [sys_enter_lsetxattr] : None : sys_enter_lsetxattr
+Umask-159 : 0x1ed : PMU : [sys_exit_lsetxattr] : None : sys_exit_lsetxattr
+Umask-160 : 0x1ec : PMU : [sys_enter_fsetxattr] : None : sys_enter_fsetxattr
+Umask-161 : 0x1eb : PMU : [sys_exit_fsetxattr] : None : sys_exit_fsetxattr
+Umask-162 : 0x1ea : PMU : [sys_enter_getxattr] : None : sys_enter_getxattr
+Umask-163 : 0x1e9 : PMU : [sys_exit_getxattr] : None : sys_exit_getxattr
+Umask-164 : 0x1e8 : PMU : [sys_enter_lgetxattr] : None : sys_enter_lgetxattr
+Umask-165 : 0x1e7 : PMU : [sys_exit_lgetxattr] : None : sys_exit_lgetxattr
+Umask-166 : 0x1e6 : PMU : [sys_enter_fgetxattr] : None : sys_enter_fgetxattr
+Umask-167 : 0x1e5 : PMU : [sys_exit_fgetxattr] : None : sys_exit_fgetxattr
+Umask-168 : 0x1e4 : PMU : [sys_enter_listxattr] : None : sys_enter_listxattr
+Umask-169 : 0x1e3 : PMU : [sys_exit_listxattr] : None : sys_exit_listxattr
+Umask-170 : 0x1e2 : PMU : [sys_enter_llistxattr] : None : sys_enter_llistxattr
+Umask-171 : 0x1e1 : PMU : [sys_exit_llistxattr] : None : sys_exit_llistxattr
+Umask-172 : 0x1e0 : PMU : [sys_enter_flistxattr] : None : sys_enter_flistxattr
+Umask-173 : 0x1df : PMU : [sys_exit_flistxattr] : None : sys_exit_flistxattr
+Umask-174 : 0x1de : PMU : [sys_enter_removexattr] : None : sys_enter_removexattr
+Umask-175 : 0x1dd : PMU : [sys_exit_removexattr] : None : sys_exit_removexattr
+Umask-176 : 0x1dc : PMU : [sys_enter_lremovexattr] : None : sys_enter_lremovexattr
+Umask-177 : 0x1db : PMU : [sys_exit_lremovexattr] : None : sys_exit_lremovexattr
+Umask-178 : 0x1da : PMU : [sys_enter_fremovexattr] : None : sys_enter_fremovexattr
+Umask-179 : 0x1d9 : PMU : [sys_exit_fremovexattr] : None : sys_exit_fremovexattr
+Umask-180 : 0x1d8 : PMU : [sys_enter_umount] : None : sys_enter_umount
+Umask-181 : 0x1d7 : PMU : [sys_exit_umount] : None : sys_exit_umount
+Umask-182 : 0x1d6 : PMU : [sys_enter_mount] : None : sys_enter_mount
+Umask-183 : 0x1d5 : PMU : [sys_exit_mount] : None : sys_exit_mount
+Umask-184 : 0x1d4 : PMU : [sys_enter_pivot_root] : None : sys_enter_pivot_root
+Umask-185 : 0x1d3 : PMU : [sys_exit_pivot_root] : None : sys_exit_pivot_root
+Umask-186 : 0x1d2 : PMU : [sys_enter_sysfs] : None : sys_enter_sysfs
+Umask-187 : 0x1d1 : PMU : [sys_exit_sysfs] : None : sys_exit_sysfs
+Umask-188 : 0x1d0 : PMU : [sys_enter_getcwd] : None : sys_enter_getcwd
+Umask-189 : 0x1cf : PMU : [sys_exit_getcwd] : None : sys_exit_getcwd
+Umask-190 : 0x1ce : PMU : [sys_enter_select] : None : sys_enter_select
+Umask-191 : 0x1cd : PMU : [sys_exit_select] : None : sys_exit_select
+Umask-192 : 0x1cc : PMU : [sys_enter_pselect6] : None : sys_enter_pselect6
+Umask-193 : 0x1cb : PMU : [sys_exit_pselect6] : None : sys_exit_pselect6
+Umask-194 : 0x1ca : PMU : [sys_enter_poll] : None : sys_enter_poll
+Umask-195 : 0x1c9 : PMU : [sys_exit_poll] : None : sys_exit_poll
+Umask-196 : 0x1c8 : PMU : [sys_enter_ppoll] : None : sys_enter_ppoll
+Umask-197 : 0x1c7 : PMU : [sys_exit_ppoll] : None : sys_exit_ppoll
+Umask-198 : 0x1c6 : PMU : [sys_enter_getdents] : None : sys_enter_getdents
+Umask-199 : 0x1c5 : PMU : [sys_exit_getdents] : None : sys_exit_getdents
+Umask-200 : 0x1c4 : PMU : [sys_enter_getdents64] : None : sys_enter_getdents64
+Umask-201 : 0x1c3 : PMU : [sys_exit_getdents64] : None : sys_exit_getdents64
+Umask-202 : 0x1c2 : PMU : [sys_enter_ioctl] : None : sys_enter_ioctl
+Umask-203 : 0x1c1 : PMU : [sys_exit_ioctl] : None : sys_exit_ioctl
+Umask-204 : 0x1c0 : PMU : [sys_enter_dup3] : None : sys_enter_dup3
+Umask-205 : 0x1bf : PMU : [sys_exit_dup3] : None : sys_exit_dup3
+Umask-206 : 0x1be : PMU : [sys_enter_dup2] : None : sys_enter_dup2
+Umask-207 : 0x1bd : PMU : [sys_exit_dup2] : None : sys_exit_dup2
+Umask-208 : 0x1bc : PMU : [sys_enter_dup] : None : sys_enter_dup
+Umask-209 : 0x1bb : PMU : [sys_exit_dup] : None : sys_exit_dup
+Umask-210 : 0x1ba : PMU : [sys_enter_fcntl] : None : sys_enter_fcntl
+Umask-211 : 0x1b9 : PMU : [sys_exit_fcntl] : None : sys_exit_fcntl
+Umask-212 : 0x1b8 : PMU : [sys_enter_mknodat] : None : sys_enter_mknodat
+Umask-213 : 0x1b7 : PMU : [sys_exit_mknodat] : None : sys_exit_mknodat
+Umask-214 : 0x1b6 : PMU : [sys_enter_mknod] : None : sys_enter_mknod
+Umask-215 : 0x1b5 : PMU : [sys_exit_mknod] : None : sys_exit_mknod
+Umask-216 : 0x1b4 : PMU : [sys_enter_mkdirat] : None : sys_enter_mkdirat
+Umask-217 : 0x1b3 : PMU : [sys_exit_mkdirat] : None : sys_exit_mkdirat
+Umask-218 : 0x1b2 : PMU : [sys_enter_mkdir] : None : sys_enter_mkdir
+Umask-219 : 0x1b1 : PMU : [sys_exit_mkdir] : None : sys_exit_mkdir
+Umask-220 : 0x1b0 : PMU : [sys_enter_rmdir] : None : sys_enter_rmdir
+Umask-221 : 0x1af : PMU : [sys_exit_rmdir] : None : sys_exit_rmdir
+Umask-222 : 0x1ae : PMU : [sys_enter_unlinkat] : None : sys_enter_unlinkat
+Umask-223 : 0x1ad : PMU : [sys_exit_unlinkat] : None : sys_exit_unlinkat
+Umask-224 : 0x1ac : PMU : [sys_enter_unlink] : None : sys_enter_unlink
+Umask-225 : 0x1ab : PMU : [sys_exit_unlink] : None : sys_exit_unlink
+Umask-226 : 0x1aa : PMU : [sys_enter_symlinkat] : None : sys_enter_symlinkat
+Umask-227 : 0x1a9 : PMU : [sys_exit_symlinkat] : None : sys_exit_symlinkat
+Umask-228 : 0x1a8 : PMU : [sys_enter_symlink] : None : sys_enter_symlink
+Umask-229 : 0x1a7 : PMU : [sys_exit_symlink] : None : sys_exit_symlink
+Umask-230 : 0x1a6 : PMU : [sys_enter_linkat] : None : sys_enter_linkat
+Umask-231 : 0x1a5 : PMU : [sys_exit_linkat] : None : sys_exit_linkat
+Umask-232 : 0x1a4 : PMU : [sys_enter_link] : None : sys_enter_link
+Umask-233 : 0x1a3 : PMU : [sys_exit_link] : None : sys_exit_link
+Umask-234 : 0x1a2 : PMU : [sys_enter_renameat] : None : sys_enter_renameat
+Umask-235 : 0x1a1 : PMU : [sys_exit_renameat] : None : sys_exit_renameat
+Umask-236 : 0x1a0 : PMU : [sys_enter_rename] : None : sys_enter_rename
+Umask-237 : 0x19f : PMU : [sys_exit_rename] : None : sys_exit_rename
+Umask-238 : 0x19e : PMU : [sys_enter_pipe2] : None : sys_enter_pipe2
+Umask-239 : 0x19d : PMU : [sys_exit_pipe2] : None : sys_exit_pipe2
+Umask-240 : 0x19c : PMU : [sys_enter_pipe] : None : sys_enter_pipe
+Umask-241 : 0x19b : PMU : [sys_exit_pipe] : None : sys_exit_pipe
+Umask-242 : 0x19a : PMU : [sys_enter_newstat] : None : sys_enter_newstat
+Umask-243 : 0x199 : PMU : [sys_exit_newstat] : None : sys_exit_newstat
+Umask-244 : 0x198 : PMU : [sys_enter_newlstat] : None : sys_enter_newlstat
+Umask-245 : 0x197 : PMU : [sys_exit_newlstat] : None : sys_exit_newlstat
+Umask-246 : 0x196 : PMU : [sys_enter_newfstatat] : None : sys_enter_newfstatat
+Umask-247 : 0x195 : PMU : [sys_exit_newfstatat] : None : sys_exit_newfstatat
+Umask-248 : 0x194 : PMU : [sys_enter_newfstat] : None : sys_enter_newfstat
+Umask-249 : 0x193 : PMU : [sys_exit_newfstat] : None : sys_exit_newfstat
+Umask-250 : 0x192 : PMU : [sys_enter_readlinkat] : None : sys_enter_readlinkat
+Umask-251 : 0x191 : PMU : [sys_exit_readlinkat] : None : sys_exit_readlinkat
+Umask-252 : 0x190 : PMU : [sys_enter_readlink] : None : sys_enter_readlink
+Umask-253 : 0x18f : PMU : [sys_exit_readlink] : None : sys_exit_readlink
+Umask-254 : 0x18e : PMU : [sys_enter_lseek] : None : sys_enter_lseek
+Umask-255 : 0x18d : PMU : [sys_exit_lseek] : None : sys_exit_lseek
+Umask-256 : 0x18c : PMU : [sys_enter_read] : None : sys_enter_read
+Umask-257 : 0x18b : PMU : [sys_exit_read] : None : sys_exit_read
+Umask-258 : 0x18a : PMU : [sys_enter_write] : None : sys_enter_write
+Umask-259 : 0x189 : PMU : [sys_exit_write] : None : sys_exit_write
+Umask-260 : 0x188 : PMU : [sys_enter_readv] : None : sys_enter_readv
+Umask-261 : 0x187 : PMU : [sys_exit_readv] : None : sys_exit_readv
+Umask-262 : 0x186 : PMU : [sys_enter_writev] : None : sys_enter_writev
+Umask-263 : 0x185 : PMU : [sys_exit_writev] : None : sys_exit_writev
+Umask-264 : 0x184 : PMU : [sys_enter_preadv] : None : sys_enter_preadv
+Umask-265 : 0x183 : PMU : [sys_exit_preadv] : None : sys_exit_preadv
+Umask-266 : 0x182 : PMU : [sys_enter_pwritev] : None : sys_enter_pwritev
+Umask-267 : 0x181 : PMU : [sys_exit_pwritev] : None : sys_exit_pwritev
+Umask-268 : 0x180 : PMU : [sys_enter_sendfile64] : None : sys_enter_sendfile64
+Umask-269 : 0x17f : PMU : [sys_exit_sendfile64] : None : sys_exit_sendfile64
+Umask-270 : 0x17e : PMU : [sys_enter_truncate] : None : sys_enter_truncate
+Umask-271 : 0x17d : PMU : [sys_exit_truncate] : None : sys_exit_truncate
+Umask-272 : 0x17c : PMU : [sys_enter_ftruncate] : None : sys_enter_ftruncate
+Umask-273 : 0x17b : PMU : [sys_exit_ftruncate] : None : sys_exit_ftruncate
+Umask-274 : 0x17a : PMU : [sys_enter_faccessat] : None : sys_enter_faccessat
+Umask-275 : 0x179 : PMU : [sys_exit_faccessat] : None : sys_exit_faccessat
+Umask-276 : 0x178 : PMU : [sys_enter_access] : None : sys_enter_access
+Umask-277 : 0x177 : PMU : [sys_exit_access] : None : sys_exit_access
+Umask-278 : 0x176 : PMU : [sys_enter_chdir] : None : sys_enter_chdir
+Umask-279 : 0x175 : PMU : [sys_exit_chdir] : None : sys_exit_chdir
+Umask-280 : 0x174 : PMU : [sys_enter_fchdir] : None : sys_enter_fchdir
+Umask-281 : 0x173 : PMU : [sys_exit_fchdir] : None : sys_exit_fchdir
+Umask-282 : 0x172 : PMU : [sys_enter_chroot] : None : sys_enter_chroot
+Umask-283 : 0x171 : PMU : [sys_exit_chroot] : None : sys_exit_chroot
+Umask-284 : 0x170 : PMU : [sys_enter_fchmod] : None : sys_enter_fchmod
+Umask-285 : 0x16f : PMU : [sys_exit_fchmod] : None : sys_exit_fchmod
+Umask-286 : 0x16e : PMU : [sys_enter_fchmodat] : None : sys_enter_fchmodat
+Umask-287 : 0x16d : PMU : [sys_exit_fchmodat] : None : sys_exit_fchmodat
+Umask-288 : 0x16c : PMU : [sys_enter_chmod] : None : sys_enter_chmod
+Umask-289 : 0x16b : PMU : [sys_exit_chmod] : None : sys_exit_chmod
+Umask-290 : 0x16a : PMU : [sys_enter_chown] : None : sys_enter_chown
+Umask-291 : 0x169 : PMU : [sys_exit_chown] : None : sys_exit_chown
+Umask-292 : 0x168 : PMU : [sys_enter_fchownat] : None : sys_enter_fchownat
+Umask-293 : 0x167 : PMU : [sys_exit_fchownat] : None : sys_exit_fchownat
+Umask-294 : 0x166 : PMU : [sys_enter_lchown] : None : sys_enter_lchown
+Umask-295 : 0x165 : PMU : [sys_exit_lchown] : None : sys_exit_lchown
+Umask-296 : 0x164 : PMU : [sys_enter_fchown] : None : sys_enter_fchown
+Umask-297 : 0x163 : PMU : [sys_exit_fchown] : None : sys_exit_fchown
+Umask-298 : 0x162 : PMU : [sys_enter_open] : None : sys_enter_open
+Umask-299 : 0x161 : PMU : [sys_exit_open] : None : sys_exit_open
+Umask-300 : 0x160 : PMU : [sys_enter_openat] : None : sys_enter_openat
+Umask-301 : 0x15f : PMU : [sys_exit_openat] : None : sys_exit_openat
+Umask-302 : 0x15e : PMU : [sys_enter_creat] : None : sys_enter_creat
+Umask-303 : 0x15d : PMU : [sys_exit_creat] : None : sys_exit_creat
+Umask-304 : 0x15c : PMU : [sys_enter_close] : None : sys_enter_close
+Umask-305 : 0x15b : PMU : [sys_exit_close] : None : sys_exit_close
+Umask-306 : 0x15a : PMU : [sys_enter_vhangup] : None : sys_enter_vhangup
+Umask-307 : 0x159 : PMU : [sys_exit_vhangup] : None : sys_exit_vhangup
+Umask-308 : 0x158 : PMU : [sys_enter_move_pages] : None : sys_enter_move_pages
+Umask-309 : 0x157 : PMU : [sys_exit_move_pages] : None : sys_exit_move_pages
+Umask-310 : 0x156 : PMU : [sys_enter_mbind] : None : sys_enter_mbind
+Umask-311 : 0x155 : PMU : [sys_exit_mbind] : None : sys_exit_mbind
+Umask-312 : 0x154 : PMU : [sys_enter_set_mempolicy] : None : sys_enter_set_mempolicy
+Umask-313 : 0x153 : PMU : [sys_exit_set_mempolicy] : None : sys_exit_set_mempolicy
+Umask-314 : 0x152 : PMU : [sys_enter_migrate_pages] : None : sys_enter_migrate_pages
+Umask-315 : 0x151 : PMU : [sys_exit_migrate_pages] : None : sys_exit_migrate_pages
+Umask-316 : 0x150 : PMU : [sys_enter_get_mempolicy] : None : sys_enter_get_mempolicy
+Umask-317 : 0x14f : PMU : [sys_exit_get_mempolicy] : None : sys_exit_get_mempolicy
+Umask-318 : 0x14e : PMU : [sys_enter_swapoff] : None : sys_enter_swapoff
+Umask-319 : 0x14d : PMU : [sys_exit_swapoff] : None : sys_exit_swapoff
+Umask-320 : 0x14c : PMU : [sys_enter_swapon] : None : sys_enter_swapon
+Umask-321 : 0x14b : PMU : [sys_exit_swapon] : None : sys_exit_swapon
+Umask-322 : 0x14a : PMU : [sys_enter_process_vm_readv] : None : sys_enter_process_vm_readv
+Umask-323 : 0x149 : PMU : [sys_exit_process_vm_readv] : None : sys_exit_process_vm_readv
+Umask-324 : 0x148 : PMU : [sys_enter_process_vm_writev] : None : sys_enter_process_vm_writev
+Umask-325 : 0x147 : PMU : [sys_exit_process_vm_writev] : None : sys_exit_process_vm_writev
+Umask-326 : 0x146 : PMU : [sys_enter_msync] : None : sys_enter_msync
+Umask-327 : 0x145 : PMU : [sys_exit_msync] : None : sys_exit_msync
+Umask-328 : 0x144 : PMU : [sys_enter_mremap] : None : sys_enter_mremap
+Umask-329 : 0x143 : PMU : [sys_exit_mremap] : None : sys_exit_mremap
+Umask-330 : 0x142 : PMU : [sys_enter_mprotect] : None : sys_enter_mprotect
+Umask-331 : 0x141 : PMU : [sys_exit_mprotect] : None : sys_exit_mprotect
+Umask-332 : 0x140 : PMU : [sys_enter_brk] : None : sys_enter_brk
+Umask-333 : 0x13f : PMU : [sys_exit_brk] : None : sys_exit_brk
+Umask-334 : 0x13e : PMU : [sys_enter_munmap] : None : sys_enter_munmap
+Umask-335 : 0x13d : PMU : [sys_exit_munmap] : None : sys_exit_munmap
+Umask-336 : 0x13c : PMU : [sys_enter_mlock] : None : sys_enter_mlock
+Umask-337 : 0x13b : PMU : [sys_exit_mlock] : None : sys_exit_mlock
+Umask-338 : 0x13a : PMU : [sys_enter_munlock] : None : sys_enter_munlock
+Umask-339 : 0x139 : PMU : [sys_exit_munlock] : None : sys_exit_munlock
+Umask-340 : 0x138 : PMU : [sys_enter_mlockall] : None : sys_enter_mlockall
+Umask-341 : 0x137 : PMU : [sys_exit_mlockall] : None : sys_exit_mlockall
+Umask-342 : 0x136 : PMU : [sys_enter_munlockall] : None : sys_enter_munlockall
+Umask-343 : 0x135 : PMU : [sys_exit_munlockall] : None : sys_exit_munlockall
+Umask-344 : 0x134 : PMU : [sys_enter_mincore] : None : sys_enter_mincore
+Umask-345 : 0x133 : PMU : [sys_exit_mincore] : None : sys_exit_mincore
+Umask-346 : 0x132 : PMU : [sys_enter_madvise] : None : sys_enter_madvise
+Umask-347 : 0x131 : PMU : [sys_exit_madvise] : None : sys_exit_madvise
+Umask-348 : 0x130 : PMU : [sys_enter_remap_file_pages] : None : sys_enter_remap_file_pages
+Umask-349 : 0x12f : PMU : [sys_exit_remap_file_pages] : None : sys_exit_remap_file_pages
+Umask-350 : 0x106 : PMU : [sys_enter_perf_event_open] : None : sys_enter_perf_event_open
+Umask-351 : 0x105 : PMU : [sys_exit_perf_event_open] : None : sys_exit_perf_event_open
+Umask-352 : 0x101 : PMU : [sys_enter_kexec_load] : None : sys_enter_kexec_load
+Umask-353 : 0x100 : PMU : [sys_exit_kexec_load] : None : sys_exit_kexec_load
+Umask-354 : 0xff : PMU : [sys_enter_acct] : None : sys_enter_acct
+Umask-355 : 0xfe : PMU : [sys_exit_acct] : None : sys_exit_acct
+Umask-356 : 0xf8 : PMU : [sys_enter_delete_module] : None : sys_enter_delete_module
+Umask-357 : 0xf7 : PMU : [sys_exit_delete_module] : None : sys_exit_delete_module
+Umask-358 : 0xf6 : PMU : [sys_enter_init_module] : None : sys_enter_init_module
+Umask-359 : 0xf5 : PMU : [sys_exit_init_module] : None : sys_exit_init_module
+Umask-360 : 0xf4 : PMU : [sys_enter_set_robust_list] : None : sys_enter_set_robust_list
+Umask-361 : 0xf3 : PMU : [sys_exit_set_robust_list] : None : sys_exit_set_robust_list
+Umask-362 : 0xf2 : PMU : [sys_enter_get_robust_list] : None : sys_enter_get_robust_list
+Umask-363 : 0xf1 : PMU : [sys_exit_get_robust_list] : None : sys_exit_get_robust_list
+Umask-364 : 0xf0 : PMU : [sys_enter_futex] : None : sys_enter_futex
+Umask-365 : 0xef : PMU : [sys_exit_futex] : None : sys_exit_futex
+Umask-366 : 0xee : PMU : [sys_enter_getgroups] : None : sys_enter_getgroups
+Umask-367 : 0xed : PMU : [sys_exit_getgroups] : None : sys_exit_getgroups
+Umask-368 : 0xec : PMU : [sys_enter_setgroups] : None : sys_enter_setgroups
+Umask-369 : 0xeb : PMU : [sys_exit_setgroups] : None : sys_exit_setgroups
+Umask-370 : 0xea : PMU : [sys_enter_nanosleep] : None : sys_enter_nanosleep
+Umask-371 : 0xe9 : PMU : [sys_exit_nanosleep] : None : sys_exit_nanosleep
+Umask-372 : 0xe8 : PMU : [sys_enter_timer_create] : None : sys_enter_timer_create
+Umask-373 : 0xe7 : PMU : [sys_exit_timer_create] : None : sys_exit_timer_create
+Umask-374 : 0xe6 : PMU : [sys_enter_timer_gettime] : None : sys_enter_timer_gettime
+Umask-375 : 0xe5 : PMU : [sys_exit_timer_gettime] : None : sys_exit_timer_gettime
+Umask-376 : 0xe4 : PMU : [sys_enter_timer_getoverrun] : None : sys_enter_timer_getoverrun
+Umask-377 : 0xe3 : PMU : [sys_exit_timer_getoverrun] : None : sys_exit_timer_getoverrun
+Umask-378 : 0xe2 : PMU : [sys_enter_timer_settime] : None : sys_enter_timer_settime
+Umask-379 : 0xe1 : PMU : [sys_exit_timer_settime] : None : sys_exit_timer_settime
+Umask-380 : 0xe0 : PMU : [sys_enter_timer_delete] : None : sys_enter_timer_delete
+Umask-381 : 0xdf : PMU : [sys_exit_timer_delete] : None : sys_exit_timer_delete
+Umask-382 : 0xde : PMU : [sys_enter_clock_settime] : None : sys_enter_clock_settime
+Umask-383 : 0xdd : PMU : [sys_exit_clock_settime] : None : sys_exit_clock_settime
+Umask-384 : 0xdc : PMU : [sys_enter_clock_gettime] : None : sys_enter_clock_gettime
+Umask-385 : 0xdb : PMU : [sys_exit_clock_gettime] : None : sys_exit_clock_gettime
+Umask-386 : 0xda : PMU : [sys_enter_clock_getres] : None : sys_enter_clock_getres
+Umask-387 : 0xd9 : PMU : [sys_exit_clock_getres] : None : sys_exit_clock_getres
+Umask-388 : 0xd8 : PMU : [sys_enter_clock_nanosleep] : None : sys_enter_clock_nanosleep
+Umask-389 : 0xd7 : PMU : [sys_exit_clock_nanosleep] : None : sys_exit_clock_nanosleep
+Umask-390 : 0xd2 : PMU : [sys_enter_setpriority] : None : sys_enter_setpriority
+Umask-391 : 0xd1 : PMU : [sys_exit_setpriority] : None : sys_exit_setpriority
+Umask-392 : 0xd0 : PMU : [sys_enter_getpriority] : None : sys_enter_getpriority
+Umask-393 : 0xcf : PMU : [sys_exit_getpriority] : None : sys_exit_getpriority
+Umask-394 : 0xce : PMU : [sys_enter_reboot] : None : sys_enter_reboot
+Umask-395 : 0xcd : PMU : [sys_exit_reboot] : None : sys_exit_reboot
+Umask-396 : 0xcc : PMU : [sys_enter_setregid] : None : sys_enter_setregid
+Umask-397 : 0xcb : PMU : [sys_exit_setregid] : None : sys_exit_setregid
+Umask-398 : 0xca : PMU : [sys_enter_setgid] : None : sys_enter_setgid
+Umask-399 : 0xc9 : PMU : [sys_exit_setgid] : None : sys_exit_setgid
+Umask-400 : 0xc8 : PMU : [sys_enter_setreuid] : None : sys_enter_setreuid
+Umask-401 : 0xc7 : PMU : [sys_exit_setreuid] : None : sys_exit_setreuid
+Umask-402 : 0xc6 : PMU : [sys_enter_setuid] : None : sys_enter_setuid
+Umask-403 : 0xc5 : PMU : [sys_exit_setuid] : None : sys_exit_setuid
+Umask-404 : 0xc4 : PMU : [sys_enter_setresuid] : None : sys_enter_setresuid
+Umask-405 : 0xc3 : PMU : [sys_exit_setresuid] : None : sys_exit_setresuid
+Umask-406 : 0xc2 : PMU : [sys_enter_getresuid] : None : sys_enter_getresuid
+Umask-407 : 0xc1 : PMU : [sys_exit_getresuid] : None : sys_exit_getresuid
+Umask-408 : 0xc0 : PMU : [sys_enter_setresgid] : None : sys_enter_setresgid
+Umask-409 : 0xbf : PMU : [sys_exit_setresgid] : None : sys_exit_setresgid
+Umask-410 : 0xbe : PMU : [sys_enter_getresgid] : None : sys_enter_getresgid
+Umask-411 : 0xbd : PMU : [sys_exit_getresgid] : None : sys_exit_getresgid
+Umask-412 : 0xbc : PMU : [sys_enter_setfsuid] : None : sys_enter_setfsuid
+Umask-413 : 0xbb : PMU : [sys_exit_setfsuid] : None : sys_exit_setfsuid
+Umask-414 : 0xba : PMU : [sys_enter_setfsgid] : None : sys_enter_setfsgid
+Umask-415 : 0xb9 : PMU : [sys_exit_setfsgid] : None : sys_exit_setfsgid
+Umask-416 : 0xb8 : PMU : [sys_enter_times] : None : sys_enter_times
+Umask-417 : 0xb7 : PMU : [sys_exit_times] : None : sys_exit_times
+Umask-418 : 0xb6 : PMU : [sys_enter_setpgid] : None : sys_enter_setpgid
+Umask-419 : 0xb5 : PMU : [sys_exit_setpgid] : None : sys_exit_setpgid
+Umask-420 : 0xb4 : PMU : [sys_enter_getpgid] : None : sys_enter_getpgid
+Umask-421 : 0xb3 : PMU : [sys_exit_getpgid] : None : sys_exit_getpgid
+Umask-422 : 0xb2 : PMU : [sys_enter_getpgrp] : None : sys_enter_getpgrp
+Umask-423 : 0xb1 : PMU : [sys_exit_getpgrp] : None : sys_exit_getpgrp
+Umask-424 : 0xb0 : PMU : [sys_enter_getsid] : None : sys_enter_getsid
+Umask-425 : 0xaf : PMU : [sys_exit_getsid] : None : sys_exit_getsid
+Umask-426 : 0xae : PMU : [sys_enter_setsid] : None : sys_enter_setsid
+Umask-427 : 0xad : PMU : [sys_exit_setsid] : None : sys_exit_setsid
+Umask-428 : 0xac : PMU : [sys_enter_sethostname] : None : sys_enter_sethostname
+Umask-429 : 0xab : PMU : [sys_exit_sethostname] : None : sys_exit_sethostname
+Umask-430 : 0xaa : PMU : [sys_enter_setdomainname] : None : sys_enter_setdomainname
+Umask-431 : 0xa9 : PMU : [sys_exit_setdomainname] : None : sys_exit_setdomainname
+Umask-432 : 0xa8 : PMU : [sys_enter_getrlimit] : None : sys_enter_getrlimit
+Umask-433 : 0xa7 : PMU : [sys_exit_getrlimit] : None : sys_exit_getrlimit
+Umask-434 : 0xa6 : PMU : [sys_enter_setrlimit] : None : sys_enter_setrlimit
+Umask-435 : 0xa5 : PMU : [sys_exit_setrlimit] : None : sys_exit_setrlimit
+Umask-436 : 0xa4 : PMU : [sys_enter_getrusage] : None : sys_enter_getrusage
+Umask-437 : 0xa3 : PMU : [sys_exit_getrusage] : None : sys_exit_getrusage
+Umask-438 : 0xa2 : PMU : [sys_enter_umask] : None : sys_enter_umask
+Umask-439 : 0xa1 : PMU : [sys_exit_umask] : None : sys_exit_umask
+Umask-440 : 0xa0 : PMU : [sys_enter_prctl] : None : sys_enter_prctl
+Umask-441 : 0x9f : PMU : [sys_exit_prctl] : None : sys_exit_prctl
+Umask-442 : 0x9c : PMU : [sys_enter_restart_syscall] : None : sys_enter_restart_syscall
+Umask-443 : 0x9b : PMU : [sys_exit_restart_syscall] : None : sys_exit_restart_syscall
+Umask-444 : 0x9a : PMU : [sys_enter_rt_sigprocmask] : None : sys_enter_rt_sigprocmask
+Umask-445 : 0x99 : PMU : [sys_exit_rt_sigprocmask] : None : sys_exit_rt_sigprocmask
+Umask-446 : 0x98 : PMU : [sys_enter_rt_sigpending] : None : sys_enter_rt_sigpending
+Umask-447 : 0x97 : PMU : [sys_exit_rt_sigpending] : None : sys_exit_rt_sigpending
+Umask-448 : 0x96 : PMU : [sys_enter_rt_sigtimedwait] : None : sys_enter_rt_sigtimedwait
+Umask-449 : 0x95 : PMU : [sys_exit_rt_sigtimedwait] : None : sys_exit_rt_sigtimedwait
+Umask-450 : 0x94 : PMU : [sys_enter_kill] : None : sys_enter_kill
+Umask-451 : 0x93 : PMU : [sys_exit_kill] : None : sys_exit_kill
+Umask-452 : 0x92 : PMU : [sys_enter_tgkill] : None : sys_enter_tgkill
+Umask-453 : 0x91 : PMU : [sys_exit_tgkill] : None : sys_exit_tgkill
+Umask-454 : 0x90 : PMU : [sys_enter_tkill] : None : sys_enter_tkill
+Umask-455 : 0x8f : PMU : [sys_exit_tkill] : None : sys_exit_tkill
+Umask-456 : 0x8e : PMU : [sys_enter_rt_sigqueueinfo] : None : sys_enter_rt_sigqueueinfo
+Umask-457 : 0x8d : PMU : [sys_exit_rt_sigqueueinfo] : None : sys_exit_rt_sigqueueinfo
+Umask-458 : 0x8c : PMU : [sys_enter_rt_tgsigqueueinfo] : None : sys_enter_rt_tgsigqueueinfo
+Umask-459 : 0x8b : PMU : [sys_exit_rt_tgsigqueueinfo] : None : sys_exit_rt_tgsigqueueinfo
+Umask-460 : 0x8a : PMU : [sys_enter_rt_sigaction] : None : sys_enter_rt_sigaction
+Umask-461 : 0x89 : PMU : [sys_exit_rt_sigaction] : None : sys_exit_rt_sigaction
+Umask-462 : 0x88 : PMU : [sys_enter_pause] : None : sys_enter_pause
+Umask-463 : 0x87 : PMU : [sys_exit_pause] : None : sys_exit_pause
+Umask-464 : 0x86 : PMU : [sys_enter_rt_sigsuspend] : None : sys_enter_rt_sigsuspend
+Umask-465 : 0x85 : PMU : [sys_exit_rt_sigsuspend] : None : sys_exit_rt_sigsuspend
+Umask-466 : 0x78 : PMU : [sys_enter_alarm] : None : sys_enter_alarm
+Umask-467 : 0x77 : PMU : [sys_exit_alarm] : None : sys_exit_alarm
+Umask-468 : 0x76 : PMU : [sys_enter_getpid] : None : sys_enter_getpid
+Umask-469 : 0x75 : PMU : [sys_exit_getpid] : None : sys_exit_getpid
+Umask-470 : 0x74 : PMU : [sys_enter_getppid] : None : sys_enter_getppid
+Umask-471 : 0x73 : PMU : [sys_exit_getppid] : None : sys_exit_getppid
+Umask-472 : 0x72 : PMU : [sys_enter_getuid] : None : sys_enter_getuid
+Umask-473 : 0x71 : PMU : [sys_exit_getuid] : None : sys_exit_getuid
+Umask-474 : 0x70 : PMU : [sys_enter_geteuid] : None : sys_enter_geteuid
+Umask-475 : 0x6f : PMU : [sys_exit_geteuid] : None : sys_exit_geteuid
+Umask-476 : 0x6e : PMU : [sys_enter_getgid] : None : sys_enter_getgid
+Umask-477 : 0x6d : PMU : [sys_exit_getgid] : None : sys_exit_getgid
+Umask-478 : 0x6c : PMU : [sys_enter_getegid] : None : sys_enter_getegid
+Umask-479 : 0x6b : PMU : [sys_exit_getegid] : None : sys_exit_getegid
+Umask-480 : 0x6a : PMU : [sys_enter_gettid] : None : sys_enter_gettid
+Umask-481 : 0x69 : PMU : [sys_exit_gettid] : None : sys_exit_gettid
+Umask-482 : 0x68 : PMU : [sys_enter_sysinfo] : None : sys_enter_sysinfo
+Umask-483 : 0x67 : PMU : [sys_exit_sysinfo] : None : sys_exit_sysinfo
+Umask-484 : 0x66 : PMU : [sys_enter_ptrace] : None : sys_enter_ptrace
+Umask-485 : 0x65 : PMU : [sys_exit_ptrace] : None : sys_exit_ptrace
+Umask-486 : 0x64 : PMU : [sys_enter_capget] : None : sys_enter_capget
+Umask-487 : 0x63 : PMU : [sys_exit_capget] : None : sys_exit_capget
+Umask-488 : 0x62 : PMU : [sys_enter_capset] : None : sys_enter_capset
+Umask-489 : 0x61 : PMU : [sys_exit_capset] : None : sys_exit_capset
+Umask-490 : 0x60 : PMU : [sys_enter_sysctl] : None : sys_enter_sysctl
+Umask-491 : 0x5f : PMU : [sys_exit_sysctl] : None : sys_exit_sysctl
+Umask-492 : 0x59 : PMU : [sys_enter_time] : None : sys_enter_time
+Umask-493 : 0x58 : PMU : [sys_exit_time] : None : sys_exit_time
+Umask-494 : 0x57 : PMU : [sys_enter_gettimeofday] : None : sys_enter_gettimeofday
+Umask-495 : 0x56 : PMU : [sys_exit_gettimeofday] : None : sys_exit_gettimeofday
+Umask-496 : 0x55 : PMU : [sys_enter_settimeofday] : None : sys_enter_settimeofday
+Umask-497 : 0x54 : PMU : [sys_exit_settimeofday] : None : sys_exit_settimeofday
+Umask-498 : 0x53 : PMU : [sys_enter_adjtimex] : None : sys_enter_adjtimex
+Umask-499 : 0x52 : PMU : [sys_exit_adjtimex] : None : sys_exit_adjtimex
+Umask-500 : 0x51 : PMU : [sys_enter_getitimer] : None : sys_enter_getitimer
+Umask-501 : 0x50 : PMU : [sys_exit_getitimer] : None : sys_exit_getitimer
+Umask-502 : 0x4f : PMU : [sys_enter_setitimer] : None : sys_enter_setitimer
+Umask-503 : 0x4e : PMU : [sys_exit_setitimer] : None : sys_exit_setitimer
+Umask-504 : 0x4d : PMU : [sys_enter_exit] : None : sys_enter_exit
+Umask-505 : 0x4c : PMU : [sys_exit_exit] : None : sys_exit_exit
+Umask-506 : 0x4b : PMU : [sys_enter_exit_group] : None : sys_enter_exit_group
+Umask-507 : 0x4a : PMU : [sys_exit_exit_group] : None : sys_exit_exit_group
+Umask-508 : 0x49 : PMU : [sys_enter_waitid] : None : sys_enter_waitid
+Umask-509 : 0x48 : PMU : [sys_exit_waitid] : None : sys_exit_waitid
+Umask-510 : 0x47 : PMU : [sys_enter_wait4] : None : sys_enter_wait4
+Umask-511 : 0x46 : PMU : [sys_exit_wait4] : None : sys_exit_wait4
+Umask-512 : 0x45 : PMU : [sys_enter_syslog] : None : sys_enter_syslog
+Umask-513 : 0x44 : PMU : [sys_exit_syslog] : None : sys_exit_syslog
+Umask-514 : 0x43 : PMU : [sys_enter_personality] : None : sys_enter_personality
+Umask-515 : 0x42 : PMU : [sys_exit_personality] : None : sys_exit_personality
+Umask-516 : 0x41 : PMU : [sys_enter_set_tid_address] : None : sys_enter_set_tid_address
+Umask-517 : 0x40 : PMU : [sys_exit_set_tid_address] : None : sys_exit_set_tid_address
+Umask-518 : 0x3f : PMU : [sys_enter_unshare] : None : sys_enter_unshare
+Umask-519 : 0x3e : PMU : [sys_exit_unshare] : None : sys_exit_unshare
+Umask-520 : 0x2e : PMU : [sys_enter_sched_setscheduler] : None : sys_enter_sched_setscheduler
+Umask-521 : 0x2d : PMU : [sys_exit_sched_setscheduler] : None : sys_exit_sched_setscheduler
+Umask-522 : 0x2c : PMU : [sys_enter_sched_setparam] : None : sys_enter_sched_setparam
+Umask-523 : 0x2b : PMU : [sys_exit_sched_setparam] : None : sys_exit_sched_setparam
+Umask-524 : 0x2a : PMU : [sys_enter_sched_getscheduler] : None : sys_enter_sched_getscheduler
+Umask-525 : 0x29 : PMU : [sys_exit_sched_getscheduler] : None : sys_exit_sched_getscheduler
+Umask-526 : 0x28 : PMU : [sys_enter_sched_getparam] : None : sys_enter_sched_getparam
+Umask-527 : 0x27 : PMU : [sys_exit_sched_getparam] : None : sys_exit_sched_getparam
+Umask-528 : 0x26 : PMU : [sys_enter_sched_setaffinity] : None : sys_enter_sched_setaffinity
+Umask-529 : 0x25 : PMU : [sys_exit_sched_setaffinity] : None : sys_exit_sched_setaffinity
+Umask-530 : 0x24 : PMU : [sys_enter_sched_getaffinity] : None : sys_enter_sched_getaffinity
+Umask-531 : 0x23 : PMU : [sys_exit_sched_getaffinity] : None : sys_exit_sched_getaffinity
+Umask-532 : 0x22 : PMU : [sys_enter_sched_yield] : None : sys_enter_sched_yield
+Umask-533 : 0x21 : PMU : [sys_exit_sched_yield] : None : sys_exit_sched_yield
+Umask-534 : 0x20 : PMU : [sys_enter_sched_get_priority_max] : None : sys_enter_sched_get_priority_max
+Umask-535 : 0x1f : PMU : [sys_exit_sched_get_priority_max] : None : sys_exit_sched_get_priority_max
+Umask-536 : 0x1e : PMU : [sys_enter_sched_get_priority_min] : None : sys_enter_sched_get_priority_min
+Umask-537 : 0x1d : PMU : [sys_exit_sched_get_priority_min] : None : sys_exit_sched_get_priority_min
+Umask-538 : 0x1c : PMU : [sys_enter_sched_rr_get_interval] : None : sys_enter_sched_rr_get_interval
+Umask-539 : 0x1b : PMU : [sys_exit_sched_rr_get_interval] : None : sys_exit_sched_rr_get_interval
+Umask-540 : 0x19 : PMU : [sys_enter] : None : sys_enter
+Umask-541 : 0x18 : PMU : [sys_exit] : None : sys_exit
+Umask-542 : 0x17 : PMU : [sys_enter_mmap] : None : sys_enter_mmap
+Umask-543 : 0x16 : PMU : [sys_exit_mmap] : None : sys_exit_mmap
+Umask-544 : 0x15 : PMU : [sys_enter_uname] : None : sys_enter_uname
+Umask-545 : 0x14 : PMU : [sys_exit_uname] : None : sys_exit_uname
+#-----------------------------
+IDX	 : 216006656
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : ARITH
+Equiv	 : None
+Flags    : None
+Desc     : Counts arithmetic multiply operations
+Code     : 0x14
+Umask-00 : 0x01 : PMU : [FPU_DIV_ACTIVE] : None : Cycles that the divider is active, includes integer and floating point
+Umask-01 : 0x10404 : PMU : [FPU_DIV] : None : Number of cycles the divider is activated, includes integer and floating point
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006657
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : BACLEARS
+Equiv	 : None
+Flags    : None
+Desc     : Branch re-steered
+Code     : 0xe6
+Umask-00 : 0x1f : PMU : [ANY] : [default] : Counts the number of times the front end is re-steered, mainly when the BPU cannot provide a correct prediction and this is corrected by other branch handling mechanisms at the front end
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006658
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : BR_INST_EXEC
+Equiv	 : None
+Flags    : None
+Desc     : Branch instructions executed
+Code     : 0x88
+Umask-00 : 0x41 : PMU : [NONTAKEN_COND] : None : All macro conditional non-taken branch instructions
+Umask-01 : 0x81 : PMU : [TAKEN_COND] : None : All macro conditional taken branch instructions
+Umask-02 : 0x82 : PMU : [TAKEN_DIRECT_JUMP] : None : All macro unconditional taken branch instructions, excluding calls and indirects
+Umask-03 : 0x84 : PMU : [TAKEN_INDIRECT_JUMP_NON_CALL_RET] : None : All taken indirect branches that are not calls nor returns
+Umask-04 : 0x88 : PMU : [TAKEN_NEAR_RETURN] : None : All taken indirect branches that have a return mnemonic
+Umask-05 : 0x90 : PMU : [TAKEN_DIRECT_NEAR_CALL] : None : All taken non-indirect calls
+Umask-06 : 0xa0 : PMU : [TAKEN_INDIRECT_NEAR_CALL] : None : All taken indirect calls, including both register and memory indirect
+Umask-07 : 0xff : PMU : [ALL_BRANCHES] : [default] : All near executed branches instructions (not necessarily retired)
+Umask-08 : 0xc1 : PMU : [ALL_COND] : None : All macro conditional branch instructions
+Umask-09 : 0xc1 : PMU : [ANY_COND] : None : Alias to ALL_COND
+Umask-10 : 0xc4 : PMU : [ANY_INDIRECT_JUMP_NON_CALL_RET] : None : All indirect branches that are not calls nor returns
+Umask-11 : 0xd0 : PMU : [ANY_DIRECT_NEAR_CALL] : None : All non-indirect calls
+Umask-12 : 0xc2 : PMU : [ANY_DIRECT_JUMP] : None : All direct jumps
+Umask-13 : 0xc8 : PMU : [ANY_INDIRECT_NEAR_RET] : None : All indirect near returns
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006659
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : BR_INST_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Retired branch instructions
+Code     : 0xc4
+Umask-00 : 0x00 : PMU : [ALL_BRANCHES] : [default] [precise] : All taken and not taken macro branches including far branches (Precise Event)
+Umask-01 : 0x01 : PMU : [COND] : [precise] : All taken and not taken macro conditional branch instructions (Precise Event)
+Umask-02 : 0x40 : PMU : [FAR_BRANCH] : [precise] : Number of far branch instructions retired (Precise Event)
+Umask-03 : 0x02 : PMU : [NEAR_CALL] : [precise] : All macro direct and indirect near calls, does not count far calls (Precise Event)
+Umask-04 : 0x08 : PMU : [NEAR_RETURN] : [precise] : Number of near ret instructions retired (Precise Event)
+Umask-05 : 0x20 : PMU : [NEAR_TAKEN] : [precise] : Number of near branch taken instructions retired (Precise Event)
+Umask-06 : 0x10 : PMU : [NOT_TAKEN] : [precise] : All not taken macro branch instructions retired (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006660
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : BR_MISP_EXEC
+Equiv	 : None
+Flags    : None
+Desc     : Mispredicted branches executed
+Code     : 0x89
+Umask-00 : 0x41 : PMU : [NONTAKEN_COND] : None : All non-taken mispredicted macro conditional branch instructions
+Umask-01 : 0x81 : PMU : [TAKEN_COND] : None : All taken mispredicted macro conditional branch instructions
+Umask-02 : 0x84 : PMU : [TAKEN_INDIRECT_JUMP_NON_CALL_RET] : None : All taken mispredicted indirect branches that are not calls nor returns
+Umask-03 : 0x88 : PMU : [TAKEN_NEAR_RETURN] : None : All taken mispredicted indirect branches that have a return mnemonic
+Umask-04 : 0x88 : PMU : [TAKEN_RETURN_NEAR] : None : Alias to TAKEN_NEAR_RETURN
+Umask-05 : 0xa0 : PMU : [TAKEN_INDIRECT_NEAR_CALL] : None : All taken mispredicted indirect calls, including both register and memory indirect
+Umask-06 : 0xc1 : PMU : [ANY_COND] : None : All mispredicted macro conditional branch instructions
+Umask-07 : 0xc4 : PMU : [ANY_INDIRECT_JUMP_NON_CALL_RET] : None : All mispredicted indirect branches that are not calls nor returns
+Umask-08 : 0xff : PMU : [ALL_BRANCHES] : [default] : All mispredicted branch instructions
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006661
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : BR_MISP_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Mispredicted retired branches
+Code     : 0xc5
+Umask-00 : 0x00 : PMU : [ALL_BRANCHES] : [default] [precise] : All mispredicted macro branches (Precise Event)
+Umask-01 : 0x01 : PMU : [COND] : [precise] : All mispredicted macro conditional branch instructions (Precise Event)
+Umask-02 : 0x01 : PMU : [CONDITIONAL] : [precise] : Alias to COND
+Umask-03 : 0x20 : PMU : [NEAR_TAKEN] : [precise] : Number of branch instructions retired that were mispredicted and taken (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006662
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : BRANCH_INSTRUCTIONS_RETIRED
+Equiv	 : BR_INST_RETIRED:ALL_BRANCHES
+Flags    : None
+Desc     : Count branch instructions at retirement. Specifically, this event counts the retirement of the last micro-op of a branch instruction
+Code     : 0xc4
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006663
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MISPREDICTED_BRANCH_RETIRED
+Equiv	 : BR_MISP_RETIRED:ALL_BRANCHES
+Flags    : None
+Desc     : Count mispredicted branch instructions at retirement. Specifically, this event counts at retirement of the last micro-op of a branch instruction in the architectural path of the execution and experienced misprediction in the branch prediction hardware
+Code     : 0xc5
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006664
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LOCK_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : Locked cycles in L1D and L2
+Code     : 0x63
+Umask-00 : 0x01 : PMU : [SPLIT_LOCK_UC_LOCK_DURATION] : None : Cycles in which the L1D and L2 are locked, due to a UC lock or split lock
+Umask-01 : 0x02 : PMU : [CACHE_LOCK_DURATION] : None : Cycles in which the L1D is locked
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006665
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : CPL_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : Unhalted core cycles at a specific ring level
+Code     : 0x5c
+Umask-00 : 0x01 : PMU : [RING0] : None : Unhalted core cycles the thread was in ring 0
+Umask-01 : 0x10401 : PMU : [RING0_TRANS] : None : Alias to RING0:c=1:e=1
+Umask-02 : 0x02 : PMU : [RING123] : None : Unhalted core cycles the thread was in rings 1, 2, or 3
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006666
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : CPU_CLK_UNHALTED
+Equiv	 : None
+Flags    : None
+Desc     : Cycles when processor is not in halted state
+Code     : 0x3c
+Umask-00 : 0x01 : PMU : [REF_P] : None : Alias to REF_XCLK
+Umask-01 : 0x01 : PMU : [REF_XCLK] : None : Count Xclk pulses (100Mhz) when the core is unhalted
+Umask-02 : 0x2001 : PMU : [REF_XCLK_ANY] : None : Alias to REF_XCLK:t
+Umask-03 : 0x00 : PMU : [THREAD_P] : [default] : Cycles when thread is not halted
+Umask-04 : 0x02 : PMU : [ONE_THREAD_ACTIVE] : None : Counts Xclk (100Mhz) pulses when this thread is unhalted and the other thread is halted
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006667
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : DSB2MITE_SWITCHES
+Equiv	 : None
+Flags    : None
+Desc     : Number of DSB to MITE switches
+Code     : 0xab
+Umask-00 : 0x01 : PMU : [COUNT] : None : Number of DSB to MITE switches
+Umask-01 : 0x02 : PMU : [PENALTY_CYCLES] : [default] : Number of DSB to MITE switch true penalty cycles
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006668
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : DSB_FILL
+Equiv	 : None
+Flags    : None
+Desc     : DSB fills
+Code     : 0xac
+Umask-00 : 0x08 : PMU : [EXCEED_DSB_LINES] : [default] : DSB Fill encountered > 3 DSB lines
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006669
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : DTLB_LOAD_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : Data TLB load misses
+Code     : 0x8
+Umask-00 : 0x81 : PMU : [MISS_CAUSES_A_WALK] : None : Demand load miss in all TLB levels which causes a page walk of any page size
+Umask-01 : 0x82 : PMU : [WALK_COMPLETED] : None : Demand load miss in all TLB levels which causes a page walk that completes for any page size
+Umask-02 : 0x84 : PMU : [WALK_DURATION] : None : Cycles PMH is busy with a walk due to demand loads
+Umask-03 : 0x81 : PMU : [DEMAND_LD_MISS_CAUSES_A_WALK] : None : Alias to MISS_CAUSES_A_WALK
+Umask-04 : 0x82 : PMU : [DEMAND_LD_WALK_COMPLETED] : None : Alias to WALK_COMPLETED
+Umask-05 : 0x84 : PMU : [DEMAND_LD_WALK_DURATION] : None : Alias to WALK_DURATION
+Umask-06 : 0x45f : PMU : [STLB_HIT] : None : Number of load operations that missed L1TLB but hit L2TLB
+Umask-07 : 0x88 : PMU : [LARGE_WALK_COMPLETED] : None : Number of large page walks completed for demand loads
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006670
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : DTLB_STORE_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : Data TLB store misses
+Code     : 0x49
+Umask-00 : 0x01 : PMU : [MISS_CAUSES_A_WALK] : None : Miss in all TLB levels that causes a page walk of any page size (4K/2M/4M/1G)
+Umask-01 : 0x01 : PMU : [CAUSES_A_WALK] : None : Alias to MISS_CAUSES_A_WALK
+Umask-02 : 0x10 : PMU : [STLB_HIT] : None : First level miss but second level hit; no page walk. Only relevant if multiple levels
+Umask-03 : 0x02 : PMU : [WALK_COMPLETED] : None : Miss in all TLB levels that causes a page walk that completes of any page size (4K/2M/4M/1G)
+Umask-04 : 0x04 : PMU : [WALK_DURATION] : None : Cycles PMH is busy with this walk
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006671
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : FP_ASSIST
+Equiv	 : None
+Flags    : None
+Desc     : X87 Floating point assists
+Code     : 0xca
+Umask-00 : 0x1001e : PMU : [ANY] : [default] : Cycles with any input/output SSE or FP assists
+Umask-01 : 0x10 : PMU : [SIMD_INPUT] : None : Number of SIMD FP assists due to input values
+Umask-02 : 0x08 : PMU : [SIMD_OUTPUT] : None : Number of SIMD FP assists due to output values
+Umask-03 : 0x04 : PMU : [X87_INPUT] : None : Number of X87 assists due to input value
+Umask-04 : 0x02 : PMU : [X87_OUTPUT] : None : Number of X87 assists due to output value
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006672
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : ICACHE
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Cache accesses
+Code     : 0x80
+Umask-00 : 0x02 : PMU : [MISSES] : None : Number of Instruction Cache, Streaming Buffer and Victim Cache Misses. Includes UC accesses
+Umask-01 : 0x04 : PMU : [IFETCH_STALL] : None : Number of cycles wher a code-fetch stalled due to L1 instruction cache miss or iTLB miss
+Umask-02 : 0x01 : PMU : [HIT] : None : Number of Instruction Cache, Streaming Buffer and Victim Cache Reads. Includes cacheable and uncacheable accesses and uncacheable fetches
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006673
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : IDQ
+Equiv	 : None
+Flags    : None
+Desc     : IDQ operations
+Code     : 0x79
+Umask-00 : 0x02 : PMU : [EMPTY] : None : Cycles IDQ is empty
+Umask-01 : 0x04 : PMU : [MITE_UOPS] : None : Number of uops delivered to IDQ from MITE path
+Umask-02 : 0x08 : PMU : [DSB_UOPS] : None : Number of uops delivered to IDQ from DSB path
+Umask-03 : 0x10 : PMU : [MS_DSB_UOPS] : None : Number of uops delivered to IDQ when MS busy by DSB
+Umask-04 : 0x20 : PMU : [MS_MITE_UOPS] : None : Number of uops delivered to IDQ when MS busy by MITE
+Umask-05 : 0x30 : PMU : [MS_UOPS] : None : Number of uops were delivered to IDQ from MS by either DSB or MITE
+Umask-06 : 0x10004 : PMU : [MITE_UOPS_CYCLES] : None : Alias to MITE_UOPS:c=1
+Umask-07 : 0x10008 : PMU : [DSB_UOPS_CYCLES] : None : Cycles where uops are delivered to IDQ from DSB (DSB active)
+Umask-08 : 0x10010 : PMU : [MS_DSB_UOPS_CYCLES] : None : Alias to MS_DSB_UOPS:c=1
+Umask-09 : 0x10020 : PMU : [MS_MITE_UOPS_CYCLES] : None : Alias to MS_MITE_UOPS:c=1
+Umask-10 : 0x10030 : PMU : [MS_UOPS_CYCLES] : None : Alias to MS_UOPS:c=1
+Umask-11 : 0x10430 : PMU : [MS_SWITCHES] : None : Alias to MS_UOPS:c=1:e
+Umask-12 : 0x18 : PMU : [ALL_DSB_UOPS] : None : Number of uops delivered from either DSB paths
+Umask-13 : 0x10018 : PMU : [ALL_DSB_CYCLES] : None : Cycles MITE/MS delivered anything
+Umask-14 : 0x40018 : PMU : [ALL_DSB_CYCLES_4_UOPS] : None : Cycles MITE/MS delivered 4 uops
+Umask-15 : 0x24 : PMU : [ALL_MITE_UOPS] : None : Number of uops delivered from either MITE paths
+Umask-16 : 0x10024 : PMU : [ALL_MITE_CYCLES] : None : Cycles DSB/MS delivered anything
+Umask-17 : 0x40024 : PMU : [ALL_MITE_CYCLES_4_UOPS] : None : Cycles MITE is  delivering 4 uops
+Umask-18 : 0x3c : PMU : [ANY_UOPS] : None : Number of uops delivered to IDQ from any path
+Umask-19 : 0x10410 : PMU : [MS_DSB_UOPS_OCCUR] : None : Alias to MS_DSB_UOPS:c=1:e=1
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006674
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : IDQ_UOPS_NOT_DELIVERED
+Equiv	 : None
+Flags    : None
+Desc     : Uops not delivered
+Code     : 0x9c
+Umask-00 : 0x01 : PMU : [CORE] : [default] : Number of non-delivered uops to RAT (use cmask to qualify further)
+Umask-01 : 0x40001 : PMU : [CYCLES_0_UOPS_DELIV_CORE] : None : Alias to CORE:c=4
+Umask-02 : 0x30001 : PMU : [CYCLES_LE_1_UOP_DELIV_CORE] : None : Alias to CORE:c=3
+Umask-03 : 0x20001 : PMU : [CYCLES_LE_2_UOP_DELIV_CORE] : None : Alias to CORE:c=2
+Umask-04 : 0x10001 : PMU : [CYCLES_LE_3_UOP_DELIV_CORE] : None : Alias to CORE:c=1
+Umask-05 : 0x18001 : PMU : [CYCLES_FE_WAS_OK] : None : Alias to CORE:c=1:i
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006675
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : ILD_STALL
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Length Decoder stalls
+Code     : 0x87
+Umask-00 : 0x01 : PMU : [LCP] : None : Stall caused by changing prefix length of the instruction
+Umask-01 : 0x04 : PMU : [IQ_FULL] : None : Stall cycles due to IQ full
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006676
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : INST_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Instructions retired
+Code     : 0xc0
+Umask-00 : 0x00 : PMU : [ANY_P] : [default] : Number of instructions retired
+Umask-01 : 0x01 : PMU : [ALL] : [precise] : Precise instruction retired event to reduce effect of PEBS shadow IP distribution (Precise Event)
+Umask-02 : 0x01 : PMU : [PREC_DIST] : [precise] : Alias to ALL
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006677
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : INSTRUCTION_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : Number of instructions at retirement
+Code     : 0xc0
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006678
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : INSTRUCTIONS_RETIRED
+Equiv	 : INSTRUCTION_RETIRED
+Flags    : None
+Desc     : This is an alias for INSTRUCTION_RETIRED
+Code     : 0xc0
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006679
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : ITLB
+Equiv	 : None
+Flags    : None
+Desc     : Instruction TLB
+Code     : 0xae
+Umask-00 : 0x01 : PMU : [ITLB_FLUSH] : [default] : Number of ITLB flushes, includes 4k/2M/4M pages
+Umask-01 : 0x01 : PMU : [FLUSH] : None : Alias to ITLB_FLUSH
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006680
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : ITLB_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : Instruction TLB misses
+Code     : 0x85
+Umask-00 : 0x01 : PMU : [MISS_CAUSES_A_WALK] : None : Miss in all TLB levels that causes a page walk of any page size (4K/2M/4M/1G)
+Umask-01 : 0x01 : PMU : [CAUSES_A_WALK] : None : Alias to MISS_CAUSES_A_WALK
+Umask-02 : 0x10 : PMU : [STLB_HIT] : None : First level miss but second level hit; no page walk. Only relevant if multiple levels
+Umask-03 : 0x02 : PMU : [WALK_COMPLETED] : None : Miss in all TLB levels that causes a page walk that completes of any page size (4K/2M/4M/1G)
+Umask-04 : 0x04 : PMU : [WALK_DURATION] : None : Cycles PMH is busy with this walk
+Umask-05 : 0x80 : PMU : [LARGE_PAGE_WALK_COMPLETED] : None : Number of completed page walks in ITLB due to STLB load misses for large pages
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006681
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L1D
+Equiv	 : None
+Flags    : None
+Desc     : L1D cache
+Code     : 0x51
+Umask-00 : 0x01 : PMU : [REPLACEMENT] : [default] : Number of cache lines brought into the L1D cache
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006682
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MOVE_ELIMINATION
+Equiv	 : None
+Flags    : None
+Desc     : Move Elimination
+Code     : 0x58
+Umask-00 : 0x01 : PMU : [INT_NOT_ELIMINATED] : None : Number of integer Move Elimination candidate uops that were not eliminated
+Umask-01 : 0x08 : PMU : [SIMD_NOT_ELIMINATED] : None : Number of SIMD Move Elimination candidate uops that were not eliminated
+Umask-02 : 0x04 : PMU : [INT_ELIMINATED] : None : Number of integer Move Elimination candidate uops that were eliminated
+Umask-03 : 0x02 : PMU : [SIMD_ELIMINATED] : None : Number of SIMD Move Elimination candidate uops that were eliminated
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006683
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L1D_PEND_MISS
+Equiv	 : None
+Flags    : None
+Desc     : L1D pending misses
+Code     : 0x48
+Umask-00 : 0x10401 : PMU : [OCCURRENCES] : None : Alias to PENDING:e=1:c=1
+Umask-01 : 0x10401 : PMU : [EDGE] : None : Alias to OCCURRENCES
+Umask-02 : 0x01 : PMU : [PENDING] : None : Number of L1D load misses outstanding every cycle
+Umask-03 : 0x10001 : PMU : [PENDING_CYCLES] : None : Alias to PENDING:c=1
+Umask-04 : 0x12001 : PMU : [PENDING_CYCLES_ANY] : None : Alias to PENDING:c=1:t
+Umask-05 : 0x10002 : PMU : [FB_FULL] : None : Number of cycles a demand request was blocked due to Fill Buffer (FB) unavailability
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006684
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L2_L1D_WB_RQSTS
+Equiv	 : None
+Flags    : None
+Desc     : Writeback requests from L1D to L2
+Code     : 0x28
+Umask-00 : 0x04 : PMU : [HIT_E] : None : Non rejected writebacks from L1D to L2 cache lines in E state
+Umask-01 : 0x08 : PMU : [HIT_M] : None : Non rejected writebacks from L1D to L2 cache lines in M state
+Umask-02 : 0x01 : PMU : [MISS] : None : Not rejected writebacks that missed LLC
+Umask-03 : 0x0f : PMU : [ALL] : None : Not rejected writebacks from L1D to L2 cache lines in any state
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006685
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L2_LINES_IN
+Equiv	 : None
+Flags    : None
+Desc     : L2 lines allocated
+Code     : 0xf1
+Umask-00 : 0x07 : PMU : [ANY] : None : Alias to ALL
+Umask-01 : 0x07 : PMU : [ALL] : [default] : L2 cache lines filling (counting does not cover rejects)
+Umask-02 : 0x04 : PMU : [E] : None : L2 cache lines in E state (counting does not cover rejects)
+Umask-03 : 0x01 : PMU : [I] : None : L2 cache lines in I state (counting does not cover rejects)
+Umask-04 : 0x02 : PMU : [S] : None : L2 cache lines in S state (counting does not cover rejects)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006686
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L2_LINES_OUT
+Equiv	 : None
+Flags    : None
+Desc     : L2 lines evicted
+Code     : 0xf2
+Umask-00 : 0x01 : PMU : [DEMAND_CLEAN] : None : L2 clean line evicted by a demand
+Umask-01 : 0x02 : PMU : [DEMAND_DIRTY] : None : L2 dirty line evicted by a demand
+Umask-02 : 0x04 : PMU : [PREFETCH_CLEAN] : None : Alias to PF_CLEAN
+Umask-03 : 0x04 : PMU : [PF_CLEAN] : None : L2 clean line evicted by a prefetch
+Umask-04 : 0x08 : PMU : [PREFETCH_DIRTY] : None : Alias to PF_DIRTY
+Umask-05 : 0x08 : PMU : [PF_DIRTY] : None : L2 dirty line evicted by an MLC Prefetch
+Umask-06 : 0x0a : PMU : [DIRTY_ANY] : None : Alias to DIRTY_ALL
+Umask-07 : 0x0a : PMU : [DIRTY_ALL] : None : Any L2 dirty line evicted (does not cover rejects)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006687
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L2_RQSTS
+Equiv	 : None
+Flags    : None
+Desc     : L2 requests
+Code     : 0x24
+Umask-00 : 0x30 : PMU : [ALL_CODE_RD] : None : Any code request to L2 cache
+Umask-01 : 0x10 : PMU : [CODE_RD_HIT] : None : L2 cache hits when fetching instructions
+Umask-02 : 0x20 : PMU : [CODE_RD_MISS] : None : L2 cache misses when fetching instructions
+Umask-03 : 0x03 : PMU : [ALL_DEMAND_DATA_RD] : None : Demand  data read requests to L2 cache
+Umask-04 : 0x01 : PMU : [DEMAND_DATA_RD_HIT] : None : Demand data read requests that hit L2
+Umask-05 : 0xc0 : PMU : [ALL_PF] : None : Any L2 HW prefetch request to L2 cache
+Umask-06 : 0x40 : PMU : [PF_HIT] : None : Requests from the L2 hardware prefetchers that hit L2 cache
+Umask-07 : 0x80 : PMU : [PF_MISS] : None : Requests from the L2 hardware prefetchers that miss L2 cache
+Umask-08 : 0x0c : PMU : [ALL_RFO] : None : Any RFO requests to L2 cache
+Umask-09 : 0x04 : PMU : [RFO_HIT] : None : Store RFO requests that hit L2 cache
+Umask-10 : 0x08 : PMU : [RFO_MISS] : None : RFO requests that miss L2 cache
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006688
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L2_STORE_LOCK_RQSTS
+Equiv	 : None
+Flags    : None
+Desc     : L2 store lock requests
+Code     : 0x27
+Umask-00 : 0x01 : PMU : [MISS] : None : RFOs that miss cache (I state)
+Umask-01 : 0x08 : PMU : [HIT_M] : None : RFOs that hit cache lines in M state
+Umask-02 : 0x0f : PMU : [ALL] : [default] : RFOs that access cache lines in any state
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006689
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L2_TRANS
+Equiv	 : None
+Flags    : None
+Desc     : L2 transactions
+Code     : 0xf0
+Umask-00 : 0x80 : PMU : [ALL] : [default] : Transactions accessing the L2 pipe
+Umask-01 : 0x04 : PMU : [CODE_RD] : None : L2 cache accesses when fetching instructions
+Umask-02 : 0x10 : PMU : [L1D_WB] : None : L1D writebacks that access the L2 cache
+Umask-03 : 0x01 : PMU : [DMND_DATA_RD] : None : Demand Data Read requests that access the L2 cache
+Umask-04 : 0x20 : PMU : [L2_FILL] : None : L2 fill requests that access the L2 cache
+Umask-05 : 0x40 : PMU : [L2_WB] : None : L2 writebacks that access the L2 cache
+Umask-06 : 0x08 : PMU : [ALL_PREFETCH] : None : Alias to ALL_PF
+Umask-07 : 0x08 : PMU : [ALL_PF] : None : L2 or L3 HW prefetches that access the L2 cache (including rejects)
+Umask-08 : 0x02 : PMU : [RFO] : None : RFO requests that access the L2 cache
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006690
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LAST_LEVEL_CACHE_MISSES
+Equiv	 : L3_LAT_CACHE:MISS
+Flags    : None
+Desc     : This is an alias for L3_LAT_CACHE:MISS
+Code     : 0x412e
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006691
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LLC_MISSES
+Equiv	 : LAST_LEVEL_CACHE_MISSES
+Flags    : None
+Desc     : Alias for LAST_LEVEL_CACHE_MISSES
+Code     : 0x412e
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006692
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LAST_LEVEL_CACHE_REFERENCES
+Equiv	 : L3_LAT_CACHE:REFERENCE
+Flags    : None
+Desc     : This is an alias for L3_LAT_CACHE:REFERENCE
+Code     : 0x4f2e
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006693
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LLC_REFERENCES
+Equiv	 : LAST_LEVEL_CACHE_REFERENCES
+Flags    : None
+Desc     : Alias for LAST_LEVEL_CACHE_REFERENCES
+Code     : 0x4f2e
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006694
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LD_BLOCKS
+Equiv	 : None
+Flags    : None
+Desc     : Blocking loads
+Code     : 0x3
+Umask-00 : 0x02 : PMU : [STORE_FORWARD] : None : Loads blocked by overlapping with store buffer that cannot be forwarded
+Umask-01 : 0x08 : PMU : [NO_SR] : None : Number of times that split load operations are temporarily blocked because all resources for handling the split accesses are in use
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006695
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LD_BLOCKS_PARTIAL
+Equiv	 : None
+Flags    : None
+Desc     : Partial load blocks
+Code     : 0x7
+Umask-00 : 0x01 : PMU : [ADDRESS_ALIAS] : [default] : False dependencies in MOB due to partial compare on address
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006696
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LOAD_HIT_PRE
+Equiv	 : None
+Flags    : None
+Desc     : Load dispatches that hit fill buffer
+Code     : 0x4c
+Umask-00 : 0x02 : PMU : [HW_PF] : None : Non sw-prefetch load dispatches that hit the fill buffer allocated for HW prefetch
+Umask-01 : 0x01 : PMU : [SW_PF] : None : Non sw-prefetch load dispatches that hit the fill buffer allocated for SW prefetch
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006697
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : L3_LAT_CACHE
+Equiv	 : None
+Flags    : None
+Desc     : Core-originated cacheable demand requests to L3
+Code     : 0x2e
+Umask-00 : 0x41 : PMU : [MISS] : None : Core-originated cacheable demand requests missed L3
+Umask-01 : 0x4f : PMU : [REFERENCE] : None : Core-originated cacheable demand requests that refer to L3
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006698
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LONGEST_LAT_CACHE
+Equiv	 : L3_LAT_CACHE
+Flags    : None
+Desc     : Core-originated cacheable demand requests to L3
+Code     : 0x2e
+Umask-00 : 0x41 : PMU : [MISS] : None : Core-originated cacheable demand requests missed L3
+Umask-01 : 0x4f : PMU : [REFERENCE] : None : Core-originated cacheable demand requests that refer to L3
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006699
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MACHINE_CLEARS
+Equiv	 : None
+Flags    : None
+Desc     : Machine clear asserted
+Code     : 0xc3
+Umask-00 : 0x20 : PMU : [MASKMOV] : None : The number of executed Intel AVX masked load operations that refer to an illegal address range with the mask bits set to 0
+Umask-01 : 0x02 : PMU : [MEMORY_ORDERING] : None : Number of Memory Ordering Machine Clears detected
+Umask-02 : 0x04 : PMU : [SMC] : None : Self-Modifying Code detected
+Umask-03 : 0x10401 : PMU : [COUNT] : None : Number of machine clears (nukes) of any type
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006700
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_LOAD_UOPS_LLC_HIT_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : L3 hit loads uops retired
+Code     : 0xd2
+Umask-00 : 0x02 : PMU : [XSNP_HIT] : [precise] : Load LLC Hit and a cross-core Snoop hits in on-pkg core cache (Precise Event)
+Umask-01 : 0x04 : PMU : [XSNP_HITM] : [precise] : Load had HitM Response from a core on same socket (shared LLC) (Precise Event)
+Umask-02 : 0x01 : PMU : [XSNP_MISS] : [precise] : Load LLC Hit and a cross-core Snoop missed in on-pkg core cache (Precise Event)
+Umask-03 : 0x08 : PMU : [XSNP_NONE] : [precise] : Load hit in last-level (L3) cache with no snoop needed (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006701
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_LOAD_LLC_HIT_RETIRED
+Equiv	 : MEM_LOAD_UOPS_LLC_HIT_RETIRED
+Flags    : [precise] 
+Desc     : L3 hit loads uops retired (deprecated use MEM_LOAD_UOPS_LLC_HIT_RETIRED)
+Code     : 0xd2
+Umask-00 : 0x02 : PMU : [XSNP_HIT] : [precise] : Load LLC Hit and a cross-core Snoop hits in on-pkg core cache (Precise Event)
+Umask-01 : 0x04 : PMU : [XSNP_HITM] : [precise] : Load had HitM Response from a core on same socket (shared LLC) (Precise Event)
+Umask-02 : 0x01 : PMU : [XSNP_MISS] : [precise] : Load LLC Hit and a cross-core Snoop missed in on-pkg core cache (Precise Event)
+Umask-03 : 0x08 : PMU : [XSNP_NONE] : [precise] : Load hit in last-level (L3) cache with no snoop needed (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006702
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_LOAD_UOPS_LLC_MISS_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Load uops retired that missed the LLC
+Code     : 0xd3
+Umask-00 : 0x01 : PMU : [LOCAL_DRAM] : [default] [precise] : Number of retired load uops that missed L3 but were service by local RAM. Does not count hardware prefetches (Precise Event)
+Umask-01 : 0x0c : PMU : [REMOTE_DRAM] : [precise] : Number of retired load uops that missed L3 but were service by remote RAM, snoop not needed, snoop miss, snoop hit data not forwarded (Precise Event)
+Umask-02 : 0x10 : PMU : [REMOTE_HITM] : [precise] : Number of retired load uops whose data sources was remote HITM (Precise Event)
+Umask-03 : 0x20 : PMU : [REMOTE_FWD] : [precise] : Load uops that miss in the L3 whose data source was forwarded from a remote cache (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006703
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_LOAD_UOPS_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Memory loads uops retired
+Code     : 0xd1
+Umask-00 : 0x40 : PMU : [HIT_LFB] : [precise] : A load missed L1D but hit the Fill Buffer (Precise Event)
+Umask-01 : 0x08 : PMU : [L1_MISS] : [precise] : Load miss in nearest-level (L1D) cache (Precise Event)
+Umask-02 : 0x01 : PMU : [L1_HIT] : [precise] : Load hit in nearest-level (L1D) cache (Precise Event)
+Umask-03 : 0x02 : PMU : [L2_HIT] : [precise] : Load hit in mid-level (L2) cache (Precise Event)
+Umask-04 : 0x10 : PMU : [L2_MISS] : [precise] : Load misses in mid-level (L2) cache (Precise Event)
+Umask-05 : 0x04 : PMU : [L3_HIT] : [precise] : Load hit in last-level (L3) cache with no snoop needed (Precise Event)
+Umask-06 : 0x20 : PMU : [L3_MISS] : [precise] : Load miss in last-level (L3) cache (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006704
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_LOAD_RETIRED
+Equiv	 : MEM_LOAD_UOPS_RETIRED
+Flags    : [precise] 
+Desc     : Memory loads uops retired (deprecated use MEM_LOAD_UOPS_RETIRED)
+Code     : 0xd1
+Umask-00 : 0x40 : PMU : [HIT_LFB] : [precise] : A load missed L1D but hit the Fill Buffer (Precise Event)
+Umask-01 : 0x08 : PMU : [L1_MISS] : [precise] : Load miss in nearest-level (L1D) cache (Precise Event)
+Umask-02 : 0x01 : PMU : [L1_HIT] : [precise] : Load hit in nearest-level (L1D) cache (Precise Event)
+Umask-03 : 0x02 : PMU : [L2_HIT] : [precise] : Load hit in mid-level (L2) cache (Precise Event)
+Umask-04 : 0x10 : PMU : [L2_MISS] : [precise] : Load misses in mid-level (L2) cache (Precise Event)
+Umask-05 : 0x04 : PMU : [L3_HIT] : [precise] : Load hit in last-level (L3) cache with no snoop needed (Precise Event)
+Umask-06 : 0x20 : PMU : [L3_MISS] : [precise] : Load miss in last-level (L3) cache (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006705
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_TRANS_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Memory transactions retired
+Code     : 0xcd
+Umask-00 : 0x01 : PMU : [LATENCY_ABOVE_THRESHOLD] : [precise] : Memory load instructions retired above programmed clocks, minimum threshold value is 3 (Precise Event and ldlat required)
+Umask-01 : 0x02 : PMU : [PRECISE_STORE] : [precise] : Capture where stores occur, must use with PEBS (Precise Event required)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+Modif-06 : 0x06 : PMU : [ldlat] : load latency threshold (cycles, [3-65535]) (integer)
+#-----------------------------
+IDX	 : 216006706
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_UOPS_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Memory uops retired
+Code     : 0xd0
+Umask-00 : 0x81 : PMU : [ALL_LOADS] : [precise] : Any retired loads (Precise Event)
+Umask-01 : 0x81 : PMU : [ANY_LOADS] : [precise] : Alias to ALL_LOADS
+Umask-02 : 0x82 : PMU : [ALL_STORES] : [precise] : Any retired stores (Precise Event)
+Umask-03 : 0x21 : PMU : [LOCK_LOADS] : [precise] : Locked retired loads (Precise Event)
+Umask-04 : 0x82 : PMU : [ANY_STORES] : [precise] : Alias to ALL_STORES
+Umask-05 : 0x41 : PMU : [SPLIT_LOADS] : [precise] : Retired loads causing cacheline splits (Precise Event)
+Umask-06 : 0x42 : PMU : [SPLIT_STORES] : [precise] : Retired stores causing cacheline splits (Precise Event)
+Umask-07 : 0x11 : PMU : [STLB_MISS_LOADS] : [precise] : STLB misses dues to retired loads (Precise Event)
+Umask-08 : 0x12 : PMU : [STLB_MISS_STORES] : [precise] : STLB misses dues to retired stores (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006707
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MEM_UOP_RETIRED
+Equiv	 : MEM_UOPS_RETIRED
+Flags    : [precise] 
+Desc     : Memory uops retired (deprecated use MEM_UOPS_RETIRED)
+Code     : 0xd0
+Umask-00 : 0x81 : PMU : [ALL_LOADS] : [precise] : Any retired loads (Precise Event)
+Umask-01 : 0x81 : PMU : [ANY_LOADS] : [precise] : Alias to ALL_LOADS
+Umask-02 : 0x82 : PMU : [ALL_STORES] : [precise] : Any retired stores (Precise Event)
+Umask-03 : 0x21 : PMU : [LOCK_LOADS] : [precise] : Locked retired loads (Precise Event)
+Umask-04 : 0x82 : PMU : [ANY_STORES] : [precise] : Alias to ALL_STORES
+Umask-05 : 0x41 : PMU : [SPLIT_LOADS] : [precise] : Retired loads causing cacheline splits (Precise Event)
+Umask-06 : 0x42 : PMU : [SPLIT_STORES] : [precise] : Retired stores causing cacheline splits (Precise Event)
+Umask-07 : 0x11 : PMU : [STLB_MISS_LOADS] : [precise] : STLB misses dues to retired loads (Precise Event)
+Umask-08 : 0x12 : PMU : [STLB_MISS_STORES] : [precise] : STLB misses dues to retired stores (Precise Event)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006708
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : MISALIGN_MEM_REF
+Equiv	 : None
+Flags    : None
+Desc     : Misaligned memory references
+Code     : 0x5
+Umask-00 : 0x01 : PMU : [LOADS] : None : Speculative cache-line split load uops dispatched to the L1D
+Umask-01 : 0x02 : PMU : [STORES] : None : Speculative cache-line split Store-address uops dispatched to L1D
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006709
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : OFFCORE_REQUESTS
+Equiv	 : None
+Flags    : None
+Desc     : Offcore requests
+Code     : 0xb0
+Umask-00 : 0x08 : PMU : [ALL_DATA_RD] : None : Demand and prefetch read requests sent to uncore
+Umask-01 : 0x08 : PMU : [ALL_DATA_READ] : None : Alias to ALL_DATA_RD
+Umask-02 : 0x02 : PMU : [DEMAND_CODE_RD] : None : Offcore code read requests, including cacheable and un-cacheables
+Umask-03 : 0x01 : PMU : [DEMAND_DATA_RD] : None : Demand Data Read requests sent to uncore
+Umask-04 : 0x04 : PMU : [DEMAND_RFO] : None : Offcore Demand RFOs, includes regular RFO, Locks, ItoM
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006710
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : OFFCORE_REQUESTS_OUTSTANDING
+Equiv	 : None
+Flags    : None
+Desc     : Outstanding offcore requests
+Code     : 0x60
+Umask-00 : 0x10008 : PMU : [ALL_DATA_RD_CYCLES] : None : Alias to ALL_DATA_RD:c=1
+Umask-01 : 0x10002 : PMU : [DEMAND_CODE_RD_CYCLES] : None : Alias to DEMAND_CODE_RD:c=1
+Umask-02 : 0x10001 : PMU : [DEMAND_DATA_RD_CYCLES] : None : Alias to DEMAND_DATA_RD:c=1
+Umask-03 : 0x08 : PMU : [ALL_DATA_RD] : None : Cacheable data read transactions in the superQ every cycle
+Umask-04 : 0x02 : PMU : [DEMAND_CODE_RD] : None : Code read transactions in the superQ every cycle
+Umask-05 : 0x01 : PMU : [DEMAND_DATA_RD] : None : Demand data read transactions in the superQ every cycle
+Umask-06 : 0x60001 : PMU : [DEMAND_DATA_RD_GE_6] : None : Alias to DEMAND_DATA_RD:c=6
+Umask-07 : 0x04 : PMU : [DEMAND_RFO] : None : Outstanding RFO (store) transactions in the superQ every cycle
+Umask-08 : 0x10004 : PMU : [DEMAND_RFO_CYCLES] : None : Alias to DEMAND_RFO:c=1
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006711
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : OTHER_ASSISTS
+Equiv	 : None
+Flags    : None
+Desc     : Count hardware assists
+Code     : 0xc1
+Umask-00 : 0x10 : PMU : [AVX_TO_SSE] : None : Number of transitions from AVX-256 to legacy SSE when penalty applicable
+Umask-01 : 0x20 : PMU : [SSE_TO_AVX] : None : Number of transitions from legacy SSE to AVX-256 when penalty applicable
+Umask-02 : 0x08 : PMU : [AVX_STORE] : None : Number of assists associated with 256-bit AVX stores
+Umask-03 : 0x80 : PMU : [WB] : None : Number of times the microcode assist is invoked by hardware upon uop writeback
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006712
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : RESOURCE_STALLS
+Equiv	 : None
+Flags    : None
+Desc     : Resource related stall cycles
+Code     : 0xa2
+Umask-00 : 0x01 : PMU : [ANY] : [default] : Cycles stalled due to Resource Related reason
+Umask-01 : 0x04 : PMU : [RS] : None : Cycles stalled due to no eligible RS entry available
+Umask-02 : 0x08 : PMU : [SB] : None : Cycles stalled due to no store buffers available (not including draining from sync)
+Umask-03 : 0x10 : PMU : [ROB] : None : Cycles stalled due to re-order buffer full
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006713
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : CYCLE_ACTIVITY
+Equiv	 : None
+Flags    : None
+Desc     : Stalled cycles
+Code     : 0xa3
+Umask-00 : 0x10001 : PMU : [CYCLES_L2_PENDING] : None : Cycles with pending L2 miss loads
+Umask-01 : 0x20002 : PMU : [CYCLES_LDM_PENDING] : None : Cycles with pending memory loads
+Umask-02 : 0x80008 : PMU : [CYCLES_L1D_PENDING] : None : Cycles with pending L1D load cache misses
+Umask-03 : 0x40004 : PMU : [CYCLES_NO_EXECUTE] : None : Cycles of dispatch stalls
+Umask-04 : 0x50005 : PMU : [STALLS_L2_PENDING] : None : Execution stalls due to L2 pending loads
+Umask-05 : 0xc000c : PMU : [STALLS_L1D_PENDING] : None : Execution stalls due to L1D pending loads
+Umask-06 : 0x60006 : PMU : [STALLS_LDM_PENDING] : None : Execution stalls due to memory loads
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006714
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : ROB_MISC_EVENTS
+Equiv	 : None
+Flags    : None
+Desc     : Reorder buffer events
+Code     : 0xcc
+Umask-00 : 0x20 : PMU : [LBR_INSERTS] : [default] : Count each time an new LBR record is saved by HW
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006715
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : RS_EVENTS
+Equiv	 : None
+Flags    : None
+Desc     : Reservation station events
+Code     : 0x5e
+Umask-00 : 0x01 : PMU : [EMPTY_CYCLES] : [default] : Cycles the RS is empty for this thread
+Umask-01 : 0x18401 : PMU : [EMPTY_END] : None : Alias to EMPTY_CYCLES:c=1:e:i
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006716
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : DTLB_LOAD_ACCESS
+Equiv	 : None
+Flags    : None
+Desc     : TLB access
+Code     : 0x5f
+Umask-00 : 0x04 : PMU : [STLB_HIT] : [default] : Number of load operations that missed L1TLB but hit L2TLB
+Umask-01 : 0x04 : PMU : [LOAD_STLB_HIT] : None : Alias to STLB_HIT
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006717
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : TLB_ACCESS
+Equiv	 : DTLB_LOAD_ACCESS
+Flags    : None
+Desc     : TLB access
+Code     : 0x5f
+Umask-00 : 0x04 : PMU : [STLB_HIT] : [default] : Number of load operations that missed L1TLB but hit L2TLB
+Umask-01 : 0x04 : PMU : [LOAD_STLB_HIT] : None : Alias to STLB_HIT
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006718
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : TLB_FLUSH
+Equiv	 : None
+Flags    : None
+Desc     : TLB flushes
+Code     : 0xbd
+Umask-00 : 0x01 : PMU : [DTLB_THREAD] : None : Number of DTLB flushes of thread-specific entries
+Umask-01 : 0x20 : PMU : [STLB_ANY] : [default] : Number of STLB flushes
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006719
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : UNHALTED_CORE_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : Count core clock cycles whenever the clock signal on the specific core is running (not halted)
+Code     : 0x3c
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006720
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : UNHALTED_REFERENCE_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : Unhalted reference cycles
+Code     : 0x300
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006721
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : UOPS_EXECUTED
+Equiv	 : None
+Flags    : None
+Desc     : Uops executed
+Code     : 0xb1
+Umask-00 : 0x02 : PMU : [CORE] : None : Counts total number of uops executed from any thread per cycle
+Umask-01 : 0x01 : PMU : [THREAD] : None : Counts total number of uops executed per thread each cycle
+Umask-02 : 0x18001 : PMU : [STALL_CYCLES] : None : Number of cycles with no uops executed
+Umask-03 : 0x10001 : PMU : [CYCLES_GE_1_UOP_EXEC] : None : Cycles where at least 1 uop was executed per thread
+Umask-04 : 0x20001 : PMU : [CYCLES_GE_2_UOPS_EXEC] : None : Cycles where at least 2 uops were executed per thread
+Umask-05 : 0x30001 : PMU : [CYCLES_GE_3_UOPS_EXEC] : None : Cycles where at least 3 uops were executed per thread
+Umask-06 : 0x40001 : PMU : [CYCLES_GE_4_UOPS_EXEC] : None : Cycles where at least 4 uops were executed per thread
+Umask-07 : 0x10002 : PMU : [CORE_CYCLES_GE_1] : None : Alias to CORE:c=1
+Umask-08 : 0x20002 : PMU : [CORE_CYCLES_GE_2] : None : Alias to CORE:c=2
+Umask-09 : 0x30002 : PMU : [CORE_CYCLES_GE_3] : None : Alias to CORE:c=3
+Umask-10 : 0x40002 : PMU : [CORE_CYCLES_GE_4] : None : Alias to CORE:c=4
+Umask-11 : 0x8002 : PMU : [CORE_CYCLES_NONE] : None : Alias to CORE:i
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006722
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : UOPS_DISPATCHED_PORT
+Equiv	 : None
+Flags    : None
+Desc     : Uops dispatch to specific ports
+Code     : 0xa1
+Umask-00 : 0x01 : PMU : [PORT_0] : None : Cycles in which a uop is dispatched on port 0
+Umask-01 : 0x02 : PMU : [PORT_1] : None : Cycles in which a uop is dispatched on port 1
+Umask-02 : 0x0c : PMU : [PORT_2] : None : Cycles in which a uop is dispatched on port 2
+Umask-03 : 0x30 : PMU : [PORT_3] : None : Cycles in which a uop is dispatched on port 3
+Umask-04 : 0x40 : PMU : [PORT_4] : None : Cycles in which a uop is dispatched on port 4
+Umask-05 : 0x80 : PMU : [PORT_5] : None : Cycles in which a uop is dispatched on port 5
+Umask-06 : 0x2001 : PMU : [PORT_0_CORE] : None : Alias to PORT_0:t
+Umask-07 : 0x2002 : PMU : [PORT_1_CORE] : None : Alias to PORT_1:t
+Umask-08 : 0x200c : PMU : [PORT_2_CORE] : None : Alias to PORT_2:t
+Umask-09 : 0x2030 : PMU : [PORT_3_CORE] : None : Alias to PORT_3:t
+Umask-10 : 0x2040 : PMU : [PORT_4_CORE] : None : Alias to PORT_4:t
+Umask-11 : 0x2080 : PMU : [PORT_5_CORE] : None : Alias to PORT_5:t
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006723
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : UOPS_ISSUED
+Equiv	 : None
+Flags    : None
+Desc     : Uops issued
+Code     : 0xe
+Umask-00 : 0x01 : PMU : [ANY] : [default] : Number of uops issued by the RAT to the Reservation Station (RS)
+Umask-01 : 0x1a001 : PMU : [CORE_STALL_CYCLES] : None : Alias to ANY:c=1:i=1:t=1
+Umask-02 : 0x18001 : PMU : [STALL_CYCLES] : None : Alias to ANY:c=1:i=1
+Umask-03 : 0x10 : PMU : [FLAGS_MERGE] : None : Number of flags-merge uops allocated. Such uops adds delay
+Umask-04 : 0x20 : PMU : [SLOW_LEA] : None : Number of slow LEA or similar uops allocated
+Umask-05 : 0x40 : PMU : [SINGLE_MUL] : None : Number of multiply packed/scalar single precision uops allocated
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006724
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : UOPS_RETIRED
+Equiv	 : None
+Flags    : [precise] 
+Desc     : Uops retired
+Code     : 0xc2
+Umask-00 : 0x01 : PMU : [ALL] : [default] [precise] : All uops that actually retired (Precise Event)
+Umask-01 : 0x01 : PMU : [ANY] : [precise] : Alias to ALL
+Umask-02 : 0x02 : PMU : [RETIRE_SLOTS] : [precise] : Number of retirement slots used (Precise Event)
+Umask-03 : 0x18001 : PMU : [STALL_CYCLES] : [precise] : Alias to ALL:c=1:i=1
+Umask-04 : 0xa8001 : PMU : [TOTAL_CYCLES] : [precise] : Alias to ALL:c=10:i
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006725
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : FP_COMP_OPS_EXE
+Equiv	 : None
+Flags    : None
+Desc     : Counts number of floating point events
+Code     : 0x10
+Umask-00 : 0x01 : PMU : [X87] : None : Number of X87 uops executed
+Umask-01 : 0x10 : PMU : [SSE_FP_PACKED_DOUBLE] : None : Number of SSE or AVX-128 double precision FP packed uops executed
+Umask-02 : 0x20 : PMU : [SSE_FP_SCALAR_SINGLE] : None : Number of SSE or AVX-128 single precision FP scalar uops executed
+Umask-03 : 0x40 : PMU : [SSE_PACKED_SINGLE] : None : Number of SSE or AVX-128 single precision FP packed uops executed
+Umask-04 : 0x80 : PMU : [SSE_SCALAR_DOUBLE] : None : Number of SSE or AVX-128 double precision FP scalar uops executed
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006726
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : SIMD_FP_256
+Equiv	 : None
+Flags    : None
+Desc     : Counts 256-bit packed floating point instructions
+Code     : 0x11
+Umask-00 : 0x01 : PMU : [PACKED_SINGLE] : None : Counts 256-bit packed single-precision
+Umask-01 : 0x02 : PMU : [PACKED_DOUBLE] : None : Counts 256-bit packed double-precision
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006727
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : LSD
+Equiv	 : None
+Flags    : None
+Desc     : Loop stream detector
+Code     : 0xa8
+Umask-00 : 0x01 : PMU : [UOPS] : [default] : Number of uops delivered by the Loop Stream Detector (LSD)
+Umask-01 : 0x10001 : PMU : [ACTIVE] : None : Alias to UOPS:c=1
+Umask-02 : 0x40001 : PMU : [CYCLES_4_UOPS] : None : Alias to UOPS:c=4
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006728
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : EPT
+Equiv	 : None
+Flags    : None
+Desc     : Extended page table
+Code     : 0x4f
+Umask-00 : 0x10 : PMU : [WALK_CYCLES] : [default] : Cycles for an extended page table walk
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006729
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : PAGE_WALKS
+Equiv	 : None
+Flags    : None
+Desc     : page walker
+Code     : 0xbe
+Umask-00 : 0x01 : PMU : [LLC_MISS] : [default] : Number of page walks with a LLC miss
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006730
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : INT_MISC
+Equiv	 : None
+Flags    : None
+Desc     : Miscellaneous interruptions
+Code     : 0xd
+Umask-00 : 0x10003 : PMU : [RECOVERY_CYCLES] : None : Cycles waiting for the checkpoints in Resource Allocation Table (RAT) to be recovered after Nuke due to all other cases except JEClear (e.g. whenever a ucode assist is needed like SSE exception, memory disambiguation, etc...)
+Umask-01 : 0x12003 : PMU : [RECOVERY_CYCLES_ANY] : None : Alias to RECOVERY_CYCLES:t
+Umask-02 : 0x10403 : PMU : [RECOVERY_STALLS_COUNT] : None : Number of occurrences waiting for Machine Clears
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006731
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : OFFCORE_REQUESTS_BUFFER
+Equiv	 : None
+Flags    : None
+Desc     : Offcore reqest buffer
+Code     : 0xb2
+Umask-00 : 0x01 : PMU : [SQ_FULL] : [default] : Number of cycles the offcore requests buffer is full
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006732
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : SQ_MISC
+Equiv	 : None
+Flags    : None
+Desc     : SuperQueue miscellaneous
+Code     : 0xf4
+Umask-00 : 0x10 : PMU : [SPLIT_LOCK] : [default] : Number of split locks in the super queue (SQ)
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+Modif-06 : 0x07 : PMU : [intx] : monitor only inside transactional memory region (boolean)
+Modif-07 : 0x08 : PMU : [intxcp] : do not count occurrences inside aborted transactional memory region (boolean)
+#-----------------------------
+IDX	 : 216006733
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : OFFCORE_RESPONSE_0
+Equiv	 : None
+Flags    : None
+Desc     : Offcore response event (must provide at least one request type and either any_response or any combination of supplier + snoop)
+Code     : 0x1b7
+Umask-00 : 0x01 : PMU : [DMND_DATA_RD] : None : Request: number of demand and DCU prefetch data reads of full and partial cachelines as well as demand data page table entry cacheline reads. Does not count L2 data read prefetches or instruction fetches
+Umask-01 : 0x02 : PMU : [DMND_RFO] : None : Request: number of demand and DCU prefetch reads for ownership (RFO) requests generated by a write to data cacheline. Does not count L2 RFO prefetches
+Umask-02 : 0x04 : PMU : [DMND_IFETCH] : None : Request: number of demand and DCU prefetch instruction cacheline reads. Does not count L2 code read prefetches
+Umask-03 : 0x08 : PMU : [WB] : None : Request: number of writebacks (modified to exclusive) transactions
+Umask-04 : 0x10 : PMU : [PF_DATA_RD] : None : Request: number of data cacheline reads generated by L2 prefetchers
+Umask-05 : 0x20 : PMU : [PF_RFO] : None : Request: number of RFO requests generated by L2 prefetchers
+Umask-06 : 0x40 : PMU : [PF_IFETCH] : None : Request: number of code reads generated by L2 prefetchers
+Umask-07 : 0x80 : PMU : [PF_LLC_DATA_RD] : None : Request: number of L3 prefetcher requests to L2 for loads
+Umask-08 : 0x100 : PMU : [PF_LLC_RFO] : None : Request: number of RFO requests generated by L2 prefetcher
+Umask-09 : 0x200 : PMU : [PF_LLC_IFETCH] : None : Request: number of L2 prefetcher requests to L3 for instruction fetches
+Umask-10 : 0x400 : PMU : [BUS_LOCKS] : None : Request: number bus lock and split lock requests
+Umask-11 : 0x800 : PMU : [STRM_ST] : None : Request: number of streaming store requests
+Umask-12 : 0x8000 : PMU : [OTHER] : None : Request: counts one of the following transaction types, including L3 invalidate, I/O, full or partial writes, WC or non-temporal stores, CLFLUSH, Fences, lock, unlock, split lock
+Umask-13 : 0x244 : PMU : [ANY_IFETCH] : None : Alias to PF_IFETCH:DMND_IFETCH:PF_LLC_IFETCH
+Umask-14 : 0x8fff : PMU : [ANY_REQUEST] : [default] : Alias to DMND_DATA_RD:DMND_RFO:DMND_IFETCH:WB:PF_DATA_RD:PF_RFO:PF_IFETCH:PF_LLC_DATA_RD:PF_LLC_RFO:PF_LLC_IFETCH:BUS_LOCKS:STRM_ST:OTHER
+Umask-15 : 0x91 : PMU : [ANY_DATA] : None : Alias to DMND_DATA_RD:PF_DATA_RD:PF_LLC_DATA_RD
+Umask-16 : 0x122 : PMU : [ANY_RFO] : None : Alias to DMND_RFO:PF_RFO:PF_LLC_RFO
+Umask-17 : 0x10000 : PMU : [ANY_RESPONSE] : [default] : Response: count any response type
+Umask-18 : 0x20000 : PMU : [NO_SUPP] : None : Supplier: counts number of times supplier information is not available
+Umask-19 : 0x40000 : PMU : [LLC_HITM] : None : Supplier: counts L3 hits in M-state (initial lookup)
+Umask-20 : 0x80000 : PMU : [LLC_HITE] : None : Supplier: counts L3 hits in E-state
+Umask-21 : 0x100000 : PMU : [LLC_HITS] : None : Supplier: counts L3 hits in S-state
+Umask-22 : 0x200000 : PMU : [LLC_HITF] : None : Supplier: counts L3 hits in F-state
+Umask-23 : 0x400000 : PMU : [LLC_MISS_LOCAL] : None : Supplier: counts L3 misses to local DRAM
+Umask-24 : 0x7f800000 : PMU : [LLC_MISS_REMOTE] : None : Alias to LLC_MISS_REMOTE_DRAM
+Umask-25 : 0xc00000 : PMU : [L3_MISS] : None : Alias to LLC_MISS_LOCAL:LLC_MISS_REMOTE
+Umask-26 : 0x7f800000 : PMU : [LLC_MISS_REMOTE_DRAM] : None : Supplier: counts L3 misses to remote DRAM
+Umask-27 : 0x3c0000 : PMU : [LLC_HITMESF] : None : Alias to LLC_HITM:LLC_HITE:LLC_HITS:LLC_HITF
+Umask-28 : 0x80000000 : PMU : [SNP_NONE] : None : Snoop: counts number of times no snoop-related information is available
+Umask-29 : 0x100000000 : PMU : [SNP_NOT_NEEDED] : None : Snoop: counts the number of times no snoop was needed to satisfy the request
+Umask-30 : 0x200000000 : PMU : [SNP_MISS] : None : Snoop: counts number of times a snoop was needed and it missed all snooped caches
+Umask-31 : 0x400000000 : PMU : [SNP_NO_FWD] : None : Snoop: counts number of times a snoop was needed and it hit in at leas one snooped cache
+Umask-32 : 0x800000000 : PMU : [SNP_FWD] : None : Snoop: counts number of times a snoop was needed and data was forwarded from a remote socket
+Umask-33 : 0x1000000000 : PMU : [HITM] : None : Snoop: counts number of times a snoop was needed and it hitM-ed in local or remote cache
+Umask-34 : 0x2000000000 : PMU : [NON_DRAM] : None : Snoop:  counts number of times target was a non-DRAM system address. This includes MMIO transactions
+Umask-35 : 0x3f80000000 : PMU : [SNP_ANY] : [default] : Alias to SNP_NONE:SNP_NOT_NEEDED:SNP_MISS:SNP_NO_FWD:SNP_FWD:HITM:NON_DRAM
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 216006734
+PMU name : ivb_ep (Intel Ivy Bridge EP)
+Name     : OFFCORE_RESPONSE_1
+Equiv	 : None
+Flags    : None
+Desc     : Offcore response event (must provide at least one request type and either any_response or any combination of supplier + snoop)
+Code     : 0x1bb
+Umask-00 : 0x01 : PMU : [DMND_DATA_RD] : None : Request: number of demand and DCU prefetch data reads of full and partial cachelines as well as demand data page table entry cacheline reads. Does not count L2 data read prefetches or instruction fetches
+Umask-01 : 0x02 : PMU : [DMND_RFO] : None : Request: number of demand and DCU prefetch reads for ownership (RFO) requests generated by a write to data cacheline. Does not count L2 RFO prefetches
+Umask-02 : 0x04 : PMU : [DMND_IFETCH] : None : Request: number of demand and DCU prefetch instruction cacheline reads. Does not count L2 code read prefetches
+Umask-03 : 0x08 : PMU : [WB] : None : Request: number of writebacks (modified to exclusive) transactions
+Umask-04 : 0x10 : PMU : [PF_DATA_RD] : None : Request: number of data cacheline reads generated by L2 prefetchers
+Umask-05 : 0x20 : PMU : [PF_RFO] : None : Request: number of RFO requests generated by L2 prefetchers
+Umask-06 : 0x40 : PMU : [PF_IFETCH] : None : Request: number of code reads generated by L2 prefetchers
+Umask-07 : 0x80 : PMU : [PF_LLC_DATA_RD] : None : Request: number of L3 prefetcher requests to L2 for loads
+Umask-08 : 0x100 : PMU : [PF_LLC_RFO] : None : Request: number of RFO requests generated by L2 prefetcher
+Umask-09 : 0x200 : PMU : [PF_LLC_IFETCH] : None : Request: number of L2 prefetcher requests to L3 for instruction fetches
+Umask-10 : 0x400 : PMU : [BUS_LOCKS] : None : Request: number bus lock and split lock requests
+Umask-11 : 0x800 : PMU : [STRM_ST] : None : Request: number of streaming store requests
+Umask-12 : 0x8000 : PMU : [OTHER] : None : Request: counts one of the following transaction types, including L3 invalidate, I/O, full or partial writes, WC or non-temporal stores, CLFLUSH, Fences, lock, unlock, split lock
+Umask-13 : 0x244 : PMU : [ANY_IFETCH] : None : Alias to PF_IFETCH:DMND_IFETCH:PF_LLC_IFETCH
+Umask-14 : 0x8fff : PMU : [ANY_REQUEST] : [default] : Alias to DMND_DATA_RD:DMND_RFO:DMND_IFETCH:WB:PF_DATA_RD:PF_RFO:PF_IFETCH:PF_LLC_DATA_RD:PF_LLC_RFO:PF_LLC_IFETCH:BUS_LOCKS:STRM_ST:OTHER
+Umask-15 : 0x91 : PMU : [ANY_DATA] : None : Alias to DMND_DATA_RD:PF_DATA_RD:PF_LLC_DATA_RD
+Umask-16 : 0x122 : PMU : [ANY_RFO] : None : Alias to DMND_RFO:PF_RFO:PF_LLC_RFO
+Umask-17 : 0x10000 : PMU : [ANY_RESPONSE] : [default] : Response: count any response type
+Umask-18 : 0x20000 : PMU : [NO_SUPP] : None : Supplier: counts number of times supplier information is not available
+Umask-19 : 0x40000 : PMU : [LLC_HITM] : None : Supplier: counts L3 hits in M-state (initial lookup)
+Umask-20 : 0x80000 : PMU : [LLC_HITE] : None : Supplier: counts L3 hits in E-state
+Umask-21 : 0x100000 : PMU : [LLC_HITS] : None : Supplier: counts L3 hits in S-state
+Umask-22 : 0x200000 : PMU : [LLC_HITF] : None : Supplier: counts L3 hits in F-state
+Umask-23 : 0x400000 : PMU : [LLC_MISS_LOCAL] : None : Supplier: counts L3 misses to local DRAM
+Umask-24 : 0x7f800000 : PMU : [LLC_MISS_REMOTE] : None : Alias to LLC_MISS_REMOTE_DRAM
+Umask-25 : 0xc00000 : PMU : [L3_MISS] : None : Alias to LLC_MISS_LOCAL:LLC_MISS_REMOTE
+Umask-26 : 0x7f800000 : PMU : [LLC_MISS_REMOTE_DRAM] : None : Supplier: counts L3 misses to remote DRAM
+Umask-27 : 0x3c0000 : PMU : [LLC_HITMESF] : None : Alias to LLC_HITM:LLC_HITE:LLC_HITS:LLC_HITF
+Umask-28 : 0x80000000 : PMU : [SNP_NONE] : None : Snoop: counts number of times no snoop-related information is available
+Umask-29 : 0x100000000 : PMU : [SNP_NOT_NEEDED] : None : Snoop: counts the number of times no snoop was needed to satisfy the request
+Umask-30 : 0x200000000 : PMU : [SNP_MISS] : None : Snoop: counts number of times a snoop was needed and it missed all snooped caches
+Umask-31 : 0x400000000 : PMU : [SNP_NO_FWD] : None : Snoop: counts number of times a snoop was needed and it hit in at leas one snooped cache
+Umask-32 : 0x800000000 : PMU : [SNP_FWD] : None : Snoop: counts number of times a snoop was needed and data was forwarded from a remote socket
+Umask-33 : 0x1000000000 : PMU : [HITM] : None : Snoop: counts number of times a snoop was needed and it hitM-ed in local or remote cache
+Umask-34 : 0x2000000000 : PMU : [NON_DRAM] : None : Snoop:  counts number of times target was a non-DRAM system address. This includes MMIO transactions
+Umask-35 : 0x3f80000000 : PMU : [SNP_ANY] : [default] : Alias to SNP_NONE:SNP_NOT_NEEDED:SNP_MISS:SNP_NO_FWD:SNP_FWD:HITM:NON_DRAM
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (may require counter-mask >= 1) (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [t] : measure any thread (boolean)
+#-----------------------------
+IDX	 : 239075328
+PMU name : perf_raw (perf_events raw PMU)
+Name     : r0000
+Equiv	 : None
+Flags    : None
+Desc     : perf_events raw event syntax: r[0-9a-fA-F]+
+Code     : 0x0

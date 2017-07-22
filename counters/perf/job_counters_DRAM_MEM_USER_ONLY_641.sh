@@ -31,11 +31,13 @@ JAVA8="/share/apps/java/jdk1.8.0_20/bin/java"
 
 # Tests to perform with perf
 DEFAULT_EXEC="$JAVA8 -jar $exe -5 $size $nthreads"
-LOCAL_ACCESS="numactl --cpubind=0 --membind=0 $JAVA8 -jar $exe -5 $size $nthreads"
-REMOTE_ACCESS="numactl --cpubind=0 --membind=1 $JAVA8 -jar $exe -5 $size $nthreads"
+LOCAL_ACCESS_EXEC="numactl --cpubind=0 --membind=0 $JAVA8 -jar $exe -5 $size $nthreads"
+REMOTE_ACCESS_EXEC="numactl --cpubind=0 --membind=1 $JAVA8 -jar $exe -5 $size $nthreads"
 
 # Array with all tests
-declare -a TEST=("$DEFAULT_EXEC" "$LOCAL_ACCESS_EXEC" "$REMOTE_ACCESS")
+#declare -a TEST=("$DEFAULT_EXEC" "$LOCAL_ACCESS_EXEC" "$REMOTE_ACCESS_EXEC")
+declare -a TEST=("$LOCAL_ACCESS_EXEC")
+
 #############################################################################
 
 

@@ -1,0 +1,280 @@
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+          17602967      r5301d3:u                                                   
+
+      32.989132411 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+             42112      r530cd3:u                                                   
+
+      32.678219258 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            335467      r5310d3:u                                                   
+
+      32.562030624 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+             32502      r5320d3:u                                                   
+
+      32.976828861 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            197414      r5302d2:u                                                   
+
+      33.007529768 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+           1121796      r5304d2:u                                                   
+
+      32.675537063 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+            277713      r5301d2:u                                                   
+
+      32.554997258 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+          80312845      r5308d2:u                                                   
+
+      32.698148416 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                53      r5301b7:u                                                   
+                 0      r400000:u                                                   
+
+      32.609897582 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                26      r5301b7:u                                                   
+      566947838980      r7f800000:u                                                 
+
+      32.637317540 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+               125      r5301b7:u                                                   
+                 0      r800000000:u                                                
+
+      32.642327086 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                41      r5301b7:u                                                   
+                 0      r1000000000:u                                               
+
+      32.621191748 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                20      r5301b7:u                                                   
+                 0      r2000000000:u                                               
+
+      32.640351497 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                42      r5301b7:u                                                   
+                 0      r1:u                                                        
+
+      32.567921573 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                84      r5301b7:u                                                   
+                 0      r2:u                                                        
+
+      32.562771279 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                43      r5301b7:u                                                   
+                 0      r4:u                                                        
+
+      32.738585569 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                28      r5301b7:u                                                   
+                 0      r10:u                                                       
+
+      32.686560537 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                77      r5301b7:u                                                   
+                 0      r20:u                                                       
+
+      32.548069724 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                26      r5301b7:u                                                   
+                 0      r40:u                                                       
+
+      32.588793987 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                55      r5301b7:u                                                   
+                 0      r80:u                                                       
+
+      32.504316385 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+               101      r5301b7:u                                                   
+                 0      r100:u                                                      
+
+      32.778124218 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                37      r5301b7:u                                                   
+                 0      r200:u                                                      
+
+      32.489983874 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r400000:u                                                   
+
+      32.614099893 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+      567048379290      r7f800000:u                                                 
+
+      32.610841839 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r800000000:u                                                
+
+      32.749489591 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r1000000000:u                                               
+
+      32.636279411 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r2000000000:u                                               
+
+      32.741966602 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r1:u                                                        
+
+      32.848990291 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r2:u                                                        
+
+      32.524503317 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r4:u                                                        
+
+      32.748836498 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r10:u                                                       
+
+      32.639100488 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r20:u                                                       
+
+      32.623168859 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r40:u                                                       
+
+      32.716090468 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r80:u                                                       
+
+      33.053608299 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r100:u                                                      
+
+      32.797187005 seconds time elapsed
+
+
+ Performance counter stats for 'numactl --cpubind=0 --membind=0 /share/apps/java/jdk1.8.0_20/bin/java -jar /home/a59905/NUMA_Aware_Thesis/java_codes/jar/SOR_Improved_sm.jar -5 5 8':
+
+                 0      r5301bb:u                                                   
+                 0      r200:u                                                      
+
+      32.624785487 seconds time elapsed
+
