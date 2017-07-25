@@ -1,0 +1,18 @@
+# started on Tue Jul 25 16:58:21 2017
+
+
+ Performance counter stats for 'sleep 3':
+
+               159      r5310d3:u                                                   
+
+       3.000733757 seconds time elapsed
+
+# started on Tue Jul 25 16:58:37 2017
+
+
+ Performance counter stats for 'sleep 3' (5 runs):
+
+               147      r5310d3:u                                                     ( +- 15.25% )
+
+       3.000792673 seconds time elapsed                                          ( +-  0.00% )
+
